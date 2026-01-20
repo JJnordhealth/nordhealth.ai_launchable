@@ -1840,26 +1840,6 @@ body.reflective-space-exited {
   color: #0c1a3d;
 }
 
-/* Pricing page footer - force dark mode */
-.pricing-page .footer {
-  background: linear-gradient(180deg, #0c1a3d, #09142f) !important;
-}
-
-.pricing-page .footer .stats-title,
-.pricing-page .footer .stat-value,
-.pricing-page .footer .stat-label {
-  color: #ffffff !important;
-}
-
-.pricing-page .footer .footer-copyright,
-.pricing-page .footer .footer-link {
-  color: #ffffff !important;
-}
-
-.pricing-page .footer .footer-container {
-  opacity: 1;
-  transform: none;
-}
 
 /* Pricing Page Mobile Styles */
 @media (max-width: 767px) {
