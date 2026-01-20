@@ -1785,27 +1785,59 @@ body.reflective-space-exited {
   transform: translateX(3px);
 }
 
-/* Footer row */
-.price-comparison-row.footer {
-  background: #f9fafb;
+/* Table Note */
+.pricing-table-note {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  color: #6b7280;
+  margin-top: 16px;
 }
 
-.price-comparison-row.footer .price-comparison-cell {
-  padding: 14px 16px;
-}
-
-.price-comparison-row.footer .price-comparison-cell:first-child {
-  background: #ffffff;
-}
-
-.price-comparison-row.footer .price-comparison-cell:not(:first-child) {
+/* Pricing CTA Section */
+.pricing-cta-section {
+  background: #f3f5fc;
+  padding: 80px 20px 100px;
   text-align: center;
 }
 
-.price-note {
-  font-size: 12px;
+.pricing-cta-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pricing-cta-title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #0c1a3d;
+  margin-bottom: 12px;
+}
+
+.pricing-cta-subtitle {
+  font-size: 18px;
   font-weight: 300;
-  color: #6b7280;
+  color: #4b5563;
+  margin-bottom: 32px;
+}
+
+.pricing-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing-cta-buttons .btn-primary {
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
+.pricing-cta-buttons .btn-secondary {
+  padding: 14px 24px;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid #d5d7da;
+  color: #0c1a3d;
 }
 
 .pricing-footer {
@@ -1850,19 +1882,6 @@ body.reflective-space-exited {
     padding: 32px 24px;
   }
 
-  .promo-banner {
-    padding: 60px 24px;
-  }
-
-  .promo-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .promo-title {
-    font-size: 28px;
-  }
-
   .pricing-table-section {
     padding: 60px 16px;
     overflow-x: auto;
@@ -1885,8 +1904,31 @@ body.reflective-space-exited {
     font-size: 13px;
   }
 
-  .price-note {
-    font-size: 11px;
+  .pricing-table-note {
+    font-size: 12px;
+  }
+
+  .pricing-cta-section {
+    padding: 60px 24px 80px;
+  }
+
+  .pricing-cta-title {
+    font-size: 26px;
+  }
+
+  .pricing-cta-subtitle {
+    font-size: 16px;
+  }
+
+  .pricing-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-cta-buttons .btn-primary,
+  .pricing-cta-buttons .btn-secondary {
+    width: 100%;
+    max-width: 280px;
   }
 }
 
@@ -1903,11 +1945,11 @@ body.reflective-space-exited {
     padding: 0 16px 40px;
   }
 
-  .promo-banner {
-    padding: 40px 16px;
+  .pricing-cta-section {
+    padding: 50px 16px 60px;
   }
 
-  .promo-title {
-    font-size: 24px;
+  .pricing-cta-title {
+    font-size: 22px;
   }
 }
