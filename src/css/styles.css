@@ -173,6 +173,7 @@ body.reflective-space-exited {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.399999976158142;
+  text-decoration: none;
   /* Exact Figma value */
   letter-spacing: 0;
 }
