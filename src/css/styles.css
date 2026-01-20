@@ -1439,9 +1439,10 @@ body.reflective-space-exited {
 .pricing-cards-container {
   display: flex;
   gap: 32px;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
   justify-content: center;
+  align-items: stretch;
 }
 
 .pricing-card {
@@ -1449,6 +1450,7 @@ body.reflective-space-exited {
   padding: 40px;
   flex: 1;
   max-width: 372px;
+  min-width: 340px;
   display: flex;
   flex-direction: column;
 }
@@ -1488,9 +1490,13 @@ body.reflective-space-exited {
 }
 
 .pricing-card-header {
+  min-height: 90px;
   margin-bottom: 16px;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pricing-card-badge {
@@ -1506,31 +1512,31 @@ body.reflective-space-exited {
   font-size: 12px;
   font-weight: 600;
   color: #0c1a3d;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
 .pricing-illustration {
   display: block;
-  margin: 16px auto 0;
+  margin-top: auto;
   max-width: 150px;
 }
 
 .pricing-card-price {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   text-align: center;
 }
 
 .price-amount {
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 48px;
+  font-weight: 600;
   color: #0c1a3d;
   display: block;
+  line-height: 1.1;
   margin-bottom: 4px;
 }
 
-.price-large {
-  font-size: 48px;
-  font-weight: 600;
+.pricing-card-blue .price-amount {
+  font-weight: 400;
 }
 
 .price-period {
