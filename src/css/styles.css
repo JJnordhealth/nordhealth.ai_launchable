@@ -235,7 +235,7 @@ body.reflective-space-exited {
 .icon-calendar {
   width: 24px;
   height: 24px;
-  color: #ffffff;
+  filter: brightness(0) invert(1);
 }
 
 .btn-primary {
@@ -324,7 +324,7 @@ body.reflective-space-exited {
 .trust-icon {
   width: 24px;
   height: 24px;
-  color: #ffffff;
+  filter: brightness(0) invert(1);
 }
 
 .trust-item p {
