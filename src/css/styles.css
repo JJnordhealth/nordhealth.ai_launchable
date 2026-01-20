@@ -1840,6 +1840,19 @@ body.reflective-space-exited {
   color: #0c1a3d;
 }
 
+/* Pricing page footer - dark blue with white text */
+.pricing-page .footer {
+  background-color: #0c1a3d !important;
+}
+
+.pricing-page .footer .stats-title,
+.pricing-page .footer .stat-value,
+.pricing-page .footer .stat-label,
+.pricing-page .footer .footer-copyright,
+.pricing-page .footer .footer-link {
+  color: #ffffff !important;
+}
+
 
 /* Pricing Page Mobile Styles */
 @media (max-width: 767px) {
