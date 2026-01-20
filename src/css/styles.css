@@ -134,10 +134,9 @@ body.reflective-space-exited {
 /* Figma: body/l - size: 20, weight: 300, lineHeight: 1.399999976158142, letterSpacing: 0 */
 .hero-description,
 .about-description {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 1.399999976158142;
-  /* Exact Figma value */
+  line-height: 1.6;
   letter-spacing: 0;
 }
 
@@ -529,12 +528,12 @@ body.reflective-space-exited {
 }
 
 .tab-content-text {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   color: #ffffff;
   opacity: 0.85;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 /* ============================================
