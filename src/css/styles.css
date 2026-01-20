@@ -19,17 +19,17 @@ html, body {
 }
 
 body {
-  /* Armin Grotesk from Figma, fallback to Inter */
   font-family:
-    "Armin Grotesk",
     "Inter",
-    system-ui,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
+    system-ui,
     sans-serif;
   font-weight: 300;
-  line-height: 1.399999976158142;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   /* Exact Figma value for body text */
   color: #181d27;
   /* Initial background matches hero section - dark gradient */
