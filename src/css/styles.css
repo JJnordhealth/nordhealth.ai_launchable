@@ -399,8 +399,7 @@ body.reflective-space-exited {
 }
 .hero-carousel-controls {
   padding: 24px;
-  position: absolute;
-  bottom: -100px;
+  position: relative;
   width: 100%;
   max-width: 100%;
   background: #0d1117;
@@ -408,6 +407,7 @@ body.reflective-space-exited {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  margin-top: 48px;
 }
 .hero-carousel-controls:before {
   position: absolute;
