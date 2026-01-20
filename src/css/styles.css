@@ -1711,9 +1711,56 @@ body.reflective-space-exited {
 }
 
 .price-period {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   color: #0c1a3d;
+  opacity: 0.6;
+}
+
+.price-old {
+  font-size: 14px;
+  font-weight: 400;
+  color: #0c1a3d;
+  opacity: 0.5;
+  text-decoration: line-through;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.price-annual {
+  font-size: 14px;
+  font-weight: 400;
+  color: #0c1a3d;
+  opacity: 0.6;
+  display: block;
+  margin-top: 8px;
+}
+
+.pricing-card-blue .price-old,
+.pricing-card-blue .price-annual,
+.pricing-card-blue .price-period {
+  color: #fff;
+}
+
+.pricing-card-info {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.pricing-card-info p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #0c1a3d;
+  margin: 0 0 4px 0;
+  line-height: 1.4;
+}
+
+.pricing-card-blue .pricing-card-info p {
+  color: #fff;
+}
+
+.pricing-validity {
+  font-size: 12px !important;
   opacity: 0.6;
 }
 
@@ -1752,6 +1799,9 @@ body.reflective-space-exited {
   cursor: pointer;
   transition: all 0.2s ease;
   font-family: inherit;
+  text-decoration: none;
+  text-align: center;
+  display: block;
 }
 
 .btn-card-cta:hover {
