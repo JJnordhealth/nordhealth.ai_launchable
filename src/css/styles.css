@@ -1616,13 +1616,22 @@ body.reflective-space-exited {
   flex: 1;
 }
 
-/* Pricing Divider */
-.pricing-divider {
+/* Pricing Trial Banner */
+.pricing-trial-banner {
   width: 100%;
   max-width: 800px;
-  height: 1px;
-  background-color: #eff2f3;
   margin: 0 auto;
+  padding: 16px 24px;
+  background-color: #97A9F6;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.pricing-trial-banner span {
+  font-family: "Armin Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A2344;
 }
 
 /* Pricing Comparison Grid */
