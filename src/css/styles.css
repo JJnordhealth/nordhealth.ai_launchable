@@ -1070,6 +1070,7 @@ body.reflective-space-exited {
 
   .nav-logo {
     width: 200px;
+    margin: 0 auto;
   }
 
   .nav-actions {
@@ -1247,6 +1248,7 @@ body.reflective-space-exited {
   .nav-logo {
     width: 160px;
     height: 32px;
+    margin: 0 auto;
   }
 
   .nav-actions {
