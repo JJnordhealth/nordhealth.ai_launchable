@@ -1016,6 +1016,16 @@ body.reflective-space-exited {
     font-size: 56px;
   }
 
+  .btn-primary {
+    padding: 16px 32px;
+    font-size: 15px;
+  }
+
+  .btn-secondary {
+    font-size: 15px;
+    gap: 12px;
+  }
+
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1056,6 +1066,34 @@ body.reflective-space-exited {
   .nav-actions {
     width: 100%;
     justify-content: center;
+    gap: 16px;
+  }
+
+  .btn-primary {
+    padding: 14px 24px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  .btn-secondary {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .btn-secondary span {
+    display: none;
+  }
+
+  .icon-calendar {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hero-cta,
+  .reflective-space-cta {
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 16px;
   }
 
   .hero {
@@ -1146,7 +1184,25 @@ body.reflective-space-exited {
 }
 }
 
-/* Small Mobile (375px and below) */
+/* Medium Mobile (480px - iPhone Plus/Max) */
+@media (max-width: 480px) {
+  .nav-actions {
+    gap: 12px;
+  }
+
+  .btn-primary {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .hero-cta,
+  .reflective-space-cta {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}
+
+/* Small Mobile (375px and below - iPhone SE) */
 @media (max-width: 375px) {
   .hero-heading {
     font-size: 28px;
@@ -1154,6 +1210,33 @@ body.reflective-space-exited {
 
   .hero-eyebrow {
     font-size: 16px;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .btn-secondary {
+    justify-content: center;
+  }
+
+  .btn-secondary span {
+    display: inline;
+    font-size: 14px;
+  }
+
+  .hero-cta,
+  .reflective-space-cta {
+    padding: 14px 20px;
+    font-size: 15px;
   }
 
   .about-title,
@@ -1165,5 +1248,19 @@ body.reflective-space-exited {
   .feature-title,
   .reflective-space-title {
     font-size: 22px;
+  }
+
+  .trust-indicators {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .trust-item {
+    min-width: 80px;
+  }
+
+  .trust-item p {
+    font-size: 12px;
   }
 }
