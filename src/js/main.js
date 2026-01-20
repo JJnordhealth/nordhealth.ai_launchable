@@ -351,6 +351,9 @@ function moveIndicator(tab, animate = true) {
   indicator.style.transform = `translateX(${tab.offsetLeft}px)`;
 }
 
+// Tab content items for dynamic text switching
+const tabContentItems = document.querySelectorAll(".tab-content-item");
+
 tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => {
     if (tab === activeTab) return;
@@ -369,6 +372,15 @@ tabs.forEach((tab, index) => {
         heroImg.src = images[index];
         heroImg.classList.remove("fade-out");
       }, 220);
+    }
+
+    // Switch tab content text
+    if (tabContentItems.length > 0) {
+      tabContentItems.forEach((item) => item.classList.remove("active"));
+      const targetContent = document.querySelector(`.tab-content-item[data-tab="${index}"]`);
+      if (targetContent) {
+        targetContent.classList.add("active");
+      }
     }
   });
 });
