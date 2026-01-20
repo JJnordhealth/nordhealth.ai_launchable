@@ -561,7 +561,7 @@ body.reflective-space-exited {
 
 .about-description {
   color: #535862;
-  max-width: calc(400px + 2rem);
+  max-width: calc(400px + 2rem) !important;
   margin-left: auto;
   margin-right: auto;
 }
