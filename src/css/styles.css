@@ -544,6 +544,7 @@ body.reflective-space-exited {
 
 .features-title {
   color: #181d27;
+  text-align: center;
 }
 
 /* Feature Slider Container (GitHub-style) */
