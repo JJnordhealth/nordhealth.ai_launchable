@@ -1156,10 +1156,22 @@ body.reflective-space-exited {
 
   .feature-display-image-container {
     height: 400px;
+    margin: 0 auto;
+  }
+
+  .feature-display {
+    align-items: center;
+    width: 100%;
+  }
+
+  .feature-display-img {
+    margin: 0 auto;
+    display: block;
   }
 
   .feature-display-content-container {
     min-height: 100px;
+    margin: 0 auto;
   }
 
   .feature-display-title {
