@@ -274,7 +274,7 @@ body.reflective-space-exited {
 .hero {
   background: linear-gradient(180deg, #0c1a3d, #09142f);
   min-height: 100vh;
-  padding: 267px 142px 280px;
+  padding: 267px 142px 230px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -400,7 +400,7 @@ body.reflective-space-exited {
 .hero-carousel-controls {
   padding: 24px;
   position: absolute;
-  bottom: -100px;
+  bottom: -50px;
   width: 100%;
   max-width: 100%;
   background: linear-gradient(180deg, #09142f 0%, #060b1a 100%);
