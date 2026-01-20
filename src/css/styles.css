@@ -403,7 +403,7 @@ body.reflective-space-exited {
   bottom: -50px;
   width: 100%;
   max-width: 100%;
-  background: linear-gradient(180deg, #09142f 0%, #060b1a 100%);
+  background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
