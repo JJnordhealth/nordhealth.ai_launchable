@@ -1156,7 +1156,7 @@ body.reflective-space-exited {
     height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding: 100px 32px 32px;
     background: rgba(12, 26, 61, 0.98);
     backdrop-filter: blur(20px);
@@ -1170,12 +1170,14 @@ body.reflective-space-exited {
   }
 
   .nav-link {
-    font-size: 18px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
   }
 
   .btn-primary {
     padding: 14px 24px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 6px;
     width: 100%;
     text-align: center;
@@ -1184,6 +1186,8 @@ body.reflective-space-exited {
   .btn-secondary {
     font-size: 16px;
     gap: 8px;
+    width: 100%;
+    justify-content: center;
   }
 
   .btn-secondary span {
