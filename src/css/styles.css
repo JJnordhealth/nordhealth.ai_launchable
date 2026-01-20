@@ -1838,8 +1838,26 @@ body.reflective-space-exited {
 .pricing-cta-buttons .btn-secondary {
   padding: 14px 24px;
   font-size: 16px;
+  font-weight: 500;
   background: #ffffff;
   border: 1px solid #d5d7da;
+  border-radius: 8px;
+  color: #0c1a3d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.pricing-cta-buttons .btn-secondary:hover {
+  background: #f3f5fc;
+  border-color: #0c1a3d;
+}
+
+.pricing-cta-buttons .btn-secondary .icon-calendar {
+  width: 18px;
+  height: 18px;
   color: #0c1a3d;
 }
 
