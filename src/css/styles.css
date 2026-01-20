@@ -1616,6 +1616,15 @@ body.reflective-space-exited {
   flex: 1;
 }
 
+/* Pricing Divider */
+.pricing-divider {
+  width: 100%;
+  max-width: 800px;
+  height: 1px;
+  background-color: #eff2f3;
+  margin: 0 auto;
+}
+
 /* Pricing Comparison Grid */
 .pricing-table-section {
   background: #f3f5fc;
