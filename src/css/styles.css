@@ -274,7 +274,7 @@ body.reflective-space-exited {
 .hero {
   background: linear-gradient(180deg, #0c1a3d, #09142f);
   min-height: 100vh;
-  padding: 267px 142px 0;
+  padding: 267px 142px 280px;
   display: flex;
   align-items: center;
   justify-content: center;
