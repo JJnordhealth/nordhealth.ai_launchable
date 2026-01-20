@@ -435,11 +435,72 @@ if (navBurger && navActions) {
     navActions.classList.toggle("active");
   });
 
-  // Close menu when clicking a link
-  navActions.querySelectorAll("a, button").forEach((item) => {
+  // Close menu when clicking a link (except demo buttons)
+  navActions.querySelectorAll("a").forEach((item) => {
     item.addEventListener("click", () => {
       navBurger.classList.remove("active");
       navActions.classList.remove("active");
     });
   });
 }
+
+// Demo Modal with Lazy-loaded HubSpot Form
+const demoModal = document.getElementById("demoModal");
+const demoButtons = document.querySelectorAll(".btn-secondary");
+const modalClose = document.querySelector(".modal-close");
+let hsScriptLoaded = false;
+
+function loadHubSpotScript() {
+  if (hsScriptLoaded) return;
+
+  const script = document.createElement("script");
+  script.src = "https://js-eu1.hsforms.net/forms/embed/144062425.js";
+  script.defer = true;
+  document.head.appendChild(script);
+  hsScriptLoaded = true;
+}
+
+function openDemoModal() {
+  loadHubSpotScript();
+  demoModal.classList.add("active");
+  document.body.style.overflow = "hidden";
+
+  // Close mobile menu if open
+  if (navBurger && navActions) {
+    navBurger.classList.remove("active");
+    navActions.classList.remove("active");
+  }
+}
+
+function closeDemoModal() {
+  demoModal.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+// Attach click handlers to all "Book a demo" buttons
+demoButtons.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    openDemoModal();
+  });
+});
+
+// Close modal handlers
+if (modalClose) {
+  modalClose.addEventListener("click", closeDemoModal);
+}
+
+if (demoModal) {
+  demoModal.addEventListener("click", (e) => {
+    if (e.target === demoModal) {
+      closeDemoModal();
+    }
+  });
+}
+
+// Close on Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && demoModal.classList.contains("active")) {
+    closeDemoModal();
+  }
+});
