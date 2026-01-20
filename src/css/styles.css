@@ -398,7 +398,7 @@ body.reflective-space-exited {
   transform: translateY(16px);
 }
 .hero-carousel-controls {
-  padding: 24px;
+  padding: 48px 24px 24px 24px;
   position: absolute;
   bottom: -50px;
   width: 100%;
