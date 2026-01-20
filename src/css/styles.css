@@ -1092,12 +1092,18 @@ body.reflective-space-exited {
   .hero-cta,
   .reflective-space-cta {
     width: 100%;
+    max-width: 320px;
     padding: 16px 24px;
     font-size: 16px;
+    box-sizing: border-box;
   }
 
   .hero {
-    padding: 140px 24px 80px;
+    padding: 160px 24px 80px;
+  }
+
+  .hero-container {
+    gap: 32px;
   }
 
   .hero-heading {
@@ -1204,28 +1210,34 @@ body.reflective-space-exited {
 
 /* Small Mobile (375px and below - iPhone SE) */
 @media (max-width: 375px) {
-  .hero-heading {
-    font-size: 28px;
+  .nav {
+    padding: 12px 16px;
   }
 
-  .hero-eyebrow {
-    font-size: 16px;
+  .nav-logo {
+    width: 160px;
+    height: 32px;
   }
 
   .nav-actions {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+    width: 100%;
   }
 
   .btn-primary {
     width: 100%;
-    padding: 12px 20px;
+    max-width: 280px;
+    padding: 12px 16px;
     font-size: 14px;
     text-align: center;
+    box-sizing: border-box;
   }
 
   .btn-secondary {
     justify-content: center;
+    width: 100%;
+    max-width: 280px;
   }
 
   .btn-secondary span {
@@ -1233,34 +1245,70 @@ body.reflective-space-exited {
     font-size: 14px;
   }
 
+  .hero {
+    padding: 180px 16px 60px;
+  }
+
+  .hero-container {
+    gap: 24px;
+  }
+
+  .hero-heading {
+    font-size: 26px;
+  }
+
+  .hero-eyebrow {
+    font-size: 14px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
   .hero-cta,
   .reflective-space-cta {
-    padding: 14px 20px;
-    font-size: 15px;
+    max-width: 280px;
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  .about,
+  .features,
+  .reflective-space,
+  .stats,
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .about-title,
   .features-title,
   .stats-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .feature-title,
   .reflective-space-title {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .trust-indicators {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 12px;
   }
 
   .trust-item {
-    min-width: 80px;
+    min-width: 70px;
+    gap: 8px;
+  }
+
+  .trust-icon {
+    width: 20px;
+    height: 20px;
   }
 
   .trust-item p {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
