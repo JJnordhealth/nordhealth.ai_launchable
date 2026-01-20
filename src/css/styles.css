@@ -477,7 +477,7 @@ body.reflective-space-exited {
   position: relative;
   width: 100%;
   max-width: 1156px;
-  min-height: 120px;
+  min-height: 220px;
   margin: 1.5rem auto 0;
   text-align: center;
 }
@@ -494,7 +494,7 @@ body.reflective-space-exited {
 }
 
 .tab-content-item.active {
-  position: relative;
+  position: absolute;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
