@@ -1,0 +1,1167 @@
+/* ============================================
+   CSS Reset & Base Styles
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Armin Grotesk from Figma, fallback to Inter */
+  font-family:
+    "Armin Grotesk",
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-weight: 300;
+  line-height: 1.399999976158142;
+  /* Exact Figma value for body text */
+  color: #181d27;
+  /* Initial background matches hero section - dark gradient */
+  /* This will be visible around sections and when scrolling */
+  background: linear-gradient(180deg, #0c1a3d, #09142f);
+  background-color: #0c1a3d;
+  /* Fallback solid color */
+  overflow-x: hidden;
+  /* Smooth transition matching abergmedia.com reference */
+  transition:
+    background 0.6s ease,
+    background-color 0.6s ease;
+  min-height: 100vh;
+  /* Ensure body covers full viewport */
+}
+
+/* Background transition when hero section END is scrolled past */
+/* Reference: https://abergmedia.com/ footer animation behavior */
+/* When user scrolls past the bottom of hero section, body background transitions to light */
+body.hero-exited {
+  /* Transition to light background after hero section */
+  background: #f3f5fc;
+  background-color: #f3f5fc;
+}
+
+/* Background transition when Reflective Space section END is scrolled past */
+/* Reference: https://abergmedia.com/ footer animation behavior */
+/* When user scrolls past the bottom of reflective space section, body background transitions to dark (for stats section) */
+body.reflective-space-exited {
+  /* Transition to dark background (matching stats section) after reflective space */
+  background: linear-gradient(180deg, #0c1a3d, #09142f);
+  background-color: #0c1a3d;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+
+/* Display Large (72px) - Hero Heading */
+/* ONLY this text has gradient - per Figma design */
+/* Figma: display/l - size: 72, weight: 600, lineHeight: 100 (1.0), letterSpacing: 0 */
+.hero-heading {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1;
+  /* 100% = 1.0 */
+  letter-spacing: 0;
+  /* Gradient text matching Figma exactly: 131.812deg angle */
+  background: linear-gradient(
+    131.81246364377185deg,
+    rgba(190, 206, 255, 1) 5.6105%,
+    rgba(53, 89, 199, 1) 149.25%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* Fallback for browsers that don't support gradient text */
+  color: #3559c7;
+}
+
+/* Ensure gradient text works in all modern browsers */
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .hero-heading {
+    color: transparent;
+  }
+}
+
+/* Headline Large (36px) */
+/* Figma: headline/l - size: 36, weight: 600, lineHeight: 100 (1.0), letterSpacing: 0 */
+.about-title,
+.features-title,
+.stats-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+  /* 100% = 1.0 */
+  letter-spacing: 0;
+}
+
+/* Headline Medium (28px) */
+/* Figma: headline/m - size: 28, weight: 600, lineHeight: 100 (1.0), letterSpacing: 0 */
+.feature-title,
+.reflective-space-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  /* 100% = 1.0 */
+  letter-spacing: 0;
+}
+
+/* Body Extra Large (24px) */
+/* Figma: body/xl - size: 24, weight: 400, lineHeight: 1.399999976158142, letterSpacing: 0 */
+.hero-eyebrow {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.399999976158142;
+  /* Exact Figma value */
+  letter-spacing: 0;
+}
+
+/* Body Large (20px) */
+/* Figma: body/l - size: 20, weight: 300, lineHeight: 1.399999976158142, letterSpacing: 0 */
+.hero-description,
+.about-description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.399999976158142;
+  /* Exact Figma value */
+  letter-spacing: 0;
+}
+
+/* Body Medium (16px) */
+/* Figma: body/m - size: 16, weight: 300, lineHeight: 1.399999976158142, letterSpacing: 0 */
+.hero-subtitle,
+.feature-description,
+.reflective-space-description,
+.stat-label,
+.footer-copyright,
+.footer-link {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.399999976158142;
+  /* Exact Figma value */
+  letter-spacing: 0;
+}
+
+/* Body Small (14px) */
+/* Figma: body/s - size: 14, weight: 400, lineHeight: 1.399999976158142, letterSpacing: 0 */
+.trust-item p,
+.reflective-space-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.399999976158142;
+  /* Exact Figma value */
+  letter-spacing: 0;
+}
+
+/* Action Medium (16px) - Buttons */
+/* Figma: action/m - size: 16, weight: 600, lineHeight: 1.399999976158142, letterSpacing: 0 */
+.btn-primary,
+.btn-secondary {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.399999976158142;
+  /* Exact Figma value */
+  letter-spacing: 0;
+}
+
+/* Stat Value (28px) */
+/* Figma: headline/m - size: 28, weight: 600, lineHeight: 100 (1.0), letterSpacing: 0 */
+.stat-value {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  /* 100% = 1.0 */
+  letter-spacing: 0;
+}
+
+/* ============================================
+   Navigation
+   ============================================ */
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 24px 142px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  height: 40px;
+  width: 297px;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.icon-calendar {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-primary {
+  background-color: #3559c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 18px 40px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* ============================================
+   Hero Section
+   ============================================ */
+
+.hero {
+  background: linear-gradient(180deg, #0c1a3d, #09142f);
+  min-height: 100vh;
+  padding: 267px 142px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+/* Smooth transition effect when hero exits viewport */
+.hero.exiting {
+  opacity: 0.95;
+  transform: translateY(-20px);
+}
+
+.hero-container {
+  max-width: 1156px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  text-align: center;
+}
+
+.hero-eyebrow {
+  color: #ffffff;
+  max-width: 1156px;
+}
+
+.hero-heading {
+  max-width: 1156px;
+  margin: 0;
+}
+
+.hero-description {
+  color: #ffffff;
+  max-width: 684px;
+}
+
+.hero-cta {
+  margin-top: 0;
+}
+
+.trust-indicators {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  min-width: 61px;
+}
+
+.trust-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.trust-item p {
+  color: #ffffff;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.hero-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1156px;
+  height: 650px;
+}
+
+.hero-subtitle {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 620px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background: hsla(0, 0%, 100%, 0.15) !important;
+  padding: 20px;
+  border: 1px solid #8c93fb !important;
+}
+.image-wrapper {
+  height: 540px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 15px;
+}
+
+.hero-img.fade-out {
+  opacity: 0;
+  transform: translateY(16px);
+}
+.hero-carousel-controls {
+  padding: 24px;
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  background: #0d1117;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-carousel-controls:before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 0;
+  width: 100%;
+  height: 100px;
+  content: "";
+  background: radial-gradient(
+    141.53% 114.68% at 87.46% 55.27%,
+    #9a7cff 36.75%,
+    rgba(14, 10, 162, 0) 100%
+  );
+  filter: blur(42px);
+  border-radius: inherit;
+  opacity: 0.85;
+  transform: translate(-50%, -135%);
+  mix-blend-mode: plus-lighter;
+  clip-path: inset(135% 0 -100% 0);
+}
+.role-tabs {
+  position: relative;
+  display: inline-flex;
+  gap: 4px;
+  padding: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid #484f58;
+  max-width: 80%;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Tabs */
+.role-tab {
+  position: relative;
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  z-index: 1;
+  transition: color 0.25s ease;
+}
+
+.role-tab.active {
+  color: #ffffff;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(153, 153, 153, 0.12) 100%
+  );
+}
+
+.active-indicator {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: calc(100% - 12px);
+
+  border: 1px solid #ffffff;
+  border-radius: 999px;
+
+  pointer-events: none;
+  z-index: 0;
+
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    width 0.35s ease;
+  opacity: 0;
+}
+
+.role-tab:not(.active) {
+  border: none;
+}
+
+.role-tab:hover {
+  opacity: 0.8;
+}
+
+/* ============================================
+   About Section
+   ============================================ */
+
+.about {
+  padding: 160px 142px 80px;
+  background-color: #f3f5fc;
+}
+
+.about-container {
+  max-width: 684px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.about-title {
+  color: #181d27;
+}
+
+.about-description {
+  color: #535862;
+}
+
+/* ============================================
+   Features Section
+   ============================================ */
+
+.features {
+  padding: 80px 142px;
+  background-color: #f3f5fc;
+}
+
+.features-container {
+  max-width: 1156px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.features-title {
+  color: #181d27;
+}
+
+/* Feature Slider Container (GitHub-style) */
+.feature-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Main Feature Display Area */
+.feature-display {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.feature-display-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1156px;
+  height: 650px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.feature-display-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.05);
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease,
+    transform 0.5s ease;
+}
+
+.feature-display-image.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.feature-display-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.feature-display-content-container {
+  position: relative;
+  width: 100%;
+  max-width: 684px;
+  min-height: 120px;
+  text-align: center;
+}
+
+.feature-display-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease,
+    transform 0.5s ease;
+}
+
+.feature-display-content.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.feature-display-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #181d27;
+  margin: 0 0 4px 0;
+}
+
+.feature-display-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.399999976158142;
+  /* Exact Figma value */
+  letter-spacing: 0;
+  color: #535862;
+  margin: 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.feature-card-clickable {
+  cursor: pointer;
+}
+
+.feature-card-clickable:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
+
+.feature-card-clickable.active {
+  transform: translateY(-4px);
+  position: relative;
+}
+
+.feature-card-clickable.active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  /* Solid color per Figma - no gradient */
+  background-color: #3559c7;
+  border-radius: 2px;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 40px;
+    opacity: 1;
+  }
+}
+
+.feature-image {
+  width: 100%;
+  aspect-ratio: 330 / 440;
+  border-radius: 16px;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card-clickable.active .feature-image {
+  opacity: 1;
+}
+
+.feature-card-clickable:not(.active) .feature-image {
+  opacity: 0.7;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-title {
+  color: #181d27;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.feature-card-clickable.active .feature-title {
+  color: #3559c7;
+}
+
+.feature-description {
+  color: #535862;
+}
+
+/* ============================================
+   Media Placeholder
+   ============================================ */
+
+.media-placeholder {
+  background-color: #c9c9c9;
+  border-radius: 16px;
+}
+
+/* ============================================
+   Reflective Space Section
+   ============================================ */
+
+.reflective-space {
+  padding: 80px 142px 160px;
+  background-color: #f3f5fc;
+}
+
+.reflective-space-container {
+  max-width: 1156px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.reflective-space-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.reflective-space-label {
+  color: #535862;
+  text-transform: uppercase;
+}
+
+.reflective-space-title {
+  color: #181d27;
+  margin: 0;
+}
+
+.reflective-space-image {
+  width: 100%;
+  height: 495px;
+}
+
+.reflective-space-description {
+  color: #535862;
+  text-align: center;
+  max-width: 684px;
+}
+
+.reflective-space-cta {
+  margin-top: 0;
+}
+
+/* ============================================
+   Statistics Section
+   ============================================ */
+
+.stats {
+  /* background-color: #fff; */
+  padding: 0 142px 160px;
+  color: #000;
+}
+/* .dark-mode .stats {
+  background-color: #000;
+} */
+
+.stats-container {
+  max-width: 1156px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.stats-title {
+  color: #000000;
+  text-align: center;
+  max-width: 684px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 1156px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: left;
+  text-align: left;
+  max-width: 330px;
+}
+.dark-mode .stat-value,
+.dark-mode .stat-label,
+.dark-mode .stats-title {
+  color: #ffffff !important;
+}
+.stats-title {
+  transition: color 1500ms ease-in-out 100ms;
+}
+
+.stat-value {
+  color: #000;
+  transition: color 1500ms ease-in-out 100ms;
+}
+
+.stat-label {
+  color: #000;
+  transition: color 1500ms ease-in-out 100ms;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+.footer {
+  --scroll-progress: 0;
+  background-color: hsl(0, 0%, calc(100% - (var(--scroll-progress, 0) * 100%)));
+  padding: 160px 142px 96px;
+  position: relative;
+  transition: background-color 100ms ease-out;
+  min-height: 100vh;
+}
+
+.footer.scroll-active {
+  background-color: hsl(0, 0%, calc(100% - (var(--scroll-progress, 0) * 100%)));
+  transition: background-color 100ms ease-out;
+}
+
+.footer.scroll-active .stats-title,
+.footer.scroll-active .stat-value,
+.footer.scroll-active .stat-label {
+  color: hsl(0, 0%, calc((var(--scroll-progress, 0) * 100%)));
+  transition: color 100ms ease-out;
+}
+
+.footer.scroll-active .footer-copyright,
+.footer.scroll-active .footer-link {
+  color: hsl(0, 0%, calc((var(--scroll-progress, 0) * 100%)));
+  transition: color 100ms ease-out;
+}
+/* Footer container - handles the reveal animation */
+/* Reference: https://abergmedia.com/ footer animation behavior */
+/* Initial state: fully hidden with slight downward offset */
+.footer-container {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 1500ms ease-in-out 100ms,
+    transform 1500ms ease-in-out 100ms;
+}
+
+.footer-container.footer-revealed {
+  opacity: 1;
+  transform: translateY(0);
+  padding-top: 96px;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.footer-logo {
+  height: 40px;
+  width: 297px;
+  object-fit: contain;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-copyright {
+  color: #000;
+  transition: color 1500ms ease-in-out 100ms;
+  font-weight: 200;
+}
+
+.footer-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition:
+    opacity 0.2s ease,
+    color 1500ms ease-in-out 100ms;
+}
+
+.footer-link:hover {
+  opacity: 0.8;
+}
+
+.section {
+  transition:
+    background-color 1500ms ease-in-out,
+    color 1500ms ease-in-out;
+}
+
+.stats {
+  transition:
+    background-color 1500ms ease-in-out,
+    color 1500ms ease-in-out;
+}
+
+.stats-footer {
+  transition:
+    background-color 1500ms ease-in-out,
+    color 1500ms ease-in-out;
+}
+
+.dark-mode .footer {
+  background-color: #0c1a3d !important;
+
+  transition: background-color 1500ms ease-in-out 100ms;
+}
+.dark-mode .footer-copyright,
+.dark-mode .footer-link {
+  color: #fff !important;
+  transition: color 1500ms ease-in-out 100ms;
+}
+
+/* ============================================
+   Animation Classes
+   ============================================ */
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.fade-in-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   Pixel-Perfect at 1440px (Figma Design Resolution)
+   ============================================ */
+
+/* Base styles are optimized for 1440px - Figma's design resolution */
+/* All measurements below are pixel-perfect at 1440px width */
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+/* Desktop (1441px and above) - maintain Figma design */
+@media (min-width: 1441px) {
+  .nav-container,
+  .hero-container,
+  .about-container,
+  .features-container,
+  .reflective-space-container,
+  .stats-container,
+  .footer-container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  .nav,
+  .hero,
+  .about,
+  .features,
+  .reflective-space,
+  .stats,
+  .footer {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .hero-heading {
+    font-size: 56px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-display-image-container {
+    height: 500px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .role-tabs {
+    border-radius: 8px;
+    max-width: 85%;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .active-indicator {
+    height: calc(100% - 62px);
+  }
+}
+
+/* Mobile (375px - 767px) */
+@media (max-width: 767px) {
+  .nav {
+    padding: 16px 24px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-logo {
+    width: 200px;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 140px 24px 80px;
+  }
+
+  .hero-heading {
+    font-size: 36px;
+  }
+
+  .hero-eyebrow {
+    font-size: 18px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .trust-indicators {
+    gap: 24px;
+  }
+
+  .hero-image {
+    height: 400px;
+  }
+
+  .role-tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .role-tab {
+    width: 100%;
+  }
+
+  .about,
+  .features,
+  .reflective-space,
+  .stats,
+  .footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .about-title,
+  .features-title,
+  .stats-title {
+    font-size: 28px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-display-image-container {
+    height: 400px;
+  }
+
+  .feature-display-content-container {
+    min-height: 100px;
+  }
+
+  .feature-display-title {
+    font-size: 22px;
+  }
+
+  .feature-display-description {
+    font-size: 14px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reflective-space-image {
+    height: 300px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .active-indicator {
+    display: none;
+  }
+  .footer-container.footer-revealed {
+  padding-top: 0;
+}
+}
+
+/* Small Mobile (375px and below) */
+@media (max-width: 375px) {
+  .hero-heading {
+    font-size: 28px;
+  }
+
+  .hero-eyebrow {
+    font-size: 16px;
+  }
+
+  .about-title,
+  .features-title,
+  .stats-title {
+    font-size: 24px;
+  }
+
+  .feature-title,
+  .reflective-space-title {
+    font-size: 22px;
+  }
+}
