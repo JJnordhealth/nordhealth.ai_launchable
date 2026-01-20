@@ -1445,39 +1445,79 @@ body.reflective-space-exited {
 }
 
 .pricing-card {
-  background: #ffffff;
   border-radius: 16px;
   padding: 40px;
   flex: 1;
-  max-width: 450px;
+  max-width: 372px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Blue card (left) */
+.pricing-card-blue {
+  background: #93aeff;
+  color: #ffffff;
+}
+
+.pricing-card-blue .pricing-card-badge {
+  background: #0c1a3d;
+  color: #ffffff;
+}
+
+.pricing-card-blue .pricing-card-name,
+.pricing-card-blue .price-amount,
+.pricing-card-blue .price-period,
+.pricing-card-blue .pricing-features li {
+  color: #ffffff;
+}
+
+.pricing-card-blue .check-icon {
+  color: #ffffff;
+}
+
+/* White card (right) */
+.pricing-card-white {
+  background: #ffffff;
+  color: #0c1a3d;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
-.pricing-card-featured {
-  border: 2px solid #3559c7;
+.pricing-card-white .pricing-card-badge {
+  background: #0c1a3d;
+  color: #ffffff;
 }
 
 .pricing-card-header {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  position: relative;
 }
 
-.pricing-card-label {
+.pricing-card-badge {
+  display: inline-block;
   font-size: 12px;
   font-weight: 300;
-  color: #0c1a3d;
-  opacity: 0.6;
-  display: block;
-  margin-bottom: 8px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  margin-bottom: 16px;
 }
 
 .pricing-card-name {
   font-size: 12px;
   font-weight: 600;
   color: #0c1a3d;
+  margin-bottom: 8px;
+}
+
+.pricing-illustration {
+  display: block;
+  margin: 16px auto 0;
+  max-width: 150px;
 }
 
 .pricing-card-price {
   margin-bottom: 32px;
+  text-align: center;
 }
 
 .price-amount {
@@ -1485,6 +1525,7 @@ body.reflective-space-exited {
   font-weight: 400;
   color: #0c1a3d;
   display: block;
+  margin-bottom: 4px;
 }
 
 .price-large {
@@ -1523,6 +1564,11 @@ body.reflective-space-exited {
 
 .pricing-cta {
   width: 100%;
+  margin-top: auto;
+}
+
+.pricing-card-blue .pricing-cta {
+  background: #0c1a3d;
 }
 
 /* Promo Banner */
