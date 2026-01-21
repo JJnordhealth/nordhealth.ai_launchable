@@ -450,7 +450,7 @@ if (navBurger && navActions) {
 
 // Demo Modal with Lazy-loaded HubSpot Form
 const demoModal = document.getElementById("demoModal");
-const demoButtons = document.querySelectorAll(".btn-secondary");
+const demoButtons = document.querySelectorAll(".btn-secondary, .btn-demo-trigger");
 const modalClose = document.querySelector(".modal-close");
 let hsScriptLoaded = false;
 
