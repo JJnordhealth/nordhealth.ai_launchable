@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Analytics - loaded conditionally after cookie consent -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      function loadGoogleAnalytics() {
+        if (document.getElementById('ga-script')) return;
+        var script = document.createElement('script');
+        script.id = 'ga-script';
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-C4CCK9KL36';
+        document.head.appendChild(script);
+        gtag('js', new Date());
+        gtag('config', 'G-C4CCK9KL36');
+      }
+
+      // Check if consent was previously given
+      if (localStorage.getItem('cookieConsent') === 'accepted') {
+        loadGoogleAnalytics();
+      }
+    </script>
+    <!-- SEO Meta Tags -->
+    <title>Privacy & Security - Nordhealth Nora</title>
+    <meta name="description" content="Nordhealth Nora's privacy and security policies. Learn how we protect patient data, comply with GDPR, and ensure data security within the EU." />
+    <link rel="canonical" href="https://nordhealth.ai/nora/en/privacy" />
+    <link rel="alternate" hreflang="en" href="https://nordhealth.ai/nora/en/privacy" />
+    <link rel="alternate" hreflang="fi" href="https://nordhealth.ai/nora/fi/privacy" />
+    <link rel="alternate" hreflang="x-default" href="https://nordhealth.ai/nora/en/privacy" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nordhealth.ai/nora/en/privacy" />
+    <meta property="og:title" content="Privacy & Security - Nordhealth Nora" />
+    <meta property="og:description" content="Learn how Nordhealth Nora protects patient data, complies with GDPR, and ensures data security within the EU." />
+    <meta property="og:image" content="https://nordhealth.ai/nora/fi/assets/images/nora-og-image.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://nordhealth.ai/nora/en/privacy" />
+    <meta name="twitter:title" content="Privacy & Security - Nordhealth Nora" />
+    <meta name="twitter:description" content="Learn how Nordhealth Nora protects patient data, complies with GDPR, and ensures data security within the EU." />
+    <meta name="twitter:image" content="https://nordhealth.ai/nora/fi/assets/images/nora-og-image.png" />
+
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg" />
+    <link rel="stylesheet" href="../../src/css/styles.css" />
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Privacy & Security",
+      "description": "Nordhealth Nora's privacy and security policies",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nordhealth",
+        "url": "https://nordhealth.com"
+      },
+      "inLanguage": "en",
+      "dateModified": "2025-01-21"
+    }
+    </script>
+  </head>
+
+  <body class="privacy-page">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav class="nav nav-light" aria-label="Main navigation">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="./">
+            <img
+              src="../../assets/images/nordhealth-nora-light.svg"
+              alt="Nordhealth Nora - Home"
+              class="logo-img"
+            />
+          </a>
+        </div>
+        <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-actions" id="nav-menu" role="menu">
+          <a href="./pricing" class="nav-link" role="menuitem">Pricing</a>
+          <button class="btn-secondary" role="menuitem">
+            <span>Book a demo</span>
+          </button>
+          <a href="https://system.nordhealth.ai/signup" target="_blank" rel="noopener noreferrer" class="btn-primary" role="menuitem">Try for free</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Privacy Policy Content -->
+    <main id="main-content" class="privacy-content">
+      <article class="privacy-container" aria-labelledby="privacy-title">
+        <header class="privacy-header">
+          <h1 id="privacy-title" class="privacy-title">Privacy & Security</h1>
+          <p class="privacy-updated">
+            <time datetime="2025-01-21">Updated January 21, 2025</time>
+          </p>
+        </header>
+
+        <p class="privacy-intro">
+          This document addresses key concerns that enterprise customers have about deploying our AI assistant, particularly regarding data storage and usage, as well as privacy, security, and compliance. The AI assistant is designed with privacy-by-design principles and AI security best practices in accordance with EU regulations.
+        </p>
+
+        <!-- Table of Contents -->
+        <nav class="privacy-toc" aria-labelledby="toc-title">
+          <h2 id="toc-title" class="privacy-toc-title">Table of Contents</h2>
+          <ol class="privacy-toc-list">
+            <li><a href="#data-storage">Where is data stored?</a></li>
+            <li><a href="#data-processing">Is data processed outside the EU?</a></li>
+            <li><a href="#data-access">Who has access to data?</a></li>
+            <li><a href="#ai-training">Is patient data used for AI model training?</a></li>
+            <li><a href="#ai-models">What AI models are used?</a></li>
+            <li><a href="#encryption">Is data encrypted?</a></li>
+            <li><a href="#data-deletion">Can data be deleted or exported?</a></li>
+            <li><a href="#gdpr">Are you GDPR-compliant?</a></li>
+            <li><a href="#sub-processors">Can I get a list of all sub-processors?</a></li>
+            <li><a href="#certifications">What certifications and standards do you follow?</a></li>
+            <li><a href="#availability">How is availability and uptime ensured?</a></li>
+            <li><a href="#ownership">Who owns the patient data?</a></li>
+            <li><a href="#service-termination">What happens if we stop using the AI assistant?</a></li>
+            <li><a href="#responsibility">Who has ownership and responsibility for notes?</a></li>
+            <li><a href="#analytics">Analytics and cookies</a></li>
+          </ol>
+        </nav>
+
+        <div class="privacy-sections">
+          <section class="privacy-section" id="data-storage" aria-labelledby="h-data-storage">
+            <h2 id="h-data-storage">1. Where is data stored?</h2>
+            <p>We use only EU-based data centers to provide the service.</p>
+            <ul>
+              <li><strong>Norway:</strong> Physica and Psykbase Desktop</li>
+              <li><strong>Denmark:</strong> EasyPractice, Physica, and Psykbase Web</li>
+              <li><strong>Finland:</strong> Diarium</li>
+              <li><strong>AI functionality:</strong> AWS and Azure EU data centers</li>
+            </ul>
+          </section>
+
+          <section class="privacy-section" id="data-processing" aria-labelledby="h-data-processing">
+            <h2 id="h-data-processing">2. Is data processed outside the EU?</h2>
+            <p>No. All data processing, including transcription, enrichment, and AI-generated summaries, takes place within the UK and EEA. No data is sent to the United States or other third countries.</p>
+          </section>
+
+          <section class="privacy-section" id="data-access" aria-labelledby="h-data-access">
+            <h2 id="h-data-access">3. Who has access to data?</h2>
+            <p>Only authorized personnel have access to data. All access is logged and monitored.</p>
+          </section>
+
+          <section class="privacy-section" id="ai-training" aria-labelledby="h-ai-training">
+            <h2 id="h-ai-training">4. Is patient data used for AI model training?</h2>
+            <p>We do not use our customers' data to train AI models. The AI assistant uses models that have been trained on general, non-customer-specific datasets.</p>
+          </section>
+
+          <section class="privacy-section" id="ai-models" aria-labelledby="h-ai-models">
+            <h2 id="h-ai-models">5. What AI models are used?</h2>
+            <p>We use models hosted in AWS EU data centers. For transcription, we also use our own speech recognition models located in the UK and EEA.</p>
+          </section>
+
+          <section class="privacy-section" id="encryption" aria-labelledby="h-encryption">
+            <h2 id="h-encryption">6. Is data encrypted?</h2>
+            <p>All data transfers are conducted through secure and encrypted connections. Customers' patient record entries are stored encrypted in secure, state-of-the-art data centers protected by both strong physical and digital security measures.</p>
+          </section>
+
+          <section class="privacy-section" id="data-deletion" aria-labelledby="h-data-deletion">
+            <h2 id="h-data-deletion">7. Can data be deleted or exported?</h2>
+            <p>Yes. Therapists can delete or export transcriptions at any time.</p>
+          </section>
+
+          <section class="privacy-section" id="gdpr" aria-labelledby="h-gdpr">
+            <h2 id="h-gdpr">8. Are you GDPR-compliant?</h2>
+            <p>Yes. We are fully GDPR-compliant. As a processor acting on behalf of the data controller, we fulfill our key obligations, including:</p>
+            <ul>
+              <li><strong>Strong data security:</strong> Extensive technical and organizational measures to protect personal data</li>
+              <li><strong>Confidentiality:</strong> All authorized employees are bound by strict confidentiality agreements</li>
+              <li><strong>Data breaches:</strong> Immediate notification procedures in case of potential breaches</li>
+              <li><strong>Support for GDPR obligations:</strong> We help our customers fulfill their duties to data subjects</li>
+              <li><strong>Cooperation with authorities:</strong> We cooperate with supervisory authorities</li>
+            </ul>
+          </section>
+
+          <section class="privacy-section" id="sub-processors" aria-labelledby="h-sub-processors">
+            <h2 id="h-sub-processors">9. Can I get a list of all sub-processors?</h2>
+            <p>Yes. We maintain a transparent sub-processor register of all vendors with access to personal data.</p>
+            <aside class="privacy-note" role="note">
+              <p><strong>Note:</strong> For business and security reasons, we do not publish the names of individual model providers as this is confidential information. However, we guarantee that:</p>
+            </aside>
+            <ul>
+              <li>All AI-related subcontractors operate in Europe</li>
+              <li>User data is not transferred or processed outside Europe</li>
+            </ul>
+          </section>
+
+          <section class="privacy-section" id="certifications" aria-labelledby="h-certifications">
+            <h2 id="h-certifications">10. What certifications and standards do you follow?</h2>
+            <p>Our systems and processes are regularly audited by independent parties to ensure the highest level of data security.</p>
+            <p><strong>Nordhealth is ISO 27001 certified.</strong></p>
+          </section>
+
+          <section class="privacy-section" id="availability" aria-labelledby="h-availability">
+            <h2 id="h-availability">11. How is availability and uptime ensured?</h2>
+            <p>We have continuous monitoring that immediately alerts the development team if the platform loads slowly or not at all. Detected outages are handled with the highest priority. All code changes go through automated and manual testing to ensure update stability and service continuity.</p>
+          </section>
+
+          <section class="privacy-section" id="ownership" aria-labelledby="h-ownership">
+            <h2 id="h-ownership">12. Who owns the patient data?</h2>
+            <p>The company using the service has exclusive ownership of all their patient data.</p>
+          </section>
+
+          <section class="privacy-section" id="service-termination" aria-labelledby="h-service-termination">
+            <h2 id="h-service-termination">13. What happens if we stop using the AI assistant?</h2>
+            <p>Data is deleted after service use ends.</p>
+          </section>
+
+          <section class="privacy-section" id="responsibility" aria-labelledby="h-responsibility">
+            <h2 id="h-responsibility">14. Who has ownership and responsibility for patient notes created with the AI assistant?</h2>
+            <p>The therapist is fully responsible for the accuracy and completeness of all patient record entries. While the AI assistant can help create notes, the therapist must review, confirm, and save these entries to the patient record. The AI assistant only assists in the process and does not own the data.</p>
+          </section>
+
+          <section class="privacy-section" id="analytics" aria-labelledby="h-analytics">
+            <h2 id="h-analytics">15. Analytics and cookies</h2>
+            <p>We use Google Analytics to analyze website traffic. Google Analytics collects anonymous data such as the number of pages visited, visit duration, and device type used. The data is used to improve our service.</p>
+            <p>You can prevent Google Analytics data collection by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out browser extension<span class="visually-hidden"> (opens in new tab)</span></a>.</p>
+          </section>
+
+          <!-- Additional Information Section -->
+          <section class="privacy-section privacy-section-supplementary" id="speech-recognition" aria-labelledby="h-speech-recognition">
+            <h2 id="h-speech-recognition">Additional information about speech recognition partner's privacy</h2>
+            <p>End user personal data is processed and stored only in the United Kingdom and EEA, and no data is retained after transcription. Data is not transferred outside the UK or EEA without Nordhealth's prior written consent.</p>
+
+            <h3>Applicable legislation</h3>
+            <ul>
+              <li><abbr title="European Union General Data Protection Regulation">EU GDPR</abbr> – Regulation (EU) 2016/679</li>
+              <li><abbr title="United Kingdom General Data Protection Regulation">UK GDPR</abbr> – EU GDPR as incorporated into UK law</li>
+              <li><abbr title="California Consumer Privacy Act">CCPA</abbr> – California Consumer Privacy Act</li>
+              <li><abbr title="California Privacy Rights Act">CPRA</abbr> – California Privacy Rights Act 2020</li>
+              <li><abbr title="Federal Data Protection Act">FDP</abbr> – Swiss Federal Data Protection Act</li>
+            </ul>
+
+            <h3>Current certifications</h3>
+            <dl class="privacy-certs">
+              <dt>HIPAA Compliance Statement</dt>
+              <dd><time datetime="2024-08">August 2024</time></dd>
+
+              <dt>PENTEST Report</dt>
+              <dd><time datetime="2024-10">October 2024</time></dd>
+
+              <dt>SOC2 Type 2 Report</dt>
+              <dd><time datetime="2024-09">September 2024</time></dd>
+
+              <dt>Cyber Essentials Plus</dt>
+              <dd><time datetime="2025-02">February 2025</time></dd>
+
+              <dt>ISO/IEC 27001</dt>
+              <dd><time datetime="2024-10">October 2024</time></dd>
+
+              <dt>PCI DSS v4.0.0</dt>
+              <dd><time datetime="2024-08">August 2024</time></dd>
+            </dl>
+          </section>
+        </div>
+
+        <footer class="privacy-article-footer">
+          <p>Questions about privacy? <a href="mailto:privacy@nordhealth.com">Contact us</a></p>
+        </footer>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="privacy-footer" role="contentinfo">
+      <div class="footer-container footer-revealed">
+        <a href="./">
+          <img
+            src="../../assets/images/nordhealth-nora-white.svg"
+            alt="Nordhealth Nora"
+            class="footer-logo"
+          />
+        </a>
+        <div class="footer-links">
+          <p class="footer-copyright">© 2026 Nordhealth</p>
+          <a href="./privacy" class="footer-link" aria-current="page">Privacy</a>
+          <a href="#" class="footer-link">Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="modal-overlay" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-body">
+          <div class="hs-form-frame" data-region="eu1" data-form-id="6761c43d-aef8-4c85-8d6c-7ed90a1ac8c5" data-portal-id="144062425"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../src/js/main.js"></script>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+      <div class="cookie-banner-container">
+        <div class="cookie-banner-content">
+          <p class="cookie-banner-text">
+            We use cookies to analyze site usage and improve our service.
+            Learn more in our <a href="./privacy">privacy policy</a>.
+          </p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button class="cookie-btn cookie-btn-decline" id="cookieDecline">Decline</button>
+          <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Accept</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        var banner = document.getElementById('cookieBanner');
+        var acceptBtn = document.getElementById('cookieAccept');
+        var declineBtn = document.getElementById('cookieDecline');
+
+        // Show banner if no consent decision has been made
+        if (!localStorage.getItem('cookieConsent')) {
+          setTimeout(function() {
+            banner.classList.add('visible');
+          }, 500);
+        }
+
+        acceptBtn.addEventListener('click', function() {
+          localStorage.setItem('cookieConsent', 'accepted');
+          banner.classList.remove('visible');
+          loadGoogleAnalytics();
+        });
+
+        declineBtn.addEventListener('click', function() {
+          localStorage.setItem('cookieConsent', 'declined');
+          banner.classList.remove('visible');
+        });
+      })();
+    </script>
+  </body>
+</html>
