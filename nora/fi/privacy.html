@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Analytics - loaded conditionally after cookie consent -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      function loadGoogleAnalytics() {
+        if (document.getElementById('ga-script')) return;
+        var script = document.createElement('script');
+        script.id = 'ga-script';
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-C4CCK9KL36';
+        document.head.appendChild(script);
+        gtag('js', new Date());
+        gtag('config', 'G-C4CCK9KL36');
+      }
+
+      // Check if consent was previously given
+      if (localStorage.getItem('cookieConsent') === 'accepted') {
+        loadGoogleAnalytics();
+      }
+    </script>
+    <!-- SEO Meta Tags -->
+    <title>Tietosuoja ja tietoturva - Nordhealth Nora</title>
+    <meta name="description" content="Nordhealth Noran tietosuoja- ja tietoturvakäytännöt. Lue, miten suojaamme potilastietoja, noudatamme GDPR:ää ja varmistamme tietoturvan EU-alueella." />
+    <link rel="canonical" href="https://nordhealth.ai/nora/fi/privacy" />
+    <link rel="alternate" hreflang="fi" href="https://nordhealth.ai/nora/fi/privacy" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nordhealth.ai/nora/fi/privacy" />
+    <meta property="og:title" content="Tietosuoja ja tietoturva - Nordhealth Nora" />
+    <meta property="og:description" content="Lue, miten Nordhealth Nora suojaa potilastietoja, noudattaa GDPR:ää ja varmistaa tietoturvan EU-alueella." />
+    <meta property="og:image" content="https://nordhealth.ai/nora/fi/assets/images/nora-og-image.png" />
+    <meta property="og:locale" content="fi_FI" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://nordhealth.ai/nora/fi/privacy" />
+    <meta name="twitter:title" content="Tietosuoja ja tietoturva - Nordhealth Nora" />
+    <meta name="twitter:description" content="Lue, miten Nordhealth Nora suojaa potilastietoja, noudattaa GDPR:ää ja varmistaa tietoturvan EU-alueella." />
+    <meta name="twitter:image" content="https://nordhealth.ai/nora/fi/assets/images/nora-og-image.png" />
+
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg" />
+    <link rel="stylesheet" href="../../src/css/styles.css" />
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Tietosuoja ja tietoturva",
+      "description": "Nordhealth Noran tietosuoja- ja tietoturvakäytännöt",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nordhealth",
+        "url": "https://nordhealth.com"
+      },
+      "inLanguage": "fi",
+      "dateModified": "2025-01-21"
+    }
+    </script>
+  </head>
+
+  <body class="privacy-page">
+    <a href="#main-content" class="skip-link">Siirry sisältöön</a>
+
+    <!-- Navigation -->
+    <nav class="nav nav-light" aria-label="Päänavigaatio">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="./">
+            <img
+              src="../../assets/images/nordhealth-nora-light.svg"
+              alt="Nordhealth Nora - Etusivu"
+              class="logo-img"
+            />
+          </a>
+        </div>
+        <button class="nav-burger" aria-label="Avaa valikko" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-actions" id="nav-menu" role="menu">
+          <a href="./pricing" class="nav-link" role="menuitem">Hinnat</a>
+          <button class="btn-secondary" role="menuitem">
+            <span>Varaa esittely</span>
+          </button>
+          <a href="https://system.nordhealth.ai/signup" target="_blank" rel="noopener noreferrer" class="btn-primary" role="menuitem">Kokeile ilmaiseksi</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Privacy Policy Content -->
+    <main id="main-content" class="privacy-content">
+      <article class="privacy-container" aria-labelledby="privacy-title">
+        <header class="privacy-header">
+          <h1 id="privacy-title" class="privacy-title">Tietosuoja ja tietoturva</h1>
+          <p class="privacy-updated">
+            <time datetime="2025-01-21">Päivitetty 21.1.2025</time>
+          </p>
+        </header>
+
+        <p class="privacy-intro">
+          Tässä dokumentissa kuvataan kysymysten ja vastausten avulla niitä keskeisiä huolenaiheita, joita yritysasiakkailla on AI-avustajamme käyttöönottoon liittyen erityisesti tietojen tallennukseen ja käyttöön sekä tietosuojaan, tietoturvaan ja vaatimustenmukaisuuteen liittyen. AI-avustaja on suunniteltu huomioiden tietojen turvallisen käytön <span lang="en">(privacy-by-design)</span> ja tekoälyn käyttöön liittyvät tietoturvaperiaatteet EU:n sääntelyn mukaisesti.
+        </p>
+
+        <!-- Table of Contents -->
+        <nav class="privacy-toc" aria-labelledby="toc-title">
+          <h2 id="toc-title" class="privacy-toc-title">Sisällysluettelo</h2>
+          <ol class="privacy-toc-list">
+            <li><a href="#tietojen-sailytys">Missä tiedot säilytetään?</a></li>
+            <li><a href="#tietojen-kasittely">Käsitelläänkö tietoja EU:n ulkopuolella?</a></li>
+            <li><a href="#tietojen-paasy">Kenellä on pääsy tietoihin?</a></li>
+            <li><a href="#ai-koulutus">Käytetäänkö potilastietoja AI-mallien kouluttamiseen?</a></li>
+            <li><a href="#ai-mallit">Mitä AI-malleja käytetään?</a></li>
+            <li><a href="#salaus">Onko tiedot salattu?</a></li>
+            <li><a href="#tietojen-poisto">Voiko tiedot poistaa tai viedä?</a></li>
+            <li><a href="#gdpr">Oletteko GDPR-yhteensopivia?</a></li>
+            <li><a href="#alikasittelijat">Voinko saada listan kaikista alikäsittelijöistä?</a></li>
+            <li><a href="#sertifikaatit">Mitä sertifikaatteja ja standardeja noudatatte?</a></li>
+            <li><a href="#kaytettavyys">Miten käytettävyys ja käytettävyysaika varmistetaan?</a></li>
+            <li><a href="#omistajuus">Kuka omistaa potilastiedot?</a></li>
+            <li><a href="#palvelun-lopetus">Mitä tapahtuu, jos lopetamme AI-avustajan käytön?</a></li>
+            <li><a href="#vastuu">Kenellä on omistajuus ja vastuu kirjauksista?</a></li>
+            <li><a href="#analytiikka">Analytiikka ja evästeet</a></li>
+          </ol>
+        </nav>
+
+        <div class="privacy-sections">
+          <section class="privacy-section" id="tietojen-sailytys" aria-labelledby="h-tietojen-sailytys">
+            <h2 id="h-tietojen-sailytys">1. Missä tiedot säilytetään?</h2>
+            <p>Käytämme palvelun tuottamiseen ainoastaan EU:n alueella sijaitsevia datakeskuksia.</p>
+            <ul>
+              <li><strong>Norja:</strong> Physica ja Psykbase Desktop</li>
+              <li><strong>Tanska:</strong> EasyPractice, Physica ja Psykbase Web</li>
+              <li><strong>Suomi:</strong> Diarium</li>
+              <li><strong>AI-toiminnot:</strong> AWS:n ja Azuren EU-datakeskukset</li>
+            </ul>
+          </section>
+
+          <section class="privacy-section" id="tietojen-kasittely" aria-labelledby="h-tietojen-kasittely">
+            <h2 id="h-tietojen-kasittely">2. Käsitelläänkö tietoja EU:n ulkopuolella?</h2>
+            <p>Ei. Kaikki tietojenkäsittely, mukaan lukien litterointi, rikastaminen ja yhteenvetojen luonti tekoälyn avulla, tapahtuu UK:n ja ETA-alueen sisällä. Tietoja ei lähetetä Yhdysvaltoihin tai muihin kolmansiin maihin.</p>
+          </section>
+
+          <section class="privacy-section" id="tietojen-paasy" aria-labelledby="h-tietojen-paasy">
+            <h2 id="h-tietojen-paasy">3. Kenellä on pääsy tietoihin?</h2>
+            <p>Vain valtuutetuilla henkilöillä on pääsy tietoihin. Kaikki pääsy kirjataan ja valvotaan.</p>
+          </section>
+
+          <section class="privacy-section" id="ai-koulutus" aria-labelledby="h-ai-koulutus">
+            <h2 id="h-ai-koulutus">4. Käytetäänkö potilastietoja AI-mallien kouluttamiseen?</h2>
+            <p>Emme käytä asiakkaidemme tietoja AI-mallien kouluttamiseen. AI-avustaja hyödyntää malleja, jotka on koulutettu yleisillä, ei-asiakaskohtaisilla aineistoilla.</p>
+          </section>
+
+          <section class="privacy-section" id="ai-mallit" aria-labelledby="h-ai-mallit">
+            <h2 id="h-ai-mallit">5. Mitä AI-malleja käytetään?</h2>
+            <p>Käytämme AWS:n EU-datakeskuksissa isännöityjä malleja. Litterointiin käytämme myös omia puheentunnistusmallejamme, jotka sijaitsevat UK:ssa ja ETA-alueella.</p>
+          </section>
+
+          <section class="privacy-section" id="salaus" aria-labelledby="h-salaus">
+            <h2 id="h-salaus">6. Onko tiedot salattu?</h2>
+            <p>Kaikki tiedonsiirrot suoritetaan suojattujen ja salattujen yhteyksien kautta. Asiakkaiden potilaskertomusmerkinnät säilytetään salattuina turvallisissa, huippuluokan datakeskuksissa, joiden turvallisuudesta huolehditaan sekä vahvoin fyysisin että digitaalisin turvallisuustoimenpitein.</p>
+          </section>
+
+          <section class="privacy-section" id="tietojen-poisto" aria-labelledby="h-tietojen-poisto">
+            <h2 id="h-tietojen-poisto">7. Voiko tiedot poistaa tai viedä?</h2>
+            <p>Kyllä. Terapeutit voivat poistaa tai viedä transkriptiot milloin tahansa.</p>
+          </section>
+
+          <section class="privacy-section" id="gdpr" aria-labelledby="h-gdpr">
+            <h2 id="h-gdpr">8. Oletteko GDPR-yhteensopivia?</h2>
+            <p>Kyllä. Olemme täysin GDPR-yhteensopivia. Rekisterinpitäjän lukuun toimivana käsittelijänä täytämme keskeiset velvoitteemme, mukaan lukien:</p>
+            <ul>
+              <li><strong>Vahva tietoturva:</strong> Laajat tekniset ja organisatoriset toimenpiteet henkilötietojen suojaamiseksi</li>
+              <li><strong>Luottamuksellisuus:</strong> Kaikkia valtuutettuja työntekijöitä sitovat tiukat salassapitosopimukset</li>
+              <li><strong>Tietoturvaloukkaukset:</strong> Välittömät ilmoitusmenettelyt mahdollisissa loukkaustilanteissa</li>
+              <li><strong>Tuki GDPR-velvoitteisiin:</strong> Autamme asiakkaitamme täyttämään velvollisuutensa rekisteröityjä kohtaan</li>
+              <li><strong>Yhteistyö viranomaisten kanssa:</strong> Teemme yhteistyötä valvontaviranomaisten kanssa</li>
+            </ul>
+          </section>
+
+          <section class="privacy-section" id="alikasittelijat" aria-labelledby="h-alikasittelijat">
+            <h2 id="h-alikasittelijat">9. Voinko saada listan kaikista alikäsittelijöistä?</h2>
+            <p>Kyllä. Ylläpidämme läpinäkyvää alikäsittelijärekisteriä kaikista toimittajista, joilla on pääsy henkilötietoihin.</p>
+            <aside class="privacy-note" role="note">
+              <p><strong>Huomautus:</strong> Liiketoiminnallisista ja tietoturvasyistä emme julkaise yksittäisten mallitoimittajien nimiä, sillä ne ovat luottamuksellista tietoa. Takaamme kuitenkin, että:</p>
+            </aside>
+            <ul>
+              <li>Kaikki tekoälyyn liittyvät alihankkijat toimivat Euroopassa</li>
+              <li>Käyttäjien tietoja ei siirretä tai käsitellä Euroopan ulkopuolella</li>
+            </ul>
+          </section>
+
+          <section class="privacy-section" id="sertifikaatit" aria-labelledby="h-sertifikaatit">
+            <h2 id="h-sertifikaatit">10. Mitä sertifikaatteja ja standardeja noudatatte?</h2>
+            <p>Järjestelmämme ja prosessimme auditoidaan säännöllisesti riippumattomien tahojen toimesta korkeimman tietoturvatason varmistamiseksi.</p>
+            <p><strong>Nordhealth on ISO 27001 -sertifioitu.</strong></p>
+          </section>
+
+          <section class="privacy-section" id="kaytettavyys" aria-labelledby="h-kaytettavyys">
+            <h2 id="h-kaytettavyys">11. Miten käytettävyys ja käytettävyysaika varmistetaan?</h2>
+            <p>Käytössämme on jatkuva valvonta, joka hälyttää kehitystiimiä välittömästi, jos alusta latautuu hitaasti tai ei ollenkaan. Havaitut käyttökatkokset käsitellään korkeimmalla prioriteetilla. Kaikki koodimuutokset käyvät läpi automaattisia ja manuaalisia testejä, jotta voimme varmistaa päivitysten vakauden ja palvelun jatkuvuuden.</p>
+          </section>
+
+          <section class="privacy-section" id="omistajuus" aria-labelledby="h-omistajuus">
+            <h2 id="h-omistajuus">12. Kuka omistaa potilastiedot?</h2>
+            <p>Palvelua käyttävällä yrityksellä on yksinomainen omistusoikeus kaikkiin potilastietoihinsa.</p>
+          </section>
+
+          <section class="privacy-section" id="palvelun-lopetus" aria-labelledby="h-palvelun-lopetus">
+            <h2 id="h-palvelun-lopetus">13. Mitä tapahtuu, jos lopetamme AI-avustajan käytön?</h2>
+            <p>Tiedot poistetaan palvelun käytön päätyttyä.</p>
+          </section>
+
+          <section class="privacy-section" id="vastuu" aria-labelledby="h-vastuu">
+            <h2 id="h-vastuu">14. Kenellä on omistajuus ja vastuu AI-avustajan avulla luoduista potilaskertomusmerkinnöistä?</h2>
+            <p>Terapeutti on täysin vastuussa kaikkien potilaskertomusmerkintöjen oikeellisuudesta ja täydellisyydestä. Vaikka AI-assistentti voi auttaa kirjauksen luomisessa, terapeutin on tarkistettava, vahvistettava ja tallennettava nämä kirjaukset potilaskertomukseen. AI-assistentti ainoastaan auttaa prosessissa, eikä omista tietoja.</p>
+          </section>
+
+          <section class="privacy-section" id="analytiikka" aria-labelledby="h-analytiikka">
+            <h2 id="h-analytiikka">15. Analytiikka ja evästeet</h2>
+            <p>Käytämme Google Analytics -palvelua verkkosivustomme kävijäliikenteen analysointiin. Google Analytics kerää anonyymejä tietoja, kuten vierailtujen sivujen määrän, vierailun keston ja käytetyn laitteen tyypin. Tietoja käytetään palvelumme kehittämiseen.</p>
+            <p>Voit estää Google Analyticsin tiedonkeruun asentamalla <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out -selainlaajennuksen<span class="visually-hidden"> (avautuu uuteen välilehteen)</span></a>.</p>
+          </section>
+
+          <!-- Additional Information Section -->
+          <section class="privacy-section privacy-section-supplementary" id="puheentunnistus" aria-labelledby="h-puheentunnistus">
+            <h2 id="h-puheentunnistus">Lisätietoja puheentunnistuskumppanin tietosuojasta</h2>
+            <p>Loppukäyttäjän henkilötietoja käsitellään ja säilytetään ainoastaan Yhdistyneessä kuningaskunnassa ja ETA-alueella, eikä tietoja säilytetä transkription jälkeen. Tietoja ei siirretä UK:n tai ETA-alueen ulkopuolelle ilman Nordhealthin etukäteistä kirjallista suostumusta.</p>
+
+            <h3>Sovellettava lainsäädäntö</h3>
+            <ul>
+              <li><abbr title="Euroopan unionin yleinen tietosuoja-asetus">EU GDPR</abbr> – Asetus (EU) 2016/679</li>
+              <li><abbr title="Yhdistyneen kuningaskunnan yleinen tietosuoja-asetus">UK GDPR</abbr> – EU GDPR sisällytettynä UK:n lainsäädäntöön</li>
+              <li><abbr title="California Consumer Privacy Act">CCPA</abbr> – Kalifornian kuluttajansuojalaki</li>
+              <li><abbr title="California Privacy Rights Act">CPRA</abbr> – Kalifornian yksityisyydensuojalaki 2020</li>
+              <li><abbr title="Federal Data Protection Act">FDP</abbr> – Sveitsin liittovaltion tietosuojalaki</li>
+            </ul>
+
+            <h3>Voimassa olevat sertifikaatit</h3>
+            <dl class="privacy-certs">
+              <dt>HIPAA-vaatimustenmukaisuuslausunto</dt>
+              <dd><time datetime="2024-08">Elokuu 2024</time></dd>
+
+              <dt>PENTEST-raportti</dt>
+              <dd><time datetime="2024-10">Lokakuu 2024</time></dd>
+
+              <dt>SOC2 tyyppi 2 -raportti</dt>
+              <dd><time datetime="2024-09">Syyskuu 2024</time></dd>
+
+              <dt>Cyber Essentials Plus</dt>
+              <dd><time datetime="2025-02">Helmikuu 2025</time></dd>
+
+              <dt>ISO/IEC 27001</dt>
+              <dd><time datetime="2024-10">Lokakuu 2024</time></dd>
+
+              <dt>PCI DSS v4.0.0</dt>
+              <dd><time datetime="2024-08">Elokuu 2024</time></dd>
+            </dl>
+          </section>
+        </div>
+
+        <footer class="privacy-article-footer">
+          <p>Kysyttävää tietosuojasta? <a href="mailto:privacy@nordhealth.com">Ota yhteyttä</a></p>
+        </footer>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="privacy-footer" role="contentinfo">
+      <div class="footer-container footer-revealed">
+        <a href="./">
+          <img
+            src="../../assets/images/nordhealth-nora-white.svg"
+            alt="Nordhealth Nora"
+            class="footer-logo"
+          />
+        </a>
+        <div class="footer-links">
+          <p class="footer-copyright">© 2026 Nordhealth</p>
+          <a href="./privacy" class="footer-link" aria-current="page">Tietosuoja</a>
+          <a href="#" class="footer-link">Käyttöehdot</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="modal-overlay" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Sulje">&times;</button>
+        <div class="modal-body">
+          <div class="hs-form-frame" data-region="eu1" data-form-id="6761c43d-aef8-4c85-8d6c-7ed90a1ac8c5" data-portal-id="144062425"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../src/js/main.js"></script>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+      <div class="cookie-banner-container">
+        <div class="cookie-banner-content">
+          <p class="cookie-banner-text">
+            Käytämme evästeitä analysoidaksemme sivuston käyttöä ja parantaaksemme palveluamme.
+            Lue lisää <a href="./privacy">tietosuojakäytännöstämme</a>.
+          </p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button class="cookie-btn cookie-btn-decline" id="cookieDecline">Hylkää</button>
+          <button class="cookie-btn cookie-btn-accept" id="cookieAccept">Hyväksy</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        var banner = document.getElementById('cookieBanner');
+        var acceptBtn = document.getElementById('cookieAccept');
+        var declineBtn = document.getElementById('cookieDecline');
+
+        // Show banner if no consent decision has been made
+        if (!localStorage.getItem('cookieConsent')) {
+          setTimeout(function() {
+            banner.classList.add('visible');
+          }, 500);
+        }
+
+        acceptBtn.addEventListener('click', function() {
+          localStorage.setItem('cookieConsent', 'accepted');
+          banner.classList.remove('visible');
+          loadGoogleAnalytics();
+        });
+
+        declineBtn.addEventListener('click', function() {
+          localStorage.setItem('cookieConsent', 'declined');
+          banner.classList.remove('visible');
+        });
+      })();
+    </script>
+  </body>
+</html>
