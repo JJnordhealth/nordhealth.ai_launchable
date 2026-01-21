@@ -2426,3 +2426,160 @@ body.reflective-space-exited {
     padding: 32px 16px;
   }
 }
+
+/* ============================================
+   Nora Footer - Responsive Styles
+   ============================================ */
+
+.nora-footer {
+  background-color: #0c1a3d;
+  padding: 96px 142px 48px;
+  min-height: auto;
+}
+
+.nora-footer-container {
+  max-width: 1156px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nora-footer-stats {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.nora-footer-heading {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 48px 0;
+}
+
+.nora-footer-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  text-align: center;
+}
+
+.nora-footer-stat-value {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.nora-footer-stat-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.nora-footer-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  margin-bottom: 48px;
+}
+
+.nora-footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nora-footer-logo {
+  height: 32px;
+  width: auto;
+}
+
+.nora-footer-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nora-footer-copyright,
+.nora-footer-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.nora-footer-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .nora-footer {
+    padding: 64px 48px 40px;
+  }
+
+  .nora-footer-stats {
+    margin-bottom: 56px;
+  }
+
+  .nora-footer-heading {
+    font-size: 28px;
+    margin-bottom: 36px;
+  }
+
+  .nora-footer-stats-grid {
+    gap: 32px;
+  }
+
+  .nora-footer-stat-value {
+    font-size: 26px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nora-footer {
+    padding: 48px 24px 32px;
+  }
+
+  .nora-footer-stats {
+    margin-bottom: 40px;
+  }
+
+  .nora-footer-heading {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .nora-footer-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .nora-footer-stat-value {
+    font-size: 24px;
+  }
+
+  .nora-footer-stat-label {
+    font-size: 14px;
+  }
+
+  .nora-footer-divider {
+    margin-bottom: 32px;
+  }
+
+  .nora-footer-bottom {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .nora-footer-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
