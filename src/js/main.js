@@ -431,8 +431,11 @@ const navActions = document.querySelector(".nav-actions");
 
 if (navBurger && navActions) {
   navBurger.addEventListener("click", () => {
+    const isActive = navActions.classList.contains("active");
     navBurger.classList.toggle("active");
     navActions.classList.toggle("active");
+    // Lock/unlock body scroll when menu opens/closes
+    document.body.style.overflow = isActive ? "" : "hidden";
   });
 
   // Close menu when clicking a link (except demo buttons)
@@ -440,6 +443,7 @@ if (navBurger && navActions) {
     item.addEventListener("click", () => {
       navBurger.classList.remove("active");
       navActions.classList.remove("active");
+      document.body.style.overflow = "";
     });
   });
 }

@@ -11,11 +11,14 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: none;
 }
 
 html, body {
   max-width: 100vw;
   overflow-x: hidden;
+  overscroll-behavior-x: none;
 }
 
 body {
@@ -1249,6 +1252,8 @@ body.reflective-space-exited {
     -webkit-backdrop-filter: blur(20px);
     gap: 24px;
     transition: right 0.3s ease;
+    overflow: hidden;
+    overscroll-behavior: contain;
   }
 
   .nav-actions.active {
