@@ -1301,7 +1301,10 @@ body.reflective-space-exited {
   .hero {
     padding: 100px 20px 40px;
     min-height: auto;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .hero-container {
@@ -1370,8 +1373,12 @@ body.reflective-space-exited {
   /* Hero carousel controls - remove absolute positioning on mobile */
   .hero-carousel-controls {
     position: static;
-    padding: 20px 0 24px;
+    padding: 20px 16px 24px;
     width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   /* Role tabs - horizontal wrap layout */
@@ -1564,6 +1571,9 @@ body.reflective-space-exited {
     min-height: auto;
     max-width: 100vw;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-container {
