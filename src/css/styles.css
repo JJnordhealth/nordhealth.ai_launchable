@@ -1348,15 +1348,47 @@ body.reflective-space-exited {
     gap: 16px;
   }
 
+  .hero-carousel-controls {
+    position: relative;
+    bottom: 0;
+    padding: 24px 16px 16px;
+  }
+
   .role-tabs {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    max-width: calc(100vw - 48px);
+    max-width: calc(100vw - 32px);
+    gap: 4px;
+    padding: 4px;
+    border-radius: 12px;
   }
 
   .role-tab {
-    width: 100%;
+    flex: 1 1 auto;
+    min-width: calc(50% - 4px);
+    padding: 10px 12px;
+    font-size: 13px;
     white-space: normal;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .hero-tab-content {
+    min-height: 120px;
+    margin-top: 16px;
+    padding: 0 8px;
+  }
+
+  .tab-content-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .tab-content-text {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
   }
 
   .section {
@@ -1503,11 +1535,36 @@ body.reflective-space-exited {
   }
 
   .hero-carousel-controls {
-    padding: 16px;
+    padding: 16px 12px 12px;
   }
 
   .role-tabs {
-    max-width: calc(100vw - 32px);
+    max-width: calc(100vw - 24px);
+    gap: 3px;
+    padding: 3px;
+  }
+
+  .role-tab {
+    padding: 8px 10px;
+    font-size: 11px;
+    min-width: calc(50% - 3px);
+  }
+
+  .hero-tab-content {
+    min-height: 100px;
+    margin-top: 12px;
+    padding: 0 4px;
+  }
+
+  .tab-content-title {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .tab-content-text {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 1rem;
   }
 
   .hero-heading {
