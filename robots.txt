@@ -1,0 +1,11 @@
+# Robots.txt for Nordhealth Nora Finnish Landing Page
+# https://nordhealth.ai/nora/fi/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nordhealth.ai/nora/fi/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
