@@ -258,6 +258,11 @@ body.reflective-space-exited {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* Dark burger for light nav (pricing page) */
+.nav-light .nav-burger span {
+  background: #0c1a3d;
+}
+
 /* ============================================
    Demo Modal
    ============================================ */
