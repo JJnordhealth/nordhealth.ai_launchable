@@ -333,7 +333,7 @@ const heroImg = document.querySelector(".hero-img");
 const images = [
   "./assets/images/Nora_hero_asset_1_General_Practice_FI.png",
   "./assets/images/Nora_hero_asset_1_Psychotherapists_FI.png",
-  "./assets/images/Nora_hero_asset_1_Speech therapists_FI.png",
+  "./assets/images/Nora_hero_asset_1_Psychotherapists_FI.png",
   "./assets/images/Nora_hero_asset_1_Physiotherapists_FI.png",
   "./assets/images/Nora_hero_asset_1_General_Practice_FI.png",
 ];
