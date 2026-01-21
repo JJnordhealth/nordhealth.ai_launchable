@@ -263,6 +263,42 @@ body.reflective-space-exited {
   background: #0c1a3d;
 }
 
+/* Light theme mobile menu (pricing page) */
+@media (max-width: 767px) {
+  .nav-light .nav-actions {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .nav-light .nav-link {
+    color: #0c1a3d;
+  }
+
+  .nav-light .nav-link:hover {
+    color: #2563eb;
+  }
+
+  .nav-light .btn-secondary {
+    background: transparent;
+    border: 1px solid #0c1a3d;
+    color: #0c1a3d;
+  }
+
+  .nav-light .btn-secondary:hover {
+    background: rgba(12, 26, 61, 0.1);
+  }
+
+  .nav-light .btn-primary {
+    background: #0c1a3d;
+    color: #ffffff;
+  }
+
+  .nav-light .btn-primary:hover {
+    background: #1e3a5f;
+  }
+}
+
 /* ============================================
    Demo Modal
    ============================================ */
