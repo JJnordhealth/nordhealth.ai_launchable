@@ -2377,7 +2377,7 @@ body.reflective-space-exited {
   }
 
   .pricing-header {
-    padding: 180px 24px 60px;
+    padding: 120px 24px 40px;
   }
 
   .pricing-title {
@@ -2470,7 +2470,7 @@ body.reflective-space-exited {
 
 @media (max-width: 375px) {
   .pricing-header {
-    padding: 200px 16px 40px;
+    padding: 120px 16px 32px;
   }
 
   .pricing-title {
