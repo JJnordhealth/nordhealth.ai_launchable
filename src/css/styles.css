@@ -536,9 +536,13 @@ body.reflective-space-exited {
   background: hsla(0, 0%, 100%, 0.15) !important;
   padding: 20px;
   border: 1px solid #8c93fb !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .image-wrapper {
   height: 540px;
+  width: 100%;
 }
 
 .hero-img {
