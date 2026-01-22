@@ -2407,8 +2407,10 @@ body.reflective-space-exited {
     transform: none;
     order: -1;
     max-width: 100%;
+    min-width: auto;
     margin: 0;
-    flex: 1;
+    flex: none;
+    width: 100%;
   }
 
   .pricing-card-featured:hover {
