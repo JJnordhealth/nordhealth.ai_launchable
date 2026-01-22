@@ -2403,14 +2403,11 @@ body.reflective-space-exited {
     padding: 32px 24px;
   }
 
-  .pricing-card-featured {
+  .pricing-card.pricing-card-featured {
     transform: none;
     order: -1;
     max-width: 100%;
-    min-width: auto;
     margin: 0;
-    flex: none;
-    width: 100%;
   }
 
   .pricing-card-featured:hover {
