@@ -84,7 +84,7 @@
         if (!body.classList.contains("reflective-space-exited")) {
           body.classList.add("reflective-space-exited");
           body.classList.remove("hero-exited"); // Remove light background state
-          // console.log(
+          console.log(
             "Reflective Space section scrolled past - background transitioning to dark",
           );
         }
@@ -93,7 +93,7 @@
         if (!body.classList.contains("hero-exited")) {
           body.classList.add("hero-exited");
           body.classList.remove("reflective-space-exited"); // Ensure dark state is removed
-          // console.log(
+          console.log(
             "Hero section scrolled past - background transitioning to light",
           );
         }
@@ -105,7 +105,7 @@
         ) {
           body.classList.remove("hero-exited");
           body.classList.remove("reflective-space-exited");
-          // console.log("Sections visible - background back to initial dark");
+          console.log("Sections visible - background back to initial dark");
         }
       }
     }
@@ -162,7 +162,7 @@
           if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
             // Footer is entering viewport (10%+ visible) - trigger reveal
             footerContainer.classList.add("footer-revealed");
-            // console.log("Footer takeover animation triggered");
+            console.log("Footer takeover animation triggered");
           }
         });
       },
@@ -318,7 +318,7 @@
     initSmoothScroll();
 
     // Log initialization (can be removed in production)
-    // console.log("Nordhealth Nora landing page initialized");
+    console.log("Nordhealth Nora landing page initialized");
   }
 
   // Start initialization
@@ -334,20 +334,12 @@ const heroImg = document.querySelector(".hero-img");
 const pathMatch = window.location.pathname.match(/^(\/[^\/]+)?\/nora\//);
 const basePath = pathMatch ? (pathMatch[1] || '') : '';
 
-// WebP images with PNG fallback for hero carousel
-const supportsWebP = (function() {
-  const canvas = document.createElement('canvas');
-  canvas.width = canvas.height = 1;
-  return canvas.toDataURL('image/webp').indexOf('image/webp') === 0;
-})();
-
-const ext = supportsWebP ? '.webp' : '.png';
 const images = [
-  basePath + "/images/Nora_hero_asset_1_General_Practice_FI" + ext,
-  basePath + "/images/Nora_hero_asset_1_Psychotherapists_FI" + ext,
-  basePath + "/images/Nora_hero_asset_1_Speech%20therapists_FI" + ext,
-  basePath + "/images/Nora_hero_asset_1_Physiotherapists_FI" + ext,
-  basePath + "/images/Nora_hero_asset_1_General_Practice_FI" + ext,
+  basePath + "/images/Nora_hero_asset_1_General_Practice_FI.png",
+  basePath + "/images/Nora_hero_asset_1_Psychotherapists_FI.png",
+  basePath + "/images/Nora_hero_asset_1_Speech%20therapists_FI.png",
+  basePath + "/images/Nora_hero_asset_1_Physiotherapists_FI.png",
+  basePath + "/images/Nora_hero_asset_1_General_Practice_FI.png",
 ];
 
 // Preload images for smoother transitions
