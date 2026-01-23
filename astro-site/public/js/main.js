@@ -330,13 +330,23 @@ const tabs = document.querySelectorAll(".role-tab");
 const indicator = document.querySelector(".active-indicator");
 const heroImg = document.querySelector(".hero-img");
 
+// Detect base path from current URL (handles /nordhealth.ai_launchable/ prefix)
+const pathMatch = window.location.pathname.match(/^(\/[^\/]+)?\/nora\//);
+const basePath = pathMatch ? (pathMatch[1] || '') : '';
+
 const images = [
-  "./assets/images/Nora_hero_asset_1_General_Practice_FI.png",
-  "./assets/images/Nora_hero_asset_1_Psychotherapists_FI.png",
-  "./assets/images/Nora_hero_asset_1_Psychotherapists_FI.png",
-  "./assets/images/Nora_hero_asset_1_Physiotherapists_FI.png",
-  "./assets/images/Nora_hero_asset_1_General_Practice_FI.png",
+  basePath + "/images/Nora_hero_asset_1_General_Practice_FI.png",
+  basePath + "/images/Nora_hero_asset_1_Psychotherapists_FI.png",
+  basePath + "/images/Nora_hero_asset_1_Speech%20therapists_FI.png",
+  basePath + "/images/Nora_hero_asset_1_Physiotherapists_FI.png",
+  basePath + "/images/Nora_hero_asset_1_General_Practice_FI.png",
 ];
+
+// Preload images for smoother transitions
+images.forEach(src => {
+  const img = new Image();
+  img.src = src;
+});
 
 let activeTab = document.querySelector(".role-tab.active");
 
