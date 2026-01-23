@@ -33,13 +33,13 @@ const t = getTranslations(lang);
           <span class="pricing-card-badge">{t.pricing.monthly.badge}</span>
         </div>
         <div class="pricing-card-price">
-          <span class="price-old">{t.pricing.monthly.priceOld}</span>
+          {t.pricing.monthly.priceOld && <span class="price-old">{t.pricing.monthly.priceOld}</span>}
           <span class="price-amount">{t.pricing.monthly.price}</span>
           <span class="price-period">{t.pricing.monthly.period}</span>
         </div>
         <div class="pricing-card-info">
           <p>{t.pricing.monthly.trial}</p>
-          <p class="pricing-validity">{t.pricing.monthly.validity}</p>
+          {t.pricing.monthly.validity && <p class="pricing-validity">{t.pricing.monthly.validity}</p>}
         </div>
         <a href="https://system.nordhealth.ai/signup" target="_blank" class="btn-card-cta">{t.pricing.monthly.cta}</a>
       </div>
@@ -50,14 +50,14 @@ const t = getTranslations(lang);
           <span class="pricing-card-badge">{t.pricing.annual.badge}</span>
         </div>
         <div class="pricing-card-price">
-          <span class="price-old">{t.pricing.annual.priceOld}</span>
+          {t.pricing.annual.priceOld && <span class="price-old">{t.pricing.annual.priceOld}</span>}
           <span class="price-amount">{t.pricing.annual.price}</span>
           <span class="price-period">{t.pricing.annual.period}</span>
           <span class="price-annual">{t.pricing.annual.annualTotal}</span>
         </div>
         <div class="pricing-card-info">
           <p>{t.pricing.annual.trial}</p>
-          <p class="pricing-validity">{t.pricing.annual.validity}</p>
+          {t.pricing.annual.validity && <p class="pricing-validity">{t.pricing.annual.validity}</p>}
         </div>
         <a href="https://system.nordhealth.ai/signup" target="_blank" class="btn-card-cta">{t.pricing.annual.cta}</a>
       </div>

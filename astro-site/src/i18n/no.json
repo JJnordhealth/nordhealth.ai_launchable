@@ -112,8 +112,8 @@
     "subtitle": "Velg mellom to ulike pakker og valgfrie tilleggsprodukter – det er enkelt å komme i gang.",
     "monthly": {
       "badge": "Månedlig",
-      "priceOld": "Tidligere 89 € / mnd",
-      "price": "49 €",
+      "priceOld": "Ordinær pris 1295 kr / mnd",
+      "price": "1095 kr",
       "period": "/ mnd (ekskl. mva)",
       "trial": "14 dagers gratis prøveperiode",
       "validity": "gyldig til 28.2.2026",
@@ -121,18 +121,18 @@
     },
     "annual": {
       "badge": "Årlig",
-      "priceOld": "Tidligere 75 € / mnd",
-      "price": "39 €",
+      "priceOld": "20% rabatt",
+      "price": "1035 kr",
       "period": "/ mnd (ekskl. mva)",
-      "annualTotal": "årlig fakturering 468 €",
+      "annualTotal": "årlig fakturering 12 420 kr",
       "trial": "14 dagers gratis prøveperiode",
       "validity": "gyldig til 28.2.2026",
       "cta": "Prøv gratis"
     },
     "multiUser": {
       "badge": "Flerbruker",
-      "price": "Tilpasset pris",
-      "info": "Kontakt oss for å diskutere tilpasset prising",
+      "price": "Fra 599 kr / bruker",
+      "info": "For 5+ brukere – kontakt oss for tilpasset pris",
       "cta": "Kontakt salg"
     }
   },

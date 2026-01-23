@@ -112,27 +112,27 @@
     "subtitle": "Vælg den plan, der passer bedst til dit arbejde – hvad end du er enkeltpraktiserende eller sidder i et team.",
     "monthly": {
       "badge": "Månedlig",
-      "priceOld": "Tidligere 89 € / md",
-      "price": "49 €",
+      "priceOld": "",
+      "price": "599 kr",
       "period": "/ md (ekskl. moms)",
       "trial": "14 dages gratis prøveperiode",
-      "validity": "gyldig til 28.2.2026",
+      "validity": "",
       "cta": "Prøv gratis"
     },
     "annual": {
       "badge": "Årlig",
-      "priceOld": "Tidligere 75 € / md",
-      "price": "39 €",
+      "priceOld": "17% rabat",
+      "price": "499 kr",
       "period": "/ md (ekskl. moms)",
-      "annualTotal": "årlig fakturering 468 €",
+      "annualTotal": "årlig fakturering 5.988 kr",
       "trial": "14 dages gratis prøveperiode",
-      "validity": "gyldig til 28.2.2026",
+      "validity": "",
       "cta": "Prøv gratis"
     },
     "multiUser": {
       "badge": "Flerbruger",
-      "price": "Tilpasset pris",
-      "info": "Kontakt os for at diskutere tilpasset prissætning",
+      "price": "Fra 499 kr / bruger",
+      "info": "For 5+ brugere – kontakt os for tilpasset pris",
       "cta": "Kontakt salg"
     }
   },
