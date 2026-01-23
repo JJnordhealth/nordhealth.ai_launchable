@@ -6,6 +6,112 @@ import { getTranslations } from '../../../i18n';
 const lang = 'dk';
 const t = getTranslations(lang);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Service schema for the 5 specialties
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Nordhealth Nora sundhedsdokumentationstjenester",
+  "description": "AI-drevet klinisk dokumentation til sundhedsprofessionelle på tværs af flere specialer",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Service",
+        "name": "Nora til praktiserende læger",
+        "description": "AI-drevet klinisk dokumentation til praktiserende læger. Automatiserede SOAP-noter, patientresumeer og konsultationsdokumentation.",
+        "provider": {
+          "@type": "Corporation",
+          "name": "Nordhealth"
+        },
+        "serviceType": "Klinisk dokumentationssoftware",
+        "audience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Praktiserende læger"
+        },
+        "areaServed": ["FI", "NO", "DK", "SE", "DE"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Service",
+        "name": "Nora til psykoterapeuter",
+        "description": "AI-drevet sessionsdokumentation til psykoterapeuter. Sikre terapinoter, sessionsresumeer og behandlingsfremskridtssporing.",
+        "provider": {
+          "@type": "Corporation",
+          "name": "Nordhealth"
+        },
+        "serviceType": "Klinisk dokumentationssoftware",
+        "audience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Psykoterapeuter"
+        },
+        "areaServed": ["FI", "NO", "DK", "SE", "DE"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Service",
+        "name": "Nora til talepædagoger",
+        "description": "AI-drevet dokumentation til talepædagoger. Sessionsnoter, behandlingsplaner og fremskridtsdokumentation.",
+        "provider": {
+          "@type": "Corporation",
+          "name": "Nordhealth"
+        },
+        "serviceType": "Klinisk dokumentationssoftware",
+        "audience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Talepædagoger"
+        },
+        "areaServed": ["FI", "NO", "DK", "SE", "DE"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Service",
+        "name": "Nora til fysioterapeuter",
+        "description": "AI-drevet klinisk dokumentation til fysioterapeuter. Behandlingsnoter, træningsplaner og patientfremskridtssporing.",
+        "provider": {
+          "@type": "Corporation",
+          "name": "Nordhealth"
+        },
+        "serviceType": "Klinisk dokumentationssoftware",
+        "audience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Fysioterapeuter"
+        },
+        "areaServed": ["FI", "NO", "DK", "SE", "DE"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Service",
+        "name": "Nora til alle sundhedsspecialer",
+        "description": "Fleksibel AI-drevet dokumentationsløsning, der kan tilpasses enhver sundhedsspeciale. Tilpasselige skabeloner og arbejdsgange.",
+        "provider": {
+          "@type": "Corporation",
+          "name": "Nordhealth"
+        },
+        "serviceType": "Klinisk dokumentationssoftware",
+        "audience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Sundhedsprofessionelle"
+        },
+        "areaServed": ["FI", "NO", "DK", "SE", "DE"]
+      }
+    }
+  ]
+};
 ---
 
 <BaseLayout
@@ -166,4 +272,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       </div>
     </div>
   </section>
+
+  <!-- Services Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(servicesSchema)} />
 </BaseLayout>

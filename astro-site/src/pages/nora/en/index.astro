@@ -6,6 +6,112 @@ import { getTranslations } from '../../../i18n';
 const lang = 'en';
 const t = getTranslations(lang);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Service schema for the 5 specialties
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Nordhealth Nora Healthcare Documentation Services",
+  "description": "AI-powered clinical documentation services for healthcare professionals across multiple specialties",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Service",
+        "name": "Nora for General Practice",
+        "description": "AI-powered clinical documentation for general practitioners. Automated SOAP notes, patient summaries, and visit documentation.",
+        "provider": {
+          "@type": "Corporation",
+          "name": "Nordhealth"
+        },
+        "serviceType": "Clinical Documentation Software",
+        "audience": {
+          "@type": "MedicalAudience",
+          "audienceType": "General Practitioners"
+        },
+        "areaServed": ["FI", "NO", "DK", "SE", "DE"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Service",
+        "name": "Nora for Psychotherapy",
+        "description": "AI-powered session documentation for psychotherapists. Secure therapy notes, session summaries, and treatment progress tracking.",
+        "provider": {
+          "@type": "Corporation",
+          "name": "Nordhealth"
+        },
+        "serviceType": "Clinical Documentation Software",
+        "audience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Psychotherapists"
+        },
+        "areaServed": ["FI", "NO", "DK", "SE", "DE"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Service",
+        "name": "Nora for Speech Therapy",
+        "description": "AI-powered documentation for speech therapists. Session notes, treatment plans, and progress documentation.",
+        "provider": {
+          "@type": "Corporation",
+          "name": "Nordhealth"
+        },
+        "serviceType": "Clinical Documentation Software",
+        "audience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Speech Therapists"
+        },
+        "areaServed": ["FI", "NO", "DK", "SE", "DE"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Service",
+        "name": "Nora for Physiotherapy",
+        "description": "AI-powered clinical documentation for physiotherapists. Treatment notes, exercise plans, and patient progress tracking.",
+        "provider": {
+          "@type": "Corporation",
+          "name": "Nordhealth"
+        },
+        "serviceType": "Clinical Documentation Software",
+        "audience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Physiotherapists"
+        },
+        "areaServed": ["FI", "NO", "DK", "SE", "DE"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Service",
+        "name": "Nora for All Healthcare Specialties",
+        "description": "Flexible AI-powered documentation solution adaptable to any healthcare specialty. Customizable templates and workflows.",
+        "provider": {
+          "@type": "Corporation",
+          "name": "Nordhealth"
+        },
+        "serviceType": "Clinical Documentation Software",
+        "audience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Healthcare Professionals"
+        },
+        "areaServed": ["FI", "NO", "DK", "SE", "DE"]
+      }
+    }
+  ]
+};
 ---
 
 <BaseLayout
@@ -166,4 +272,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       </div>
     </div>
   </section>
+
+  <!-- Services Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(servicesSchema)} />
 </BaseLayout>
