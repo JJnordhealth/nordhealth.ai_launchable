@@ -1,0 +1,37 @@
+---
+import type { Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  t: any;
+}
+
+const { lang, t } = Astro.props;
+---
+
+<nav class="nav" data-node-id="13457:763">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href={`/nora/${lang}/`}>
+        <img
+          src="/images/nordhealth-nora-dark.svg"
+          alt="Nordhealth Nora"
+          class="logo-img"
+        />
+      </a>
+    </div>
+    <button class="nav-burger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-actions">
+      <a href={`/nora/${lang}/pricing`} class="nav-link">{t.nav.pricing}</a>
+      <button class="btn-secondary">
+        <span>{t.nav.bookDemo}</span>
+      </button>
+      <a href="https://system.nordhealth.ai/" target="_blank" class="btn-outline">{t.nav.login}</a>
+      <a href="https://system.nordhealth.ai/signup" target="_blank" class="btn-primary">{t.nav.tryFree}</a>
+    </div>
+  </div>
+</nav>

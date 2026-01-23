@@ -1,0 +1,51 @@
+---
+import type { Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  t: any;
+}
+
+const { lang, t } = Astro.props;
+---
+
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+  <div class="cookie-banner-container">
+    <div class="cookie-banner-content">
+      <p class="cookie-banner-text">
+        {t.cookie.text}
+        {' '}{t.cookie.learnMore}{' '}<a href={`/nora/${lang}/privacy`}>{t.cookie.privacyPolicy}</a>.
+      </p>
+    </div>
+    <div class="cookie-banner-actions">
+      <button class="cookie-btn cookie-btn-decline" id="cookieDecline">{t.cookie.decline}</button>
+      <button class="cookie-btn cookie-btn-accept" id="cookieAccept">{t.cookie.accept}</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    var banner = document.getElementById('cookieBanner');
+    var acceptBtn = document.getElementById('cookieAccept');
+    var declineBtn = document.getElementById('cookieDecline');
+
+    if (!localStorage.getItem('cookieConsent')) {
+      setTimeout(function() {
+        banner?.classList.add('visible');
+      }, 500);
+    }
+
+    acceptBtn?.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      banner?.classList.remove('visible');
+      // @ts-ignore
+      if (typeof loadGoogleAnalytics === 'function') loadGoogleAnalytics();
+    });
+
+    declineBtn?.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'declined');
+      banner?.classList.remove('visible');
+    });
+  })();
+</script>

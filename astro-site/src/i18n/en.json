@@ -1,0 +1,109 @@
+{
+  "lang": "en",
+  "locale": "en_US",
+  "nav": {
+    "pricing": "Pricing",
+    "bookDemo": "Book a demo",
+    "login": "Login",
+    "tryFree": "Try for free"
+  },
+  "hero": {
+    "eyebrow": "Built by Nordhealth — trusted by over 30,000 healthcare professionals across the Nordics.",
+    "heading": "AI-powered documentation that supports your clinical decision-making.",
+    "description": "Create high-quality, personalized patient notes in seconds with a solution designed to support your professional judgment.",
+    "cta": "Try for free"
+  },
+  "trust": {
+    "euHosted": "EU-hosted",
+    "gdpr": "GDPR-compliant",
+    "noAudio": "No audio stored",
+    "noTraining": "Patient data not used<br>for AI model training",
+    "clinicallyApproved": "Clinically approved"
+  },
+  "tabs": {
+    "generalPractice": "General Practice",
+    "psychotherapy": "Psychotherapy",
+    "speechTherapy": "Speech Therapy",
+    "physiotherapy": "Physiotherapy",
+    "allSpecialties": "All Specialties"
+  },
+  "tabContent": {
+    "generalPractice": {
+      "title": "Care is human. Administration doesn't have to be.",
+      "text": "Nordhealth Nora automates documentation with clinical accuracy and quality, capturing essential details while preserving your professional voice. You can create multiple clinical documents from a single consultation, significantly reducing administrative workload throughout your day. You maintain full control and responsibility for your notes without automating diagnostics."
+    },
+    "psychotherapy": {
+      "title": "Documentation without compromising therapy quality.",
+      "text": "Most AI assistants can write notes, but Nordhealth Nora is specifically designed to strengthen your clinical judgment during therapeutic work. Nora structures high-quality patient notes in your own style. This allows you to be fully present for your client without the distraction of a keyboard. By reducing repetitive administrative work and providing a private space for your notes, Nora helps you maintain clinical focus and mentally prepare for the next session."
+    },
+    "speechTherapy": {
+      "title": "Precision in every note, for every patient's story.",
+      "text": "Speech therapy requires precision that traditional documentation often fails to capture. Nordhealth Nora captures the subtle details of every session, allowing you to track language development and cognitive milestones with complete accuracy. It automatically structures complex assessments into thorough and consistent draft notes that follow your own style. You can focus fully on the client's progress knowing that essential observations will be documented."
+    },
+    "physiotherapy": {
+      "title": "Focus on care – Nordhealth Nora handles the notes.",
+      "text": "Nora helps physiotherapists create accurate and structured patient notes in seconds – especially during a busy day. With dictation, you can record observations, test results, and exercises while they're fresh. This way, goals and treatment plans are organized as soon as the appointment ends. You can focus fully on the patient instead of the keyboard. End your workday energized and professionally at ease, without notes piling up."
+    },
+    "allSpecialties": {
+      "title": "A clinical tool for every specialty.",
+      "text": "Nora is developed to support the full range of healthcare services. Regardless of the documentation template you use, our AI adapts to your clinical language and terminology. This ensures that your professional judgment is always conveyed in your notes, regardless of your specialty."
+    }
+  },
+  "about": {
+    "title": "Transforming the way AI<br />supports clinical work.",
+    "description": "We don't just automate notes. We protect the space between the consultation and the patient record. High-quality, structured documentation that you finalize yourself. Every feature we add comes from professional feedback – built by Nordhealth and trusted by over 30,000 Nordic healthcare professionals."
+  },
+  "trialBanner": {
+    "text": "Launch offer: only €49 per month – available for a limited time"
+  },
+  "features": {
+    "title": "Features",
+    "gdpr": {
+      "title": "GDPR-compliant & EU-hosted",
+      "description": "All data is processed on secure European servers. Original audio is never stored, reused, or retained, and no data is used for AI model training. Read more about our security here."
+    },
+    "transcription": {
+      "title": "Session transcription",
+      "description": "Capture the entire conversation and any background information you add. Nordhealth Nora converts them into clear text that you can use immediately in your notes – always clinically reviewed and secure."
+    },
+    "dictation": {
+      "title": "Live dictation",
+      "description": "Naturally dictate your observations and thoughts during or after the appointment. Nora converts your words into clear and accurate text directly for documentation."
+    },
+    "askNora": {
+      "title": "Ask Nora to help format your notes",
+      "description": "Make them shorter, longer, clearer, or more like your own style. You can also create new documents based on the same session, which you always review and approve before saving."
+    },
+    "privateNotes": {
+      "title": "Private notes",
+      "description": "A private section separate from the official patient record for your own notes and background information. It allows you to freely process clinical observations, assumptions, and reflections between appointments."
+    }
+  },
+  "footer": {
+    "heading": "Stay present with your patient",
+    "stats": {
+      "timeSaved": {
+        "value": "4 h+",
+        "label": "Time saved every week"
+      },
+      "filesAdded": {
+        "value": "8000+",
+        "label": "Files added weekly to private notes"
+      },
+      "noteQuality": {
+        "value": "Note quality",
+        "label": "Most valued by Nordhealth Nora users"
+      }
+    },
+    "copyright": "© 2026 Nordhealth",
+    "privacy": "Privacy",
+    "terms": "Terms of Use"
+  },
+  "cookie": {
+    "text": "We use cookies to analyze site usage and improve our service.",
+    "learnMore": "Learn more in our",
+    "privacyPolicy": "privacy policy",
+    "decline": "Decline",
+    "accept": "Accept"
+  }
+}

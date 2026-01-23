@@ -1,0 +1,109 @@
+{
+  "lang": "fi",
+  "locale": "fi_FI",
+  "nav": {
+    "pricing": "Hinnat",
+    "bookDemo": "Varaa esittely",
+    "login": "Kirjaudu",
+    "tryFree": "Kokeile ilmaiseksi"
+  },
+  "hero": {
+    "eyebrow": "Nordhealthin kehittämä — jo yli 30 000 terveydenhuollon ammattilaista Pohjoismaissa luottaa meihin.",
+    "heading": "Tekoälypohjainen kirjaaminen, joka tukee kliinistä päätöksentekoasi.",
+    "description": "Luo korkealaatuisia, yksilöllisiä potilasmerkintöjä hetkessä ratkaisulla, joka on suunniteltu tukemaan ammatillista harkintaasi.",
+    "cta": "Kokeile ilmaiseksi"
+  },
+  "trust": {
+    "euHosted": "Ylläpito EU-alueella",
+    "gdpr": "GDPR-yhteensopiva",
+    "noAudio": "Ääntä ei tallenneta",
+    "noTraining": "Potilastietoja ei käytetä<br>kielimallin kouluttamiseen",
+    "clinicallyApproved": "Kliinisesti hyväksytty"
+  },
+  "tabs": {
+    "generalPractice": "Yleislääkäri",
+    "psychotherapy": "Psykoterapia",
+    "speechTherapy": "Puheterapia",
+    "physiotherapy": "Fysioterapia",
+    "allSpecialties": "Kaikki erikoisalat"
+  },
+  "tabContent": {
+    "generalPractice": {
+      "title": "Hoito on inhimillistä. Hallinnon ei tarvitse olla.",
+      "text": "Nordhealth Nora automatisoi kirjaamisen kliinisellä tarkkuudella ja laadukkaasti, taltioiden olennaiset yksityiskohdat samalla säilyttäen ammatillisen äänesi. Voit luoda useita kliinisiä asiakirjoja yhden konsultaation perusteella, mikä vähentää merkittävästi hallinnollisen työn määrää työpäiväsi aikana. Säilytät täyden hallinnan ja vastuun kirjauksistasi ilman diagnostiikan automatisointia."
+    },
+    "psychotherapy": {
+      "title": "Dokumentointia ilman tinkimistä terapian laadusta.",
+      "text": "Useimmat tekoälyavustajat osaavat kirjoittaa kirjauksia, mutta Nordhealth Nora on suunniteltu erityisesti vahvistamaan kliinistä harkintaasi terapeuttisen työn aikana. Nora jäsentää korkealaatuiset potilasmerkinnät omalla tyylilläsi. Näin voit olla täysin läsnä asiakkaallesi ilman näppäimistön aiheuttamaa häiriötä. Vähentämällä toistuvaa hallinnollista työtä ja tarjoamalla yksityisen paikan muistiinpanoillesi, Nora auttaa sinua säilyttämään kliinisen tarkkaavaisuutesi ja valmistautumaan henkisesti seuraavaan tapaamiseen."
+    },
+    "speechTherapy": {
+      "title": "Tarkkuutta jokaiseen kirjaukseen, jokaisen potilaan tarinalle.",
+      "text": "Puheterapia vaatii täsmällisyyttä, jota perinteinen dokumentointi ei usein tavoita. Nordhealth Nora taltioi jokaisen käynnin hienovaraiset yksityiskohdat, jolloin voit seurata kielellistä kehitystä ja kognitiivisia virstanpylväitä täydellisellä tarkkuudella. Se jäsentää monimutkaiset arvioinnit automaattisesti perusteellisiksi ja johdonmukaisiksi kirjausluonnoksiksi, jotka noudattavat omaa tyyliäsi. Voit keskittyä täysillä asiakkaan kehitykseen tietäen, että olennaiset huomiot tulevat kirjatuiksi."
+    },
+    "physiotherapy": {
+      "title": "Keskity hoitoon – Nordhealth Nora hoitaa kirjaukset.",
+      "text": "Nora auttaa fysioterapeuttia laatimaan tarkat ja jäsennellyt potilasmerkinnät sekunneissa – erityisesti kiireisen päivän keskellä. Sanelun avulla voit kirjata havainnot, testitulokset ja harjoitteet tuoreeltaan. Näin tavoitteet ja hoitosuunnitelmat ovat järjestyksessä heti, kun vastaanotto päättyy. Voit keskittyä täysillä potilaaseen näppäimistön sijaan. Päätä työpäiväsi energisenä ja ammatillisesti levollisesti, ilman rästissä olevia kirjauksia."
+    },
+    "allSpecialties": {
+      "title": "Kliininen työkalu jokaiselle erikoisalalle.",
+      "text": "Nora on kehitetty tukemaan koko terveydenhuollon palvelujen kirjoa. Riippumatta käyttämästäsi kirjausmallista, tekoälymme mukautuu käyttämääsi kliiniseen kieleen ja terminologiaan. Näin varmistetaan, että ammatillinen harkintasi välittyy kirjauksista aina erikoisalastasi riippumatta."
+    }
+  },
+  "about": {
+    "title": "Muutamme tapaa, jolla tekoäly<br />tukee kliinistä työtä.",
+    "description": "Emme vain automatisoi kirjauksia. Suojelemme tilaa vastaanoton ja potilaskertomuksen välillä. Korkealaatuinen, rakenteinen dokumentaatio, jonka viimeistelet itse. Jokainen lisäämämme ominaisuus syntyy ammattilaisten palautteesta – Nordhealthin rakentama ja yli 30 000 pohjoismaisen terveydenhuollon ammattilaisen luottama."
+  },
+  "trialBanner": {
+    "text": "Avajaistarjous: vain €49 kuukaudessa – saatavilla rajoitetun ajan"
+  },
+  "features": {
+    "title": "Ominaisuudet",
+    "gdpr": {
+      "title": "GDPR-yhteensopiva ja EU-ylläpito",
+      "description": "Kaikki tiedot käsitellään turvallisilla eurooppalaisilla palvelimilla. Alkuperäistä ääntä ei koskaan tallenneta, käytetä uudelleen tai säilytetä, eikä tietoja käytetä tekoälymallin kouluttamiseen. Lue lisää turvallisuudestamme täältä."
+    },
+    "transcription": {
+      "title": "Käynnin litterointi",
+      "description": "Taltioi koko keskustelu ja lisäämäsi taustatiedot. Nordhealth Nora muuntaa ne selkeäksi tekstiksi, jota voit käyttää heti kirjauksissasi – aina kliinisesti tarkistettuna ja turvallisesti."
+    },
+    "dictation": {
+      "title": "Live-sanelu",
+      "description": "Sanele havaintosi ja ajatuksesi luonnollisesti vastaanoton aikana tai sen jälkeen. Nora muuntaa sanasi selkeäksi ja tarkaksi tekstiksi suoraan dokumentointia varten."
+    },
+    "askNora": {
+      "title": "Pyydä Noraa auttamaan muotoilussa",
+      "description": "Tee kirjauksista lyhyempiä, pidempiä, selkeämpiä tai enemmän omaa tyyliäsi. Voit myös luoda uusia asiakirjoja saman käynnin perusteella, jotka aina tarkistat ja hyväksyt ennen tallentamista."
+    },
+    "privateNotes": {
+      "title": "Omat muistiinpanot",
+      "description": "Yksityinen osio virallisesta potilaskertomuksesta erillään omille muistiinpanoillesi ja taustatiedoillesi. Sen avulla voit vapaasti käsitellä kliinisiä havaintoja, oletuksia ja pohdintoja vastaanottojen välillä."
+    }
+  },
+  "footer": {
+    "heading": "Pysy läsnä potilaallesi",
+    "stats": {
+      "timeSaved": {
+        "value": "4 h+",
+        "label": "Aikaa säästyy viikossa"
+      },
+      "filesAdded": {
+        "value": "8000+",
+        "label": "Tiedostoa lisätty viikoittain yksityisiin muistiinpanoihin"
+      },
+      "noteQuality": {
+        "value": "Kirjausten laatu",
+        "label": "Nordhealth Noran käyttäjien eniten arvostama ominaisuus"
+      }
+    },
+    "copyright": "© 2026 Nordhealth",
+    "privacy": "Tietosuoja",
+    "terms": "Käyttöehdot"
+  },
+  "cookie": {
+    "text": "Käytämme evästeitä sivuston käytön analysointiin ja palvelumme parantamiseen.",
+    "learnMore": "Lue lisää",
+    "privacyPolicy": "tietosuojakäytännöstämme",
+    "decline": "Hylkää",
+    "accept": "Hyväksy"
+  }
+}

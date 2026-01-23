@@ -1,0 +1,48 @@
+---
+import type { Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  t: any;
+}
+
+const { lang, t } = Astro.props;
+---
+
+<footer class="footer nora-footer" id="footer">
+  <div class="nora-footer-container">
+    <!-- Stats Section -->
+    <div class="nora-footer-stats">
+      <h2 class="nora-footer-heading">{t.footer.heading}</h2>
+      <div class="nora-footer-stats-grid">
+        <div class="nora-footer-stat">
+          <div class="nora-footer-stat-value">{t.footer.stats.timeSaved.value}</div>
+          <div class="nora-footer-stat-label">{t.footer.stats.timeSaved.label}</div>
+        </div>
+        <div class="nora-footer-stat">
+          <div class="nora-footer-stat-value">{t.footer.stats.filesAdded.value}</div>
+          <div class="nora-footer-stat-label">{t.footer.stats.filesAdded.label}</div>
+        </div>
+        <div class="nora-footer-stat">
+          <div class="nora-footer-stat-value">{t.footer.stats.noteQuality.value}</div>
+          <div class="nora-footer-stat-label">{t.footer.stats.noteQuality.label}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="nora-footer-divider"></div>
+
+    <!-- Logo & Links -->
+    <div class="nora-footer-bottom">
+      <a href={`/nora/${lang}/`} class="nora-footer-logo-link">
+        <img src="/images/nordhealth-nora-white.svg" alt="Nordhealth Nora" class="nora-footer-logo">
+      </a>
+      <div class="nora-footer-links">
+        <span class="nora-footer-copyright">{t.footer.copyright}</span>
+        <a href={`/nora/${lang}/privacy`} class="nora-footer-link">{t.footer.privacy}</a>
+        <a href={`/nora/${lang}/privacy`} class="nora-footer-link">{t.footer.terms}</a>
+      </div>
+    </div>
+  </div>
+</footer>

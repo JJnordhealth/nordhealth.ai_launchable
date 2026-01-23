@@ -1,0 +1,94 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CookieBanner from '../components/CookieBanner.astro';
+import type { Lang } from '../i18n';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Lang;
+  t: any;
+  canonicalPath?: string;
+}
+
+const { title, description, lang, t, canonicalPath = '' } = Astro.props;
+const canonicalUrl = `https://nordhealth.ai/nora/${lang}/${canonicalPath}`;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={`https://nordhealth.ai/nora/en/${canonicalPath}`} />
+    <link rel="alternate" hreflang="fi" href={`https://nordhealth.ai/nora/fi/${canonicalPath}`} />
+    <link rel="alternate" hreflang="x-default" href={`https://nordhealth.ai/nora/en/${canonicalPath}`} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://nordhealth.ai/nora/fi/assets/images/nora-og-image.png" />
+    <meta property="og:locale" content={t.locale} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://nordhealth.ai/nora/fi/assets/images/nora-og-image.png" />
+
+    <!-- Google Analytics - loaded conditionally after cookie consent -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      function loadGoogleAnalytics() {
+        if (document.getElementById('ga-script')) return;
+        var script = document.createElement('script');
+        script.id = 'ga-script';
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-C4CCK9KL36';
+        document.head.appendChild(script);
+        gtag('js', new Date());
+        gtag('config', 'G-C4CCK9KL36');
+      }
+
+      if (localStorage.getItem('cookieConsent') === 'accepted') {
+        loadGoogleAnalytics();
+      }
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+
+  <body>
+    <Header lang={lang} t={t} />
+
+    <slot />
+
+    <Footer lang={lang} t={t} />
+
+    <!-- Demo Modal -->
+    <div class="modal-overlay" id="demoModal">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal-body">
+          <div class="hs-form-frame" data-region="eu1" data-form-id="6761c43d-aef8-4c85-8d6c-7ed90a1ac8c5" data-portal-id="144062425"></div>
+        </div>
+      </div>
+    </div>
+
+    <script is:inline src="/js/main.js"></script>
+
+    <CookieBanner lang={lang} t={t} />
+  </body>
+</html>
