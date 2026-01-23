@@ -5,7 +5,7 @@ import { getTranslations } from '../../../i18n';
 
 const lang = 'en';
 const t = getTranslations(lang);
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <BaseLayout

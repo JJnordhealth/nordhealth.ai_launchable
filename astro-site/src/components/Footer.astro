@@ -8,11 +8,13 @@ interface Props {
 }
 
 const { lang, t } = Astro.props;
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 // Get current path after base/nora/{lang}/ to build language switch links
 const pathname = Astro.url.pathname;
-const pathAfterLang = pathname.replace(new RegExp(`^${base}/nora/[a-z]{2}/?`), '');
+// Escape special regex characters in base and match the lang portion
+const escapedBase = base.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const pathAfterLang = pathname.replace(new RegExp(`^${escapedBase}/nora/[a-z]{2}/?`), '');
 ---
 
 <footer class="footer nora-footer" id="footer">
@@ -46,8 +48,8 @@ const pathAfterLang = pathname.replace(new RegExp(`^${base}/nora/[a-z]{2}/?`), '
       </a>
       <div class="nora-footer-links">
         <span class="nora-footer-copyright">{t.footer.copyright}</span>
-        <a href={`${base}/nora/${lang}/privacy`} class="nora-footer-link">{t.footer.privacy}</a>
-        <a href={`${base}/nora/${lang}/privacy`} class="nora-footer-link">{t.footer.terms}</a>
+        <a href={`${base}/nora/${lang}/privacy/`} class="nora-footer-link">{t.footer.privacy}</a>
+        <a href={`${base}/nora/${lang}/privacy/`} class="nora-footer-link">{t.footer.terms}</a>
         <span class="nora-footer-lang-switcher">
           {languages.map((l, i) => (
             <>
@@ -55,7 +57,7 @@ const pathAfterLang = pathname.replace(new RegExp(`^${base}/nora/[a-z]{2}/?`), '
               {l === lang ? (
                 <span class="lang-current">{l.toUpperCase()}</span>
               ) : (
-                <a href={`${base}/nora/${l}/${pathAfterLang}`} class="lang-link">{l.toUpperCase()}</a>
+                <a href={`${base}/nora/${l}/${pathAfterLang || ''}`} class="lang-link">{l.toUpperCase()}</a>
               )}
             </>
           ))}
