@@ -426,6 +426,27 @@ body.reflective-space-exited {
   opacity: 0.9;
 }
 
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 18px 40px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* ============================================
    Hero Section
    ============================================ */
@@ -1322,6 +1343,14 @@ body.reflective-space-exited {
 
   .btn-secondary span {
     display: inline;
+  }
+
+  .btn-outline {
+    padding: 14px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
   }
 
   .icon-calendar {
