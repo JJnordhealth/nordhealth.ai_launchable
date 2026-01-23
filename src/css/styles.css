@@ -170,7 +170,8 @@ body.reflective-space-exited {
 /* Action Medium (16px) - Buttons */
 /* Figma: action/m - size: 16, weight: 600, lineHeight: 1.399999976158142, letterSpacing: 0 */
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-outline {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.399999976158142;
@@ -433,13 +434,10 @@ body.reflective-space-exited {
   background: transparent;
   border: 1px solid #ffffff;
   border-radius: 8px;
-  padding: 18px 40px;
+  padding: 17px 39px;
   color: #ffffff;
   cursor: pointer;
   font-family: inherit;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
   transition: background 0.2s ease, opacity 0.2s ease;
 }
 
@@ -1346,8 +1344,7 @@ body.reflective-space-exited {
   }
 
   .btn-outline {
-    padding: 14px 24px;
-    font-size: 16px;
+    padding: 13px 23px;
     border-radius: 6px;
     width: 100%;
     text-align: center;
