@@ -1,5 +1,6 @@
 ---
 import type { Lang } from '../i18n';
+import { languages } from '../i18n';
 
 interface Props {
   lang: Lang;
@@ -7,6 +8,10 @@ interface Props {
 }
 
 const { lang, t } = Astro.props;
+
+// Get current path after /nora/{lang}/ to build language switch links
+const pathname = Astro.url.pathname;
+const pathAfterLang = pathname.replace(/^\/nora\/[a-z]{2}\/?/, '');
 ---
 
 <footer class="footer nora-footer" id="footer">
@@ -42,6 +47,18 @@ const { lang, t } = Astro.props;
         <span class="nora-footer-copyright">{t.footer.copyright}</span>
         <a href={`/nora/${lang}/privacy`} class="nora-footer-link">{t.footer.privacy}</a>
         <a href={`/nora/${lang}/privacy`} class="nora-footer-link">{t.footer.terms}</a>
+        <span class="nora-footer-lang-switcher">
+          {languages.map((l, i) => (
+            <>
+              {i > 0 && <span class="lang-separator">|</span>}
+              {l === lang ? (
+                <span class="lang-current">{l.toUpperCase()}</span>
+              ) : (
+                <a href={`/nora/${l}/${pathAfterLang}`} class="lang-link">{l.toUpperCase()}</a>
+              )}
+            </>
+          ))}
+        </span>
       </div>
     </div>
   </div>
