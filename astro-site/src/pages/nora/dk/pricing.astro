@@ -4,6 +4,35 @@ import { getTranslations } from '../../../i18n';
 
 const lang = 'dk';
 const t = getTranslations(lang);
+
+const pricingSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Nordhealth Nora",
+  "description": "AI-drevet klinisk dokumentation til sundhedsprofessionelle",
+  "brand": {
+    "@type": "Brand",
+    "name": "Nordhealth"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Månedligt abonnement",
+      "price": "599",
+      "priceCurrency": "DKK",
+      "availability": "https://schema.org/InStock",
+      "url": "https://system.nordhealth.ai/signup"
+    },
+    {
+      "@type": "Offer",
+      "name": "Årligt abonnement",
+      "price": "499",
+      "priceCurrency": "DKK",
+      "availability": "https://schema.org/InStock",
+      "url": "https://system.nordhealth.ai/signup"
+    }
+  ]
+};
 ---
 
 <BaseLayout
@@ -82,4 +111,7 @@ const t = getTranslations(lang);
   <section class="pricing-trial-banner">
     <h2>{t.trialBanner.text}</h2>
   </section>
+
+  <!-- Pricing Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(pricingSchema)} />
 </BaseLayout>
