@@ -9,9 +9,9 @@
     "tryFree": "Prøv gratis"
   },
   "hero": {
-    "eyebrow": "Utviklet av Nordhealth — over 30 000 helsepersonell i Norden stoler på oss.",
-    "heading": "AI-drevet dokumentasjon som støtter dine kliniske beslutninger.",
-    "description": "Lag pasientnotater av høy kvalitet på sekunder med en løsning designet for å støtte din faglige vurdering.",
+    "eyebrow": "Bygget av Nordhealth – brukt av over 30 000 nordiske helseprofesjonelle.",
+    "heading": "AI-dokumentasjon som ivaretar ditt kliniske skjønn",
+    "description": "Personlige, kliniske notater av høy kvalitet – på få sekunder. Utviklet for å støtte og beskytte ditt kliniske skjønn.",
     "cta": "Prøv gratis"
   },
   "trust": {
@@ -22,37 +22,37 @@
     "clinicallyApproved": "Klinisk godkjent"
   },
   "tabs": {
-    "generalPractice": "Allmennpraksis",
-    "psychotherapy": "Psykoterapi",
-    "speechTherapy": "Logopedi",
-    "physiotherapy": "Fysioterapi",
+    "generalPractice": "Fastleger",
+    "psychotherapy": "Psykologer og psykiatere",
+    "speechTherapy": "Logopeder",
+    "physiotherapy": "Fysioterapeuter",
     "allSpecialties": "Alle spesialiteter"
   },
   "tabContent": {
     "generalPractice": {
       "title": "Omsorg er menneskelig. Administrasjon trenger ikke være det.",
-      "text": "Nordhealth Nora automatiserer dokumentasjon med klinisk nøyaktighet og kvalitet, fanger opp viktige detaljer samtidig som din profesjonelle stemme bevares. Du kan lage flere kliniske dokumenter fra én konsultasjon, noe som betydelig reduserer administrativ arbeidsmengde gjennom dagen. Du beholder full kontroll og ansvar for notatene dine uten å automatisere diagnostikk."
+      "text": "For fastleger og privatpraktiserende leger i allmennpraksis bidrar Nordhealth Nora til å redusere dokumentasjonsarbeidet uten å gå på bekostning av faglig kvalitet. Fra én enkelt konsultasjon kan Nora forberede strukturerte utkast til journalnotater, henvisninger og legeerklæringer. Løsningen fungerer som et selvstendig dokumentasjonsverktøy og gir deg full kontroll over innhold, språk og vurderinger før noe eventuelt lagres i journal. Resultatet er mindre etterslep, bedre flyt i hverdagen og mer tid til pasientarbeid."
     },
     "psychotherapy": {
-      "title": "Dokumentasjon uten å gå på bekostning av terapikvalitet.",
-      "text": "De fleste AI-assistenter kan skrive notater, men Nordhealth Nora er spesielt designet for å styrke din kliniske vurdering under terapeutisk arbeid. Nora strukturerer pasientnotater av høy kvalitet i din egen stil. Dette lar deg være fullt til stede for klienten din uten distraksjon fra tastaturet. Ved å redusere repetitivt administrativt arbeid og gi et privat rom for notatene dine, hjelper Nora deg med å opprettholde klinisk fokus og mentalt forberede deg til neste time."
+      "title": "Dokumentasjon – uten å miste terapeutisk dybde.",
+      "text": "Mange AI-verktøy kan skrive tekst. Nordhealth Nora er utviklet for å støtte det kliniske skjønnet i terapeutisk arbeid. Løsningen strukturerer kliniske notater i høy kvalitet, tilpasset din stil og terminologi, slik at du kan være fullt til stede i samtalen. Ved å redusere repetitiv administrasjon og gi deg et privat rom for egne refleksjoner, bidrar Nora til bedre klinisk oversikt og mer mental tilstedeværelse mellom økter."
     },
     "speechTherapy": {
-      "title": "Presisjon i hvert notat, for hver pasients historie.",
-      "text": "Logopedi krever presisjon som tradisjonell dokumentasjon ofte ikke klarer å fange. Nordhealth Nora fanger de subtile detaljene i hver time, slik at du kan spore språkutvikling og kognitive milepæler med full nøyaktighet. Den strukturerer automatisk komplekse vurderinger til grundige og konsistente notatutkast som følger din egen stil. Du kan fokusere fullt på klientens fremgang og vite at viktige observasjoner vil bli dokumentert."
+      "title": "Presisjon i hvert notat, rom for hver klients historie.",
+      "text": "Språk- og taleterapi krever nøyaktighet som tradisjonell dokumentasjon ofte ikke fanger godt nok. Nordhealth Nora samler komplekse detaljer fra hver økt og strukturerer dem til profesjonelle og konsistente notater. Det gjør det enklere å følge språklig utvikling og kognitive milepæler over tid - med trygghet for at viktige detaljer alltid blir dokumentert."
     },
     "physiotherapy": {
-      "title": "Fokuser på behandling – Nordhealth Nora tar seg av notatene.",
-      "text": "Nora hjelper fysioterapeuter med å lage nøyaktige og strukturerte pasientnotater på sekunder – spesielt i en travel hverdag. Med diktering kan du registrere observasjoner, testresultater og øvelser mens de er ferske. På denne måten er mål og behandlingsplaner organisert så snart timen er over. Du kan fokusere fullt på pasienten i stedet for tastaturet. Avslutt arbeidsdagen energisk og profesjonelt avslappet, uten notater som hoper seg opp."
+      "title": "Fullt fokus på pasienten. Nordhealth Nora tar seg av dokumentasjonen.",
+      "text": "I en travel og praktisk arbeidshverdag hjelper Nora fysioterapeuter med å fange presise og strukturerte notater på sekunder. Med diktering under behandlingen kan du dokumentere undersøkelser, tester og øvelser mens de utføres. Resultatet er tydelige mål, behandlingsplaner og notater – klare når behandlingen er ferdig. Mindre tastatur, mer behandling."
     },
     "allSpecialties": {
-      "title": "Et klinisk verktøy for alle spesialiteter.",
-      "text": "Nora er utviklet for å støtte hele spekteret av helsetjenester. Uansett hvilken dokumentasjonsmal du bruker, tilpasser vår AI seg til ditt kliniske språk og terminologi. Dette sikrer at din faglige vurdering alltid kommer frem i notatene dine, uansett spesialitet."
+      "title": "En klinisk motor – tilpasset ditt fag.",
+      "text": "Nordhealth Nora er bygget for å støtte et bredt spekter av klinisk arbeid. Enten du bruker SOAP, DAP eller egne maler, tilpasser løsningen seg ditt faglige språk og din terminologi. Ditt kliniske skjønn er alltid utgangspunktet."
     }
   },
   "about": {
-    "title": "Transformerer måten AI<br />støtter klinisk arbeid.",
-    "description": "Vi automatiserer ikke bare notater. Vi beskytter rommet mellom konsultasjonen og pasientjournalen. Dokumentasjon av høy kvalitet og struktur som du selv ferdigstiller. Hver funksjon vi legger til kommer fra tilbakemeldinger fra fagfolk – bygget av Nordhealth og betrodd av over 30 000 nordiske helsepersonell."
+    "title": "Vi endrer hvordan AI<br />støtter klinisk arbeid",
+    "description": "Vi automatiserer ikke faglige vurderinger. Vi beskytter rommet mellom konsultasjon og journalføring. Strukturert dokumentasjon av høy kvalitet – alltid ferdigstilt og godkjent av deg. Utviklet i tett samarbeid med behandlere. Bygget av Nordhealth – brukt av over 30 000 nordiske helseprofesjonelle."
   },
   "trialBanner": {
     "text": "Lanseringstilbud: kun €49 per måned – tilgjengelig i begrenset tid"
