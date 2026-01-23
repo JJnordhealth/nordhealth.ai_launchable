@@ -11,9 +11,12 @@ interface Props {
   lang: Lang;
   t: any;
   canonicalPath?: string;
+  headerVariant?: 'dark' | 'light';
+  activePage?: string;
+  bodyClass?: string;
 }
 
-const { title, description, lang, t, canonicalPath = '' } = Astro.props;
+const { title, description, lang, t, canonicalPath = '', headerVariant = 'dark', activePage = '', bodyClass = '' } = Astro.props;
 const canonicalUrl = `https://nordhealth.ai/nora/${lang}/${canonicalPath}`;
 ---
 
@@ -29,6 +32,8 @@ const canonicalUrl = `https://nordhealth.ai/nora/${lang}/${canonicalPath}`;
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" hreflang="en" href={`https://nordhealth.ai/nora/en/${canonicalPath}`} />
     <link rel="alternate" hreflang="fi" href={`https://nordhealth.ai/nora/fi/${canonicalPath}`} />
+    <link rel="alternate" hreflang="nb" href={`https://nordhealth.ai/nora/no/${canonicalPath}`} />
+    <link rel="alternate" hreflang="da" href={`https://nordhealth.ai/nora/dk/${canonicalPath}`} />
     <link rel="alternate" hreflang="x-default" href={`https://nordhealth.ai/nora/en/${canonicalPath}`} />
 
     <!-- Open Graph / Facebook -->
@@ -70,8 +75,8 @@ const canonicalUrl = `https://nordhealth.ai/nora/${lang}/${canonicalPath}`;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
 
-  <body>
-    <Header lang={lang} t={t} />
+  <body class={bodyClass}>
+    <Header lang={lang} t={t} variant={headerVariant} activePage={activePage} />
 
     <slot />
 
@@ -82,7 +87,7 @@ const canonicalUrl = `https://nordhealth.ai/nora/${lang}/${canonicalPath}`;
       <div class="modal-content">
         <button class="modal-close" aria-label="Close modal">&times;</button>
         <div class="modal-body">
-          <div class="hs-form-frame" data-region="eu1" data-form-id="6761c43d-aef8-4c85-8d6c-7ed90a1ac8c5" data-portal-id="144062425"></div>
+          <div class="hs-form-frame" data-region="eu1" data-form-id={t.hubspotFormId} data-portal-id="144062425"></div>
         </div>
       </div>
     </div>

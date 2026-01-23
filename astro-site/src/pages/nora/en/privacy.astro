@@ -1,0 +1,157 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getTranslations } from '../../../i18n';
+
+const lang = 'en';
+const t = getTranslations(lang);
+const sections = t.privacy.sections;
+---
+
+<BaseLayout
+  title="Privacy & Security - Nordhealth Nora"
+  description="Nordhealth Nora's privacy and security policies. Learn how we protect patient data, comply with GDPR, and ensure data security within the EU."
+  lang={lang}
+  t={t}
+  canonicalPath="privacy"
+  headerVariant="light"
+  bodyClass="privacy-page"
+>
+  <!-- Privacy Policy Content -->
+  <main id="main-content" class="privacy-content">
+    <article class="privacy-container">
+      <header class="privacy-header">
+        <h1 class="privacy-title">{t.privacy.title}</h1>
+        <p class="privacy-updated">{t.privacy.updated}</p>
+      </header>
+
+      <p class="privacy-intro">{t.privacy.intro}</p>
+
+      <!-- Table of Contents -->
+      <nav class="privacy-toc">
+        <h2 class="privacy-toc-title">{t.privacy.tocTitle}</h2>
+        <ol class="privacy-toc-list">
+          <li><a href="#data-storage">{sections.dataStorage.title}</a></li>
+          <li><a href="#data-processing">{sections.dataProcessing.title}</a></li>
+          <li><a href="#data-access">{sections.dataAccess.title}</a></li>
+          <li><a href="#ai-training">{sections.aiTraining.title}</a></li>
+          <li><a href="#ai-models">{sections.aiModels.title}</a></li>
+          <li><a href="#encryption">{sections.encryption.title}</a></li>
+          <li><a href="#data-deletion">{sections.dataDeletion.title}</a></li>
+          <li><a href="#gdpr">{sections.gdpr.title}</a></li>
+          <li><a href="#sub-processors">{sections.subProcessors.title}</a></li>
+          <li><a href="#certifications">{sections.certifications.title}</a></li>
+          <li><a href="#availability">{sections.availability.title}</a></li>
+          <li><a href="#ownership">{sections.ownership.title}</a></li>
+          <li><a href="#service-termination">{sections.serviceTermination.title}</a></li>
+          <li><a href="#responsibility">{sections.responsibility.title}</a></li>
+          <li><a href="#analytics">{sections.analytics.title}</a></li>
+        </ol>
+      </nav>
+
+      <div class="privacy-sections">
+        <section class="privacy-section" id="data-storage">
+          <h2>1. {sections.dataStorage.title}</h2>
+          <p>{sections.dataStorage.content}</p>
+          {sections.dataStorage.list && (
+            <ul>
+              {sections.dataStorage.list.map((item: string) => <li>{item}</li>)}
+            </ul>
+          )}
+        </section>
+
+        <section class="privacy-section" id="data-processing">
+          <h2>2. {sections.dataProcessing.title}</h2>
+          <p>{sections.dataProcessing.content}</p>
+        </section>
+
+        <section class="privacy-section" id="data-access">
+          <h2>3. {sections.dataAccess.title}</h2>
+          <p>{sections.dataAccess.content}</p>
+        </section>
+
+        <section class="privacy-section" id="ai-training">
+          <h2>4. {sections.aiTraining.title}</h2>
+          <p>{sections.aiTraining.content}</p>
+        </section>
+
+        <section class="privacy-section" id="ai-models">
+          <h2>5. {sections.aiModels.title}</h2>
+          <p>{sections.aiModels.content}</p>
+        </section>
+
+        <section class="privacy-section" id="encryption">
+          <h2>6. {sections.encryption.title}</h2>
+          <p>{sections.encryption.content}</p>
+        </section>
+
+        <section class="privacy-section" id="data-deletion">
+          <h2>7. {sections.dataDeletion.title}</h2>
+          <p>{sections.dataDeletion.content}</p>
+        </section>
+
+        <section class="privacy-section" id="gdpr">
+          <h2>8. {sections.gdpr.title}</h2>
+          <p>{sections.gdpr.content}</p>
+          {sections.gdpr.list && (
+            <ul>
+              {sections.gdpr.list.map((item: string) => <li set:html={item.replace(/^([^:]+:)/, '<strong>$1</strong>')} />)}
+            </ul>
+          )}
+        </section>
+
+        <section class="privacy-section" id="sub-processors">
+          <h2>9. {sections.subProcessors.title}</h2>
+          <p>{sections.subProcessors.content}</p>
+          {sections.subProcessors.note && (
+            <aside class="privacy-note">
+              <p><strong>{sections.subProcessors.note}</strong></p>
+            </aside>
+          )}
+          {sections.subProcessors.list && (
+            <ul>
+              {sections.subProcessors.list.map((item: string) => <li>{item}</li>)}
+            </ul>
+          )}
+        </section>
+
+        <section class="privacy-section" id="certifications">
+          <h2>10. {sections.certifications.title}</h2>
+          <p>{sections.certifications.content}</p>
+          {sections.certifications.highlight && (
+            <p><strong>{sections.certifications.highlight}</strong></p>
+          )}
+        </section>
+
+        <section class="privacy-section" id="availability">
+          <h2>11. {sections.availability.title}</h2>
+          <p>{sections.availability.content}</p>
+        </section>
+
+        <section class="privacy-section" id="ownership">
+          <h2>12. {sections.ownership.title}</h2>
+          <p>{sections.ownership.content}</p>
+        </section>
+
+        <section class="privacy-section" id="service-termination">
+          <h2>13. {sections.serviceTermination.title}</h2>
+          <p>{sections.serviceTermination.content}</p>
+        </section>
+
+        <section class="privacy-section" id="responsibility">
+          <h2>14. {sections.responsibility.title}</h2>
+          <p>{sections.responsibility.content}</p>
+        </section>
+
+        <section class="privacy-section" id="analytics">
+          <h2>15. {sections.analytics.title}</h2>
+          <p>{sections.analytics.content}</p>
+          <p>{sections.analytics.optOut}</p>
+        </section>
+      </div>
+
+      <footer class="privacy-article-footer">
+        <p>{t.privacy.contact}</p>
+      </footer>
+    </article>
+  </main>
+</BaseLayout>

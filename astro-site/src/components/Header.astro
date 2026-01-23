@@ -4,17 +4,21 @@ import type { Lang } from '../i18n';
 interface Props {
   lang: Lang;
   t: any;
+  variant?: 'dark' | 'light';
+  activePage?: string;
 }
 
-const { lang, t } = Astro.props;
+const { lang, t, variant = 'dark', activePage = '' } = Astro.props;
+const navClass = variant === 'light' ? 'nav nav-light' : 'nav';
+const logoSrc = variant === 'light' ? '/images/nordhealth-nora-light.svg' : '/images/nordhealth-nora-dark.svg';
 ---
 
-<nav class="nav" data-node-id="13457:763">
+<nav class={navClass} data-node-id="13457:763">
   <div class="nav-container">
     <div class="nav-logo">
       <a href={`/nora/${lang}/`}>
         <img
-          src="/images/nordhealth-nora-dark.svg"
+          src={logoSrc}
           alt="Nordhealth Nora"
           class="logo-img"
         />
@@ -26,7 +30,7 @@ const { lang, t } = Astro.props;
       <span></span>
     </button>
     <div class="nav-actions">
-      <a href={`/nora/${lang}/pricing`} class="nav-link">{t.nav.pricing}</a>
+      <a href={`/nora/${lang}/pricing`} class={`nav-link${activePage === 'pricing' ? ' active' : ''}`}>{t.nav.pricing}</a>
       <button class="btn-secondary">
         <span>{t.nav.bookDemo}</span>
       </button>

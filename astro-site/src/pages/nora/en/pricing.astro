@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getTranslations } from '../../../i18n';
+
+const lang = 'en';
+const t = getTranslations(lang);
+---
+
+<BaseLayout
+  title="Pricing - Nordhealth Nora | AI-Powered Documentation from €49/month"
+  description="Nordhealth Nora pricing: launch offer only €49/month. Choose the package that suits you - for general practitioners, psychotherapists, and physiotherapists. Try for free."
+  lang={lang}
+  t={t}
+  canonicalPath="pricing"
+  headerVariant="light"
+  activePage="pricing"
+  bodyClass="pricing-page"
+>
+  <!-- Pricing Header -->
+  <section class="pricing-header">
+    <div class="pricing-header-container">
+      <h1 class="pricing-title">{t.pricing.title}</h1>
+      <p class="pricing-subtitle">{t.pricing.subtitle}</p>
+    </div>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section class="pricing-cards">
+    <div class="pricing-cards-container">
+      <!-- Monthly Card -->
+      <div class="pricing-card pricing-card-white">
+        <div class="pricing-card-header">
+          <span class="pricing-card-badge">{t.pricing.monthly.badge}</span>
+        </div>
+        <div class="pricing-card-price">
+          <span class="price-old">{t.pricing.monthly.priceOld}</span>
+          <span class="price-amount">{t.pricing.monthly.price}</span>
+          <span class="price-period">{t.pricing.monthly.period}</span>
+        </div>
+        <div class="pricing-card-info">
+          <p>{t.pricing.monthly.trial}</p>
+          <p class="pricing-validity">{t.pricing.monthly.validity}</p>
+        </div>
+        <a href="https://system.nordhealth.ai/signup" target="_blank" class="btn-card-cta">{t.pricing.monthly.cta}</a>
+      </div>
+
+      <!-- Annual Card (Featured) -->
+      <div class="pricing-card pricing-card-blue pricing-card-featured">
+        <div class="pricing-card-header">
+          <span class="pricing-card-badge">{t.pricing.annual.badge}</span>
+        </div>
+        <div class="pricing-card-price">
+          <span class="price-old">{t.pricing.annual.priceOld}</span>
+          <span class="price-amount">{t.pricing.annual.price}</span>
+          <span class="price-period">{t.pricing.annual.period}</span>
+          <span class="price-annual">{t.pricing.annual.annualTotal}</span>
+        </div>
+        <div class="pricing-card-info">
+          <p>{t.pricing.annual.trial}</p>
+          <p class="pricing-validity">{t.pricing.annual.validity}</p>
+        </div>
+        <a href="https://system.nordhealth.ai/signup" target="_blank" class="btn-card-cta">{t.pricing.annual.cta}</a>
+      </div>
+
+      <!-- Multi-user Card -->
+      <div class="pricing-card pricing-card-white">
+        <div class="pricing-card-header">
+          <span class="pricing-card-badge">{t.pricing.multiUser.badge}</span>
+        </div>
+        <div class="pricing-card-price">
+          <span class="price-amount">{t.pricing.multiUser.price}</span>
+        </div>
+        <div class="pricing-card-info">
+          <p>{t.pricing.multiUser.info}</p>
+        </div>
+        <button class="btn-card-cta btn-demo-trigger">{t.pricing.multiUser.cta}</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trial Banner -->
+  <section class="pricing-trial-banner">
+    <h2>{t.trialBanner.text}</h2>
+  </section>
+</BaseLayout>

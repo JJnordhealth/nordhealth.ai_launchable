@@ -1,0 +1,214 @@
+{
+  "lang": "dk",
+  "locale": "da_DK",
+  "hubspotFormId": "d03599e2-7622-454e-aac8-ba071329897d",
+  "nav": {
+    "pricing": "Priser",
+    "bookDemo": "Book en demo",
+    "login": "Log ind",
+    "tryFree": "Prøv gratis"
+  },
+  "hero": {
+    "eyebrow": "Udviklet af Nordhealth — over 30.000 sundhedsprofessionelle i Norden stoler på os.",
+    "heading": "AI-drevet dokumentation, der understøtter dine kliniske beslutninger.",
+    "description": "Opret patientnotater af høj kvalitet på sekunder med en løsning designet til at understøtte din faglige vurdering.",
+    "cta": "Prøv gratis"
+  },
+  "trust": {
+    "euHosted": "Hostet i EU",
+    "gdpr": "GDPR-kompatibel",
+    "noAudio": "Ingen lyd gemmes",
+    "noTraining": "Patientdata bruges ikke<br>til AI-træning",
+    "clinicallyApproved": "Klinisk godkendt"
+  },
+  "tabs": {
+    "generalPractice": "Almen praksis",
+    "psychotherapy": "Psykoterapi",
+    "speechTherapy": "Logopædi",
+    "physiotherapy": "Fysioterapi",
+    "allSpecialties": "Alle specialer"
+  },
+  "tabContent": {
+    "generalPractice": {
+      "title": "Omsorg er menneskelig. Administration behøver ikke være det.",
+      "text": "Nordhealth Nora automatiserer dokumentation med klinisk nøjagtighed og kvalitet, fanger vigtige detaljer samtidig med at din professionelle stemme bevares. Du kan oprette flere kliniske dokumenter fra én konsultation, hvilket væsentligt reducerer den administrative arbejdsbyrde gennem dagen. Du bevarer fuld kontrol og ansvar for dine notater uden at automatisere diagnostik."
+    },
+    "psychotherapy": {
+      "title": "Dokumentation uden at gå på kompromis med terapikvaliteten.",
+      "text": "De fleste AI-assistenter kan skrive notater, men Nordhealth Nora er specifikt designet til at styrke din kliniske vurdering under terapeutisk arbejde. Nora strukturerer patientnotater af høj kvalitet i din egen stil. Dette giver dig mulighed for at være fuldt til stede for din klient uden distraktionen fra et tastatur. Ved at reducere gentagne administrative opgaver og give et privat rum til dine notater, hjælper Nora dig med at opretholde klinisk fokus og mentalt forberede dig til næste session."
+    },
+    "speechTherapy": {
+      "title": "Præcision i hvert notat, for hver patients historie.",
+      "text": "Logopædi kræver præcision, som traditionel dokumentation ofte ikke formår at fange. Nordhealth Nora fanger de subtile detaljer i hver session, så du kan spore sprogudvikling og kognitive milepæle med fuld nøjagtighed. Den strukturerer automatisk komplekse vurderinger til grundige og konsistente notatudkast, der følger din egen stil. Du kan fokusere fuldt på klientens fremskridt og vide, at vigtige observationer vil blive dokumenteret."
+    },
+    "physiotherapy": {
+      "title": "Fokuser på behandling – Nordhealth Nora klarer notaterne.",
+      "text": "Nora hjælper fysioterapeuter med at oprette nøjagtige og strukturerede patientnotater på sekunder – især i en travl hverdag. Med diktering kan du registrere observationer, testresultater og øvelser, mens de er friske. På denne måde er mål og behandlingsplaner organiseret, så snart konsultationen slutter. Du kan fokusere fuldt på patienten i stedet for tastaturet. Afslut din arbejdsdag energisk og professionelt afslappet, uden notater der hober sig op."
+    },
+    "allSpecialties": {
+      "title": "Et klinisk værktøj til alle specialer.",
+      "text": "Nora er udviklet til at understøtte hele spektret af sundhedsydelser. Uanset hvilken dokumentationsskabelon du bruger, tilpasser vores AI sig til dit kliniske sprog og terminologi. Dette sikrer, at din faglige vurdering altid kommer til udtryk i dine notater, uanset speciale."
+    }
+  },
+  "about": {
+    "title": "Transformerer måden AI<br />understøtter klinisk arbejde.",
+    "description": "Vi automatiserer ikke bare notater. Vi beskytter rummet mellem konsultationen og patientjournalen. Dokumentation af høj kvalitet og struktur, som du selv færdiggør. Hver funktion vi tilføjer kommer fra feedback fra fagfolk – bygget af Nordhealth og betroet af over 30.000 nordiske sundhedsprofessionelle."
+  },
+  "trialBanner": {
+    "text": "Lanceringstilbud: kun €49 per måned – tilgængeligt i begrænset tid"
+  },
+  "features": {
+    "title": "Funktioner",
+    "gdpr": {
+      "title": "GDPR-kompatibel og EU-hostet",
+      "description": "Alle data behandles på sikre europæiske servere. Originallyd gemmes, genbruges eller beholdes aldrig, og ingen data bruges til AI-træning. Læs mere om vores sikkerhed her."
+    },
+    "transcription": {
+      "title": "Transskription af sessioner",
+      "description": "Fang hele samtalen og eventuelle baggrundsoplysninger, du tilføjer. Nordhealth Nora konverterer dem til klar tekst, som du kan bruge med det samme i dine notater – altid klinisk gennemgået og sikkert."
+    },
+    "dictation": {
+      "title": "Live diktering",
+      "description": "Dikter naturligt dine observationer og tanker under eller efter konsultationen. Nora konverterer dine ord til klar og nøjagtig tekst direkte til dokumentation."
+    },
+    "askNora": {
+      "title": "Bed Nora om hjælp til formatering",
+      "description": "Gør dem kortere, længere, klarere eller mere som din egen stil. Du kan også oprette nye dokumenter baseret på samme session, som du altid gennemgår og godkender før lagring."
+    },
+    "privateNotes": {
+      "title": "Private notater",
+      "description": "En privat sektion adskilt fra den officielle patientjournal til dine egne notater og baggrundsoplysninger. Det giver dig mulighed for frit at bearbejde kliniske observationer, antagelser og refleksioner mellem konsultationer."
+    }
+  },
+  "footer": {
+    "heading": "Vær til stede med din patient",
+    "stats": {
+      "timeSaved": {
+        "value": "4 t+",
+        "label": "Tid sparet hver uge"
+      },
+      "filesAdded": {
+        "value": "8000+",
+        "label": "Filer tilføjet ugentligt til private notater"
+      },
+      "noteQuality": {
+        "value": "Notatkvalitet",
+        "label": "Mest værdsat af Nordhealth Nora-brugere"
+      }
+    },
+    "copyright": "© 2026 Nordhealth",
+    "privacy": "Privatlivspolitik",
+    "terms": "Vilkår for brug"
+  },
+  "cookie": {
+    "text": "Vi bruger cookies til at analysere brug af hjemmesiden og forbedre vores service.",
+    "learnMore": "Læs mere i vores",
+    "privacyPolicy": "privatlivspolitik",
+    "decline": "Afvis",
+    "accept": "Accepter"
+  },
+  "pricing": {
+    "title": "Vælg den prispakke, der passer til dig",
+    "subtitle": "Vælg mellem to forskellige pakker og valgfrie tilføjelser – det er nemt at komme i gang.",
+    "monthly": {
+      "badge": "Månedlig",
+      "priceOld": "Tidligere 89 € / md",
+      "price": "49 €",
+      "period": "/ md (ekskl. moms)",
+      "trial": "14 dages gratis prøveperiode",
+      "validity": "gyldig til 28.2.2026",
+      "cta": "Prøv gratis"
+    },
+    "annual": {
+      "badge": "Årlig",
+      "priceOld": "Tidligere 75 € / md",
+      "price": "39 €",
+      "period": "/ md (ekskl. moms)",
+      "annualTotal": "årlig fakturering 468 €",
+      "trial": "14 dages gratis prøveperiode",
+      "validity": "gyldig til 28.2.2026",
+      "cta": "Prøv gratis"
+    },
+    "multiUser": {
+      "badge": "Flerbruger",
+      "price": "Tilpasset pris",
+      "info": "Kontakt os for at diskutere tilpasset prissætning",
+      "cta": "Kontakt salg"
+    }
+  },
+  "privacy": {
+    "title": "Privatliv og sikkerhed",
+    "updated": "Opdateret 21. januar 2025",
+    "intro": "Dette dokument adresserer centrale bekymringer, som virksomhedskunder har om implementering af vores AI-assistent, især vedrørende datalagring og -brug samt privatliv, sikkerhed og overholdelse. AI-assistenten er designet med privatlivsbeskyttelse som udgangspunkt og bedste praksis for AI-sikkerhed i overensstemmelse med EU-regler.",
+    "tocTitle": "Indholdsfortegnelse",
+    "sections": {
+      "dataStorage": {
+        "title": "Hvor gemmes data?",
+        "content": "Vi bruger kun EU-baserede datacentre til at levere tjenesten.",
+        "list": ["Norge: Physica og Psykbase Desktop", "Danmark: EasyPractice, Physica og Psykbase Web", "Finland: Diarium", "AI-funktionalitet: AWS og Azure EU-datacentre"]
+      },
+      "dataProcessing": {
+        "title": "Behandles data uden for EU?",
+        "content": "Nej. Al databehandling, herunder transskription, berigelse og AI-genererede resuméer, finder sted inden for Storbritannien og EØS. Ingen data sendes til USA eller andre tredjelande."
+      },
+      "dataAccess": {
+        "title": "Hvem har adgang til data?",
+        "content": "Kun autoriseret personale har adgang til data. Al adgang logges og overvåges."
+      },
+      "aiTraining": {
+        "title": "Bruges patientdata til træning af AI-modeller?",
+        "content": "Vi bruger ikke vores kunders data til at træne AI-modeller. AI-assistenten bruger modeller, der er trænet på generelle, ikke-kundespecifikke datasæt."
+      },
+      "aiModels": {
+        "title": "Hvilke AI-modeller bruges?",
+        "content": "Vi bruger modeller hostet i AWS EU-datacentre. Til transskription bruger vi også vores egne talegenkendelsesmodeller placeret i Storbritannien og EØS."
+      },
+      "encryption": {
+        "title": "Er data krypteret?",
+        "content": "Al dataoverførsel sker gennem sikre og krypterede forbindelser. Kundernes patientjournalindtastninger gemmes krypteret i sikre, topmoderne datacentre beskyttet af både stærke fysiske og digitale sikkerhedsforanstaltninger."
+      },
+      "dataDeletion": {
+        "title": "Kan data slettes eller eksporteres?",
+        "content": "Ja. Terapeuter kan slette eller eksportere transskriptioner når som helst."
+      },
+      "gdpr": {
+        "title": "Er I GDPR-kompatible?",
+        "content": "Ja. Vi er fuldt GDPR-kompatible. Som databehandler på vegne af den dataansvarlige opfylder vi vores vigtigste forpligtelser, herunder:",
+        "list": ["Stærk datasikkerhed: Omfattende tekniske og organisatoriske foranstaltninger til beskyttelse af personoplysninger", "Fortrolighed: Alle autoriserede medarbejdere er bundet af strenge fortrolighedsaftaler", "Databrud: Øjeblikkelige underretningsprocedurer i tilfælde af potentielle brud", "Støtte til GDPR-forpligtelser: Vi hjælper vores kunder med at opfylde deres forpligtelser over for registrerede", "Samarbejde med myndigheder: Vi samarbejder med tilsynsmyndigheder"]
+      },
+      "subProcessors": {
+        "title": "Kan jeg få en liste over alle underdatabehandlere?",
+        "content": "Ja. Vi opretholder et gennemsigtigt underdatabehandlerregister over alle leverandører med adgang til personoplysninger.",
+        "note": "Bemærk: Af forretnings- og sikkerhedsmæssige årsager offentliggør vi ikke navnene på individuelle modeludbydere, da dette er fortrolig information. Vi garanterer dog, at:",
+        "list": ["Alle AI-relaterede underleverandører opererer i Europa", "Brugerdata overføres eller behandles ikke uden for Europa"]
+      },
+      "certifications": {
+        "title": "Hvilke certificeringer og standarder følger I?",
+        "content": "Vores systemer og processer auditeres regelmæssigt af uafhængige parter for at sikre det højeste niveau af datasikkerhed.",
+        "highlight": "Nordhealth er ISO 27001-certificeret."
+      },
+      "availability": {
+        "title": "Hvordan sikres tilgængelighed og oppetid?",
+        "content": "Vi har kontinuerlig overvågning, der straks advarer udviklingsteamet, hvis platformen indlæses langsomt eller slet ikke. Opdagede udfald håndteres med højeste prioritet. Alle kodeændringer gennemgår automatiseret og manuel test for at sikre opdateringsstabilitet og servicekontinuitet."
+      },
+      "ownership": {
+        "title": "Hvem ejer patientdataene?",
+        "content": "Virksomheden, der bruger tjenesten, har eksklusivt ejerskab over alle deres patientdata."
+      },
+      "serviceTermination": {
+        "title": "Hvad sker der, hvis vi stopper med at bruge AI-assistenten?",
+        "content": "Data slettes efter tjenestebrugen ophører."
+      },
+      "responsibility": {
+        "title": "Hvem har ejerskab og ansvar for patientnoter oprettet med AI-assistenten?",
+        "content": "Terapeuten er fuldt ansvarlig for nøjagtigheden og fuldstændigheden af alle patientjournalindtastninger. Selvom AI-assistenten kan hjælpe med at oprette noter, skal terapeuten gennemgå, bekræfte og gemme disse indtastninger i patientjournalen. AI-assistenten assisterer kun i processen og ejer ikke dataene."
+      },
+      "analytics": {
+        "title": "Analyse og cookies",
+        "content": "Vi bruger Google Analytics til at analysere webstedstrafik. Google Analytics indsamler anonyme data såsom antal besøgte sider, besøgsvarighed og anvendt enhedstype. Dataene bruges til at forbedre vores service.",
+        "optOut": "Du kan forhindre Google Analytics-dataindsamling ved at installere Google Analytics Opt-out-browserudvidelsen."
+      }
+    },
+    "contact": "Spørgsmål om privatliv? Kontakt os"
+  }
+}

@@ -1,6 +1,7 @@
 {
   "lang": "en",
   "locale": "en_US",
+  "hubspotFormId": "0f372cfc-4693-40dc-b2bf-a705696ae918",
   "nav": {
     "pricing": "Pricing",
     "bookDemo": "Book a demo",
@@ -105,5 +106,109 @@
     "privacyPolicy": "privacy policy",
     "decline": "Decline",
     "accept": "Accept"
+  },
+  "pricing": {
+    "title": "Choose the right plan for you",
+    "subtitle": "Choose from two different packages and optional add-ons – getting started is easy.",
+    "monthly": {
+      "badge": "Monthly",
+      "priceOld": "Previously €89 / month",
+      "price": "€49",
+      "period": "/ month (excl. VAT)",
+      "trial": "14-day free trial",
+      "validity": "valid until 28.2.2026",
+      "cta": "Try for free"
+    },
+    "annual": {
+      "badge": "Annual",
+      "priceOld": "Previously €75 / month",
+      "price": "€39",
+      "period": "/ month (excl. VAT)",
+      "annualTotal": "annual billing €468",
+      "trial": "14-day free trial",
+      "validity": "valid until 28.2.2026",
+      "cta": "Try for free"
+    },
+    "multiUser": {
+      "badge": "Multi-user",
+      "price": "Custom pricing",
+      "info": "Contact us to discuss customized pricing",
+      "cta": "Contact sales"
+    }
+  },
+  "privacy": {
+    "title": "Privacy & Security",
+    "updated": "Updated January 21, 2025",
+    "intro": "This document addresses key concerns that enterprise customers have about deploying our AI assistant, particularly regarding data storage and usage, as well as privacy, security, and compliance. The AI assistant is designed with privacy-by-design principles and AI security best practices in accordance with EU regulations.",
+    "tocTitle": "Table of Contents",
+    "sections": {
+      "dataStorage": {
+        "title": "Where is data stored?",
+        "content": "We use only EU-based data centers to provide the service.",
+        "list": ["Norway: Physica and Psykbase Desktop", "Denmark: EasyPractice, Physica, and Psykbase Web", "Finland: Diarium", "AI functionality: AWS and Azure EU data centers"]
+      },
+      "dataProcessing": {
+        "title": "Is data processed outside the EU?",
+        "content": "No. All data processing, including transcription, enrichment, and AI-generated summaries, takes place within the UK and EEA. No data is sent to the United States or other third countries."
+      },
+      "dataAccess": {
+        "title": "Who has access to data?",
+        "content": "Only authorized personnel have access to data. All access is logged and monitored."
+      },
+      "aiTraining": {
+        "title": "Is patient data used for AI model training?",
+        "content": "We do not use our customers' data to train AI models. The AI assistant uses models that have been trained on general, non-customer-specific datasets."
+      },
+      "aiModels": {
+        "title": "What AI models are used?",
+        "content": "We use models hosted in AWS EU data centers. For transcription, we also use our own speech recognition models located in the UK and EEA."
+      },
+      "encryption": {
+        "title": "Is data encrypted?",
+        "content": "All data transfers are conducted through secure and encrypted connections. Customers' patient record entries are stored encrypted in secure, state-of-the-art data centers protected by both strong physical and digital security measures."
+      },
+      "dataDeletion": {
+        "title": "Can data be deleted or exported?",
+        "content": "Yes. Therapists can delete or export transcriptions at any time."
+      },
+      "gdpr": {
+        "title": "Are you GDPR-compliant?",
+        "content": "Yes. We are fully GDPR-compliant. As a processor acting on behalf of the data controller, we fulfill our key obligations, including:",
+        "list": ["Strong data security: Extensive technical and organizational measures to protect personal data", "Confidentiality: All authorized employees are bound by strict confidentiality agreements", "Data breaches: Immediate notification procedures in case of potential breaches", "Support for GDPR obligations: We help our customers fulfill their duties to data subjects", "Cooperation with authorities: We cooperate with supervisory authorities"]
+      },
+      "subProcessors": {
+        "title": "Can I get a list of all sub-processors?",
+        "content": "Yes. We maintain a transparent sub-processor register of all vendors with access to personal data.",
+        "note": "Note: For business and security reasons, we do not publish the names of individual model providers as this is confidential information. However, we guarantee that:",
+        "list": ["All AI-related subcontractors operate in Europe", "User data is not transferred or processed outside Europe"]
+      },
+      "certifications": {
+        "title": "What certifications and standards do you follow?",
+        "content": "Our systems and processes are regularly audited by independent parties to ensure the highest level of data security.",
+        "highlight": "Nordhealth is ISO 27001 certified."
+      },
+      "availability": {
+        "title": "How is availability and uptime ensured?",
+        "content": "We have continuous monitoring that immediately alerts the development team if the platform loads slowly or not at all. Detected outages are handled with the highest priority. All code changes go through automated and manual testing to ensure update stability and service continuity."
+      },
+      "ownership": {
+        "title": "Who owns the patient data?",
+        "content": "The company using the service has exclusive ownership of all their patient data."
+      },
+      "serviceTermination": {
+        "title": "What happens if we stop using the AI assistant?",
+        "content": "Data is deleted after service use ends."
+      },
+      "responsibility": {
+        "title": "Who has ownership and responsibility for patient notes created with the AI assistant?",
+        "content": "The therapist is fully responsible for the accuracy and completeness of all patient record entries. While the AI assistant can help create notes, the therapist must review, confirm, and save these entries to the patient record. The AI assistant only assists in the process and does not own the data."
+      },
+      "analytics": {
+        "title": "Analytics and cookies",
+        "content": "We use Google Analytics to analyze website traffic. Google Analytics collects anonymous data such as the number of pages visited, visit duration, and device type used. The data is used to improve our service.",
+        "optOut": "You can prevent Google Analytics data collection by installing the Google Analytics Opt-out browser extension."
+      }
+    },
+    "contact": "Questions about privacy? Contact us"
   }
 }

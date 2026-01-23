@@ -1,0 +1,168 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import TrustIndicators from '../../../components/TrustIndicators.astro';
+import { getTranslations } from '../../../i18n';
+
+const lang = 'dk';
+const t = getTranslations(lang);
+---
+
+<BaseLayout
+  title="Nordhealth Nora - AI-drevet dokumentation til sundhedsprofessionelle"
+  description="Opret patientnotater af høj kvalitet på sekunder with Nordhealth Nora's AI-powered documentation solution. GDPR-compliant, EU-hosted, trusted by over 30,000 professionals."
+  lang={lang}
+  t={t}
+>
+  <!-- Hero Section -->
+  <section class="hero section" id="hero-section" data-node-id="13457:667">
+    <div class="hero-container">
+      <p class="hero-eyebrow fade-in-up" data-animation-delay="0.1s">
+        {t.hero.eyebrow}
+      </p>
+
+      <h1 class="hero-heading fade-in-up" data-animation-delay="0.2s">
+        {t.hero.heading}
+      </h1>
+
+      <p class="hero-description fade-in-up" data-animation-delay="0.3s">
+        {t.hero.description}
+      </p>
+
+      <a
+        href="https://system.nordhealth.ai/signup"
+        target="_blank"
+        class="btn-primary hero-cta fade-in-up"
+        data-animation-delay="0.4s"
+      >
+        {t.hero.cta}
+      </a>
+
+      <TrustIndicators t={t} />
+
+      <div class="hero-media fade-in-up" data-animation-delay="0.6s" data-node-id="13457:699">
+        <div class="media-placeholder hero-image" data-node-id="13457:700">
+          <div class="image-wrapper">
+            <img
+              class="hero-img active"
+              src="/images/Nora_hero_asset_1_General_Practice_FI.png"
+              alt="Nordhealth Nora AI-powered documentation solution"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Role Tabs -->
+    <div class="hero-carousel-controls">
+      <div class="role-tabs" data-node-id="13457:701">
+        <span class="active-indicator"></span>
+        <button class="role-tab active">{t.tabs.generalPractice}</button>
+        <button class="role-tab">{t.tabs.psychotherapy}</button>
+        <button class="role-tab">{t.tabs.speechTherapy}</button>
+        <button class="role-tab">{t.tabs.physiotherapy}</button>
+        <button class="role-tab">{t.tabs.allSpecialties}</button>
+      </div>
+
+      <div class="hero-tab-content">
+        <div class="tab-content-item active" data-tab="0">
+          <h3 class="tab-content-title">{t.tabContent.generalPractice.title}</h3>
+          <p class="tab-content-text">{t.tabContent.generalPractice.text}</p>
+        </div>
+        <div class="tab-content-item" data-tab="1">
+          <h3 class="tab-content-title">{t.tabContent.psychotherapy.title}</h3>
+          <p class="tab-content-text">{t.tabContent.psychotherapy.text}</p>
+        </div>
+        <div class="tab-content-item" data-tab="2">
+          <h3 class="tab-content-title">{t.tabContent.speechTherapy.title}</h3>
+          <p class="tab-content-text">{t.tabContent.speechTherapy.text}</p>
+        </div>
+        <div class="tab-content-item" data-tab="3">
+          <h3 class="tab-content-title">{t.tabContent.physiotherapy.title}</h3>
+          <p class="tab-content-text">{t.tabContent.physiotherapy.text}</p>
+        </div>
+        <div class="tab-content-item" data-tab="4">
+          <h3 class="tab-content-title">{t.tabContent.allSpecialties.title}</h3>
+          <p class="tab-content-text">{t.tabContent.allSpecialties.text}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" data-node-id="13457:708">
+    <div class="about-container">
+      <h2 class="about-title fade-in-up" data-animation-delay="0.1s" set:html={t.about.title}></h2>
+      <p class="about-description fade-in-up" data-animation-delay="0.2s">
+        {t.about.description}
+      </p>
+    </div>
+  </section>
+
+  <!-- Trial Banner -->
+  <section class="pricing-trial-banner">
+    <h2>{t.trialBanner.text}</h2>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features section" data-node-id="13457:712">
+    <div class="features-container">
+      <h2 class="features-title fade-in-up" data-animation-delay="0.1s">
+        {t.features.title}
+      </h2>
+
+      <div class="feature-slider">
+        <div class="features-grid">
+          <div class="feature-card fade-in-up feature-card-clickable active" data-animation-delay="0.2s" data-feature-index="0">
+            <div class="media-placeholder feature-image">
+              <img src="/images/Nora_asset_1_FI.png" alt={t.features.gdpr.title} style="width:100%;height:100%;object-fit:cover;border-radius:16px;" />
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">{t.features.gdpr.title}</h3>
+              <p class="feature-description">{t.features.gdpr.description}</p>
+            </div>
+          </div>
+
+          <div class="feature-card fade-in-up feature-card-clickable" data-animation-delay="0.3s" data-feature-index="1">
+            <div class="media-placeholder feature-image">
+              <img src="/images/Nora_asset_2_FI.png" alt={t.features.transcription.title} style="width:100%;height:100%;object-fit:cover;border-radius:16px;" />
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">{t.features.transcription.title}</h3>
+              <p class="feature-description">{t.features.transcription.description}</p>
+            </div>
+          </div>
+
+          <div class="feature-card fade-in-up feature-card-clickable" data-animation-delay="0.4s" data-feature-index="2">
+            <div class="media-placeholder feature-image">
+              <img src="/images/Nora_asset_3_FI.png" alt={t.features.dictation.title} style="width:100%;height:100%;object-fit:cover;border-radius:16px;" />
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">{t.features.dictation.title}</h3>
+              <p class="feature-description">{t.features.dictation.description}</p>
+            </div>
+          </div>
+
+          <div class="feature-card fade-in-up feature-card-clickable" data-animation-delay="0.5s" data-feature-index="3">
+            <div class="media-placeholder feature-image">
+              <img src="/images/Nora_asset_4_FI.png" alt={t.features.askNora.title} style="width:100%;height:100%;object-fit:cover;border-radius:16px;" />
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">{t.features.askNora.title}</h3>
+              <p class="feature-description">{t.features.askNora.description}</p>
+            </div>
+          </div>
+
+          <div class="feature-card fade-in-up feature-card-clickable" data-animation-delay="0.6s" data-feature-index="4">
+            <div class="media-placeholder feature-image">
+              <img src="/images/Nora_asset_5_FI.png" alt={t.features.privateNotes.title} style="width:100%;height:100%;object-fit:cover;border-radius:16px;" />
+            </div>
+            <div class="feature-content">
+              <h3 class="feature-title">{t.features.privateNotes.title}</h3>
+              <p class="feature-description">{t.features.privateNotes.description}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
