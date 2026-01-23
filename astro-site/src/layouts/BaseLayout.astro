@@ -18,6 +18,7 @@ interface Props {
 
 const { title, description, lang, t, canonicalPath = '', headerVariant = 'dark', activePage = '', bodyClass = '' } = Astro.props;
 const canonicalUrl = `https://nordhealth.ai/nora/${lang}/${canonicalPath}`;
+const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -72,7 +73,7 @@ const canonicalUrl = `https://nordhealth.ai/nora/${lang}/${canonicalPath}`;
       }
     </script>
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
   </head>
 
   <body class={bodyClass}>
@@ -92,7 +93,11 @@ const canonicalUrl = `https://nordhealth.ai/nora/${lang}/${canonicalPath}`;
       </div>
     </div>
 
-    <script is:inline src="/js/main.js"></script>
+    <script is:inline define:vars={{ base }}>
+      var s = document.createElement('script');
+      s.src = base + '/js/main.js';
+      document.body.appendChild(s);
+    </script>
 
     <CookieBanner lang={lang} t={t} />
   </body>
