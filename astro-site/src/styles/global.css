@@ -1793,6 +1793,15 @@ body.reflective-space-exited {
   color: #0c1a3d;
 }
 
+.nav-light .btn-outline {
+  border-color: #0c1a3d;
+  color: #0c1a3d;
+}
+
+.nav-light .btn-outline:hover {
+  background: rgba(12, 26, 61, 0.1);
+}
+
 /* Pricing Header */
 .pricing-header {
   padding: 180px 142px 80px;
