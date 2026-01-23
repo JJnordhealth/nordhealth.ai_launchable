@@ -334,12 +334,20 @@ const heroImg = document.querySelector(".hero-img");
 const pathMatch = window.location.pathname.match(/^(\/[^\/]+)?\/nora\//);
 const basePath = pathMatch ? (pathMatch[1] || '') : '';
 
+// WebP images with PNG fallback for hero carousel
+const supportsWebP = (function() {
+  const canvas = document.createElement('canvas');
+  canvas.width = canvas.height = 1;
+  return canvas.toDataURL('image/webp').indexOf('image/webp') === 0;
+})();
+
+const ext = supportsWebP ? '.webp' : '.png';
 const images = [
-  basePath + "/images/Nora_hero_asset_1_General_Practice_FI.png",
-  basePath + "/images/Nora_hero_asset_1_Psychotherapists_FI.png",
-  basePath + "/images/Nora_hero_asset_1_Speech%20therapists_FI.png",
-  basePath + "/images/Nora_hero_asset_1_Physiotherapists_FI.png",
-  basePath + "/images/Nora_hero_asset_1_General_Practice_FI.png",
+  basePath + "/images/Nora_hero_asset_1_General_Practice_FI" + ext,
+  basePath + "/images/Nora_hero_asset_1_Psychotherapists_FI" + ext,
+  basePath + "/images/Nora_hero_asset_1_Speech%20therapists_FI" + ext,
+  basePath + "/images/Nora_hero_asset_1_Physiotherapists_FI" + ext,
+  basePath + "/images/Nora_hero_asset_1_General_Practice_FI" + ext,
 ];
 
 // Preload images for smoother transitions
