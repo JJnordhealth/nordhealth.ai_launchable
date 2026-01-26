@@ -1958,6 +1958,21 @@ body.reflective-space-exited {
   margin-bottom: 8px;
 }
 
+.price-discount {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #3559c7 0%, #5a7fd6 100%);
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.pricing-card-blue .price-discount {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .price-annual {
   font-size: 14px;
   font-weight: 400;
