@@ -654,16 +654,19 @@ body.reflective-space-exited {
 
 /* Hero Tab Content */
 .hero-tab-content {
-  display: grid;
+  position: relative;
   width: 100%;
   max-width: 1156px;
+  min-height: 220px;
   margin: 1.5rem auto 0;
   text-align: center;
 }
 
 .tab-content-item {
-  grid-area: 1 / 1;
-  align-self: start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -671,6 +674,7 @@ body.reflective-space-exited {
 }
 
 .tab-content-item.active {
+  position: absolute;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -1473,15 +1477,19 @@ body.reflective-space-exited {
     display: none;
   }
 
-  /* Hero tab content - grid stacking for dynamic height */
+  /* Hero tab content - use relative positioning for proper stacking */
   .hero-tab-content {
-    display: grid;
+    position: relative;
+    min-height: 240px;
     margin-top: 20px;
     padding: 0 12px;
   }
 
   .tab-content-item {
-    grid-area: 1 / 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 0 12px;
   }
 
@@ -1671,6 +1679,7 @@ body.reflective-space-exited {
   }
 
   .hero-tab-content {
+    min-height: 220px;
     margin-top: 16px;
     padding: 0 8px;
   }
