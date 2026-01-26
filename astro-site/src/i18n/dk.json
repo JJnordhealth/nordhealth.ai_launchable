@@ -55,7 +55,7 @@
     "description": "Vi automatiserer ikke bare journalnoter. Vi beskytter rummet mellem konsultation og journalføring. Dokumentation i høj kvalitet, struktureret og færdiggjort af dig. Hver funktion, vi tilføjer, er udviklet med dit input, bygget af Nordhealth og betroet af mere end 30.000 sundhedsprofessionelle i Norden."
   },
   "trialBanner": {
-    "text": "Lanceringstilbud: kun €49 per måned – tilgængeligt i begrænset tid"
+    "text": "Lanceringstilbud: kun 399 kr per måned – tilgængeligt i begrænset tid"
   },
   "features": {
     "title": "Funktioner",
@@ -112,11 +112,11 @@
     "subtitle": "Vælg den plan, der passer bedst til dit arbejde – hvad end du er enkeltpraktiserende eller sidder i et team.",
     "monthly": {
       "badge": "Månedlig",
-      "priceOld": "",
-      "price": "599 kr",
+      "priceOld": "Tidligere 599 kr / md",
+      "price": "399 kr",
       "period": "/ md (ekskl. moms)",
       "trial": "14 dages gratis prøveperiode",
-      "validity": "",
+      "validity": "gyldig til 28.2.2026",
       "cta": "Prøv gratis"
     },
     "annual": {
