@@ -337,7 +337,7 @@ const lang = pathMatch ? pathMatch[2] : 'en';
 
 // Language-specific hero images (NO, DK, EN have their own, FI uses FI)
 const imgSuffix = lang === 'no' ? 'NO' : lang === 'dk' ? 'DK' : lang === 'en' ? 'EN' : 'FI';
-const usesSpaceInGeneral = lang === 'no' || lang === 'dk'; // NO/DK use "General Practice", EN/FI use "General_Practice"
+const usesSpaceInGeneral = lang === 'dk'; // Only DK uses "General Practice" with space, others use underscore
 const usesSingularTherapist = lang !== 'fi'; // NO/DK/EN use "therapist", FI uses "therapists"
 const usesAllTherapistsLast = lang !== 'fi'; // NO/DK/EN use "All Therapists" for last tab, FI uses "General_Practice"
 const images = [
