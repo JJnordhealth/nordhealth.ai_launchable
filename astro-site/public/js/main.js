@@ -330,16 +330,22 @@ const tabs = document.querySelectorAll(".role-tab");
 const indicator = document.querySelector(".active-indicator");
 const heroImg = document.querySelector(".hero-img");
 
-// Detect base path from current URL (handles /nordhealth.ai_launchable/ prefix)
-const pathMatch = window.location.pathname.match(/^(\/[^\/]+)?\/nora\//);
+// Detect base path and language from current URL
+const pathMatch = window.location.pathname.match(/^(\/[^\/]+)?\/nora\/([a-z]{2})\//);
 const basePath = pathMatch ? (pathMatch[1] || '') : '';
+const lang = pathMatch ? pathMatch[2] : 'en';
 
+// Language-specific hero images (NO, DK, EN have their own, FI uses FI)
+const imgSuffix = lang === 'no' ? 'NO' : lang === 'dk' ? 'DK' : lang === 'en' ? 'EN' : 'FI';
+const usesSpaceInGeneral = lang === 'no' || lang === 'dk'; // NO/DK use "General Practice", EN/FI use "General_Practice"
+const usesSingularTherapist = lang !== 'fi'; // NO/DK/EN use "therapist", FI uses "therapists"
+const usesAllTherapistsLast = lang !== 'fi'; // NO/DK/EN use "All Therapists" for last tab, FI uses "General_Practice"
 const images = [
-  basePath + "/images/Nora_hero_asset_1_General_Practice_FI.png",
-  basePath + "/images/Nora_hero_asset_1_Psychotherapists_FI.png",
-  basePath + "/images/Nora_hero_asset_1_Speech%20therapists_FI.png",
-  basePath + "/images/Nora_hero_asset_1_Physiotherapists_FI.png",
-  basePath + "/images/Nora_hero_asset_1_General_Practice_FI.png",
+  basePath + "/images/Nora_hero_asset_1_General" + (usesSpaceInGeneral ? '%20Practice' : '_Practice') + "_" + imgSuffix + ".png",
+  basePath + "/images/Nora_hero_asset_1_Psychotherapists_" + imgSuffix + ".png",
+  basePath + "/images/Nora_hero_asset_1_Speech%20therapist" + (usesSingularTherapist ? '' : 's') + "_" + imgSuffix + ".png",
+  basePath + "/images/Nora_hero_asset_1_Physiotherapists_" + imgSuffix + ".png",
+  basePath + "/images/Nora_hero_asset_1_" + (usesAllTherapistsLast ? 'All%20Therapists' : 'General_Practice') + "_" + imgSuffix + ".png",
 ];
 
 // Preload images for smoother transitions

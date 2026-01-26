@@ -18,8 +18,9 @@ const pricingSchema = {
     {
       "@type": "Offer",
       "name": "Månedligt abonnement",
-      "price": "599",
+      "price": "399",
       "priceCurrency": "DKK",
+      "priceValidUntil": "2026-02-28",
       "availability": "https://schema.org/InStock",
       "url": "https://system.nordhealth.ai/signup"
     },
@@ -36,8 +37,8 @@ const pricingSchema = {
 ---
 
 <BaseLayout
-  title="Priser - Nordhealth Nora | AI-drevet dokumentation fra €49/måned"
-  description="Nordhealth Nora priser: lanceringstilbud kun €49/måned. Vælg pakken der passer til dig - til praktiserende læger, psykoterapeuter og fysioterapeuter. Prøv gratis."
+  title="Priser - Nordhealth Nora | AI-drevet dokumentation fra 399 kr/måned"
+  description="Nordhealth Nora priser: lanceringstilbud kun 399 kr/måned. Vælg pakken der passer til dig - til praktiserende læger, psykoterapeuter og fysioterapeuter. Prøv gratis."
   lang={lang}
   t={t}
   canonicalPath="pricing"
@@ -79,7 +80,7 @@ const pricingSchema = {
           <span class="pricing-card-badge">{t.pricing.annual.badge}</span>
         </div>
         <div class="pricing-card-price">
-          {t.pricing.annual.priceOld && <span class="price-old">{t.pricing.annual.priceOld}</span>}
+          {t.pricing.annual.priceOld && <span class="price-discount">{t.pricing.annual.priceOld}</span>}
           <span class="price-amount">{t.pricing.annual.price}</span>
           <span class="price-period">{t.pricing.annual.period}</span>
           <span class="price-annual">{t.pricing.annual.annualTotal}</span>

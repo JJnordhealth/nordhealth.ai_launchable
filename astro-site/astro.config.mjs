@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://nordhealth.ai',
-  base: '/nordhealth.ai_launchable',
+  base: '',
   output: 'static',
   trailingSlash: 'always',
   build: {

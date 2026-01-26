@@ -9,9 +9,9 @@
     "tryFree": "Prøv gratis"
   },
   "hero": {
-    "eyebrow": "Udviklet af Nordhealth – betroet af mere end 30.000 sundhedsprofessionelle i Norden",
-    "heading": "AI-dokumentation, der værner om dit kliniske skøn.",
-    "description": "Personlige kliniske notater af høj kvalitet på få sekunder – skabt til at beskytte dit kliniske skøn.",
+    "eyebrow": "Udviklet af Nordhealth - valgt af mere end 30.000 sundhedsprofessionelle i Norden",
+    "heading": "AI-dokumentation, der bevarer din kliniske vurdering",
+    "description": "Højkvalitets, personaliserede kliniske notater på få sekunder - udviklet til at understøtte og beskytte din kliniske faglighed.",
     "cta": "Prøv gratis"
   },
   "trust": {
@@ -23,61 +23,61 @@
   },
   "tabs": {
     "generalPractice": "Almen praksis",
-    "psychotherapy": "Psykoterapi",
-    "speechTherapy": "Logopædi",
-    "physiotherapy": "Fysioterapi",
+    "psychotherapy": "Psykologer og psykoterapeuter",
+    "speechTherapy": "Logopæder",
+    "physiotherapy": "Fysioterapeuter",
     "allSpecialties": "Alle specialer"
   },
   "tabContent": {
     "generalPractice": {
       "title": "Omsorg er menneskelig. Administration behøver ikke være det.",
-      "text": "Nordhealth Nora automatiserer din dokumentation med klinisk præcision og kvalitet og indfanger detaljer til at styrke din faglige vurdering. Ved at generere alle nødvendige dokumenter til den alment praktiserende – herunder journalnotater, henvisninger og lægeerklæringer – ud fra blot én konsultation reducerer Nora din administrative byrde i løbet af arbejdsdagen markant. Du bevarer fuld kontrol, så hvert eneste notat forbliver fuldkommen dit eget."
+      "text": "Nordhealth Nora automatiserer din dokumentation med klinisk præcision og høj kvalitet og indfanger de detaljer, der styrker din faglige vurdering.\n\nPå baggrund af én enkelt konsultation genererer Nora automatisk alle centrale dokumenter, herunder journalnotater, henvisninger og lægeerklæringer, og reducerer dermed din administrative byrde markant i løbet af arbejdsdagen.\n\nDer laves ingen automatisk diagnosticering, og du bevarer fuld ejerskab og kontrol over al dokumentation."
     },
     "psychotherapy": {
       "title": "Dokumentation uden at miste terapeutisk dybde.",
-      "text": "De fleste AI-assistenter kan skrive noter, men Nordhealth Nora er udviklet specifikt til at understøtte dit kliniske skøn i det terapeutiske arbejde. Nora strukturerer kliniske notater i høj kvalitet – i din egen stil – så du kan være fuldt til stede med klienten. Ved at fjerne repetitiv administration og give dig et privat rum til dine noter hjælper Nora dig med at bevare overblik og prioritere mental forberedelse mellem sessioner."
+      "text": "De fleste AI-assistenter kan skrive noter. Nordhealth Nora er udviklet specifikt til at styrke din faglige vurdering i det terapeutiske arbejde.\n\nNora opretter og strukturerer kliniske notater i din egen stil og af høj kvalitet, så du kan fokusere fuldt ud på klienten - uden tastatur og afbrydelser.\n\nMindre administration og et trygt rum til dine noter giver bedre overblik og mental ro mellem sessioner."
     },
     "speechTherapy": {
-      "title": "Præcision i hvert notat – plads til hver klients historie.",
-      "text": "Tale- og sprogterapi kræver en nøjagtighed, som traditionel dokumentation ofte ikke fanger. Nordhealth Nora indsamler de komplekse detaljer fra hver session og gør det muligt at følge sproglig udvikling og kognitive milepæle med høj præcision. Nora strukturerer automatisk komplekse observationer i professionelle notater, der passer til din stil, så dine journaler altid er udførlige og konsekvente. Brug din tid på klienters udvikling – og lad de vigtige detaljer blive dokumenteret automatisk."
+      "title": "Præcision i hvert notat - plads til hver klients historie.",
+      "text": "Tale- og sprogterapi kræver en nøjagtighed, som traditionel dokumentation ofte ikke fanger. Nordhealth Nora indfanger alle vigtige detaljer fra hver session og gør det nemt at følge både sproglig og kognitiv udvikling.\n\nNora strukturerer automatisk komplekse observationer i professionelle udkast, der afspejler din personlige stil og sikrer ensartet og grundig journalføring.\n\nBrug din tid på klienters udvikling - og lad de vigtige detaljer blive dokumenteret automatisk."
     },
     "physiotherapy": {
-      "title": "Fokus på klienten. Nordhealth Nora klarer resten.",
-      "text": "Nora hjælper fysioterapeuter med at indfange præcise, strukturerede notater på få sekunder – selv i en travl, hands-on hverdag. Med håndfri diktering under behandlingen kan du dokumentere undersøgelser, tests og øvelser, mens de udføres, så dine mål og behandlingsplaner er tydeligt struktureret, så snart behandlingen slutter. Fokuser fuldt ud på behandling frem for tastning – og afslut dagen uden dokumentationsefterslæb."
+      "title": "Fokuser på klienten. Nordhealth Nora klarer resten.",
+      "text": "Nora hjælper fysioterapeuter med at indfange præcise, strukturerede notater på få sekunder - selv i en travl, hands-on hverdag. Med håndfri diktering under behandlingen kan du dokumentere undersøgelser, tests og øvelser, mens de udføres, så dine mål og behandlingsplaner er tydeligt struktureret, så snart behandlingen slutter. Fokuser fuldt ud på behandling frem for tastning - og afslut dagen uden dokumentations­efterslæb."
     },
     "allSpecialties": {
       "title": "En klinisk motor til alle specialer.",
-      "text": "Nora er bygget til at understøtte hele spektret af klinisk arbejde. Uanset om du bruger SOAP, DAP eller egne skabeloner, tilpasser vores AI sig dit faglige sprog og terminologi – så dit professionelle skøn altid afspejles, uanset dit speciale."
+      "text": "Nora er bygget til at understøtte alle behandlingsformer og dokumentationsmetoder. Uanset om du arbejder med SOAP, DAP eller bruger egne skabeloner, tilpasser AI'en sig dit faglige sprog og din terminologi og sikrer, at din kliniske vurdering konsekvent kommer til udtryk på tværs af specialer."
     }
   },
   "about": {
     "title": "Vi ændrer måden, AI<br />understøtter klinisk arbejde på.",
-    "description": "Vi automatiserer ikke bare journalnoter. Vi beskytter rummet mellem konsultation og journalføring. Dokumentation i høj kvalitet, struktureret og færdiggjort af dig. Hver funktion, vi tilføjer, er udviklet med dit input, bygget af Nordhealth og betroet af mere end 30.000 sundhedsprofessionelle i Norden."
+    "description": "Vi automatiserer ikke blot notetagning - vi sikrer kvaliteten i overgangen fra konsultation til journalføring.\n\nStruktureret dokumentation i høj kvalitet - godkendt og færdiggjort af dig.\n\nUdviklet sammen med behandlere. Bygget af Nordhealth. Valgt af +30.000 sundhedsprofessionelle i Norden."
   },
   "trialBanner": {
-    "text": "Lanceringstilbud: kun €49 per måned – tilgængeligt i begrænset tid"
+    "text": "Lanceringstilbud: Kun 399 kr per måned – tilgængeligt i begrænset tid"
   },
   "features": {
     "title": "Funktioner",
     "gdpr": {
-      "title": "GDPR-klar & EU-hostet",
-      "description": "Alle data behandles på sikre europæiske servere. Rå lyd gemmes, genbruges eller beholdes aldrig, og ingen data bruges til AI-træning. Læs mere om vores sikkerhed her."
+      "title": "GDPR-compliant & EU-hostet",
+      "description": "Alle data behandles på sikre europæiske servere. Rå lyd gemmes, genbruges eller opbevares aldrig, og ingen data bruges til at træne eksterne AI-modeller.\nLæs mere om vores sikkerhed her."
     },
     "transcription": {
       "title": "Sessionsudskrift",
-      "description": "Indfang hele samtalen og anden relevant kontekst. Nordhealth Nora omsætter det til tydelig tekst, som du kan bruge direkte i journaler og dokumenter – altid GDPR-sikker."
+      "description": "Indfang hele samtalen og anden relevant kontekst, du tilføjer. Nordhealth Nora omsætter det til tydelig tekst, som du kan bruge direkte i journaler og dokumenter - altid gennemgået og godkendt af dig, før det gemmes, og sikkert håndteret."
     },
     "dictation": {
       "title": "Live diktering",
       "description": "Tal naturligt under eller efter sessionen. Nora omdanner dine ord til klar, præcis tekst direkte i de rette felter – uanset om du skriver journalnotat, medicinsk dokument eller interne noter."
     },
     "askNora": {
-      "title": "Få Noras hjælp til at forme dine journalnotater",
+      "title": "Få Nora til at udforme dine journalnotater",
       "description": "Bed Nora gøre dem kortere, længere, klarere eller mere i din egen stemme. Du kan også få lavet helt nye dokumenter ud fra sessionen, som altid vil gennemses og godkendes af dig, før de gemmes."
     },
     "privateNotes": {
       "title": "Dine noter",
-      "description": "Et privat rum, adskilt fra den officielle kliniske journal, til dine egne overvejelser og kontekst. Giver dig mulighed for frit at bearbejde fornemmelser og observationer mellem sessioner."
+      "description": "Et privat rum, adskilt fra den officielle klientjournal, til dine egne noter og baggrundsoplysninger. Det giver dig mulighed for frit at bearbejde kliniske observationer, faglige overvejelser og refleksioner mellem konsultationer."
     }
   },
   "footer": {
@@ -89,7 +89,7 @@
       },
       "filesAdded": {
         "value": "8000+",
-        "label": "Filer tilføjet ugentligt til private notater"
+        "label": "Filer tilføjet ugentligt til private noter"
       },
       "noteQuality": {
         "value": "Kvaliteten af notatet",
@@ -112,11 +112,11 @@
     "subtitle": "Vælg den plan, der passer bedst til dit arbejde – hvad end du er enkeltpraktiserende eller sidder i et team.",
     "monthly": {
       "badge": "Månedlig",
-      "priceOld": "",
-      "price": "599 kr",
+      "priceOld": "Tidligere 599 kr / md",
+      "price": "399 kr",
       "period": "/ md (ekskl. moms)",
       "trial": "14 dages gratis prøveperiode",
-      "validity": "",
+      "validity": "gyldig til 28.2.2026",
       "cta": "Prøv gratis"
     },
     "annual": {
@@ -209,6 +209,6 @@
         "optOut": "Du kan forhindre Google Analytics-dataindsamling ved at installere Google Analytics Opt-out-browserudvidelsen."
       }
     },
-    "contact": "Spørgsmål om privatliv? Kontakt os"
+    "contact": "Spørgsmål om privatliv? Kontakt os på <a href=\"mailto:support@nordhealth.ai\">support@nordhealth.ai</a>"
   }
 }
