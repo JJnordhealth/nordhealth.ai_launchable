@@ -209,6 +209,6 @@
         "optOut": "Voit estää Google Analyticsin tiedonkeruun asentamalla Google Analyticsin opt-out-selainlaajennuksen."
       }
     },
-    "contact": "Kysymyksiä tietosuojasta? Ota yhteyttä"
+    "contact": "Kysymyksiä tietosuojasta? Ota yhteyttä: <a href=\"mailto:support@nordhealth.ai\">support@nordhealth.ai</a>"
   }
 }

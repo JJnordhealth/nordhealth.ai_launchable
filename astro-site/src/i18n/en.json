@@ -209,6 +209,6 @@
         "optOut": "You can prevent Google Analytics data collection by installing the Google Analytics Opt-out browser extension."
       }
     },
-    "contact": "Questions about privacy? Contact us"
+    "contact": "Questions about privacy? Contact us at <a href=\"mailto:support@nordhealth.ai\">support@nordhealth.ai</a>"
   }
 }
