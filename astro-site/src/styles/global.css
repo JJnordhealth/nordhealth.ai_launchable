@@ -876,37 +876,6 @@ body.reflective-space-exited {
   opacity: 0.9;
 }
 
-.feature-card-clickable.active {
-  transform: translateY(-4px);
-  position: relative;
-}
-
-.feature-card-clickable.active::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 3px;
-  /* Solid color per Figma - no gradient */
-  background-color: #3559c7;
-  border-radius: 2px;
-  animation: slideIn 0.3s ease;
-}
-
-@keyframes slideIn {
-  from {
-    width: 0;
-    opacity: 0;
-  }
-
-  to {
-    width: 40px;
-    opacity: 1;
-  }
-}
-
 .feature-image {
   width: 100%;
   aspect-ratio: 330 / 440;
@@ -914,13 +883,6 @@ body.reflective-space-exited {
   transition: opacity 0.3s ease;
 }
 
-.feature-card-clickable.active .feature-image {
-  opacity: 1;
-}
-
-.feature-card-clickable:not(.active) .feature-image {
-  opacity: 0.7;
-}
 
 .feature-content {
   display: flex;
@@ -933,11 +895,6 @@ body.reflective-space-exited {
 .feature-title {
   color: #181d27;
   margin: 0;
-  transition: color 0.3s ease;
-}
-
-.feature-card-clickable.active .feature-title {
-  color: #3559c7;
 }
 
 .feature-description {
