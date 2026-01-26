@@ -35,6 +35,8 @@ jobs:
       - name: Build Astro site
         working-directory: astro-site
         run: npm run build
+        env:
+          ASTRO_BASE: /nordhealth.ai_launchable
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
