@@ -1478,7 +1478,7 @@ body.reflective-space-exited {
   /* Hero tab content - use relative positioning for proper stacking */
   .hero-tab-content {
     position: relative;
-    min-height: 180px;
+    min-height: 420px;
     margin-top: 20px;
     padding: 0 12px;
   }
@@ -1677,7 +1677,7 @@ body.reflective-space-exited {
   }
 
   .hero-tab-content {
-    min-height: 160px;
+    min-height: 480px;
     margin-top: 16px;
     padding: 0 8px;
   }
