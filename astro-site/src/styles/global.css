@@ -75,9 +75,11 @@ body.reflective-space-exited {
 .hero-heading {
   font-size: 72px;
   font-weight: 600;
-  line-height: 1;
-  /* 100% = 1.0 */
+  line-height: 1.15;
+  /* Increased to prevent clipping of diacritics (ä, ö, å, ø) and descenders (g, j, y, p, q) */
   letter-spacing: 0;
+  padding-bottom: 0.1em;
+  /* Extra space for descenders with gradient text */
   /* Gradient text matching Figma exactly: 131.812deg angle */
   background: linear-gradient(
     131.81246364377185deg,
@@ -105,8 +107,8 @@ body.reflective-space-exited {
 .stats-title {
   font-size: 36px;
   font-weight: 600;
-  line-height: 1;
-  /* 100% = 1.0 */
+  line-height: 1.1;
+  /* Slightly increased from 1.0 to prevent clipping of diacritics */
   letter-spacing: 0;
 }
 
@@ -116,8 +118,8 @@ body.reflective-space-exited {
 .reflective-space-title {
   font-size: 28px;
   font-weight: 600;
-  line-height: 1;
-  /* 100% = 1.0 */
+  line-height: 1.1;
+  /* Slightly increased from 1.0 to prevent clipping of diacritics */
   letter-spacing: 0;
 }
 
