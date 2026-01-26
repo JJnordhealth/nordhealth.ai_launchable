@@ -209,6 +209,6 @@
         "optOut": "Du kan forhindre Google Analytics-dataindsamling ved at installere Google Analytics Opt-out-browserudvidelsen."
       }
     },
-    "contact": "Spørgsmål om privatliv? Kontakt os"
+    "contact": "Kontakt os på <a href=\"mailto:support@nordhealth.ai\">support@nordhealth.ai</a>"
   }
 }
