@@ -654,19 +654,16 @@ body.reflective-space-exited {
 
 /* Hero Tab Content */
 .hero-tab-content {
-  position: relative;
+  display: grid;
   width: 100%;
   max-width: 1156px;
-  min-height: 220px;
   margin: 1.5rem auto 0;
   text-align: center;
 }
 
 .tab-content-item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  grid-area: 1 / 1;
+  align-self: start;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -674,7 +671,6 @@ body.reflective-space-exited {
 }
 
 .tab-content-item.active {
-  position: absolute;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -1477,19 +1473,15 @@ body.reflective-space-exited {
     display: none;
   }
 
-  /* Hero tab content - use relative positioning for proper stacking */
+  /* Hero tab content - grid stacking for dynamic height */
   .hero-tab-content {
-    position: relative;
-    min-height: 240px;
+    display: grid;
     margin-top: 20px;
     padding: 0 12px;
   }
 
   .tab-content-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    grid-area: 1 / 1;
     padding: 0 12px;
   }
 
@@ -1679,7 +1671,6 @@ body.reflective-space-exited {
   }
 
   .hero-tab-content {
-    min-height: 220px;
     margin-top: 16px;
     padding: 0 8px;
   }
