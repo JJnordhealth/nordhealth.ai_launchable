@@ -337,15 +337,14 @@ const lang = pathMatch ? pathMatch[2] : 'en';
 
 // Language-specific hero images (NO, DK, EN have their own, FI uses FI)
 const imgSuffix = lang === 'no' ? 'NO' : lang === 'dk' ? 'DK' : lang === 'en' ? 'EN' : 'FI';
-const usesSpaceInGeneral = lang === 'dk'; // Only DK uses "General Practice" with space, others use underscore
 const usesSingularTherapist = lang !== 'fi'; // NO/DK/EN use "therapist", FI uses "therapists"
 const usesAllTherapistsLast = lang !== 'fi'; // NO/DK/EN use "All Therapists" for last tab, FI uses "General_Practice"
 const images = [
-  basePath + "/images/Nora_hero_asset_1_General" + (usesSpaceInGeneral ? '%20Practice' : '_Practice') + "_" + imgSuffix + ".png",
+  basePath + "/images/Nora_hero_asset_1_General_Practice_" + imgSuffix + ".png",
   basePath + "/images/Nora_hero_asset_1_Psychotherapists_" + imgSuffix + ".png",
-  basePath + "/images/Nora_hero_asset_1_Speech%20therapist" + (usesSingularTherapist ? '' : 's') + "_" + imgSuffix + ".png",
+  basePath + "/images/Nora_hero_asset_1_Speech_therapist" + (usesSingularTherapist ? '' : 's') + "_" + imgSuffix + ".png",
   basePath + "/images/Nora_hero_asset_1_Physiotherapists_" + imgSuffix + ".png",
-  basePath + "/images/Nora_hero_asset_1_" + (usesAllTherapistsLast ? 'All%20Therapists' : 'General_Practice') + "_" + imgSuffix + ".png",
+  basePath + "/images/Nora_hero_asset_1_" + (usesAllTherapistsLast ? 'All_Therapists' : 'General_Practice') + "_" + imgSuffix + ".png",
 ];
 
 // Preload images for smoother transitions

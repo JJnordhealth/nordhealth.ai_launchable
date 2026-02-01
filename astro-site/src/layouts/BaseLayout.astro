@@ -52,7 +52,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content="https://nordhealth.ai/nora/fi/assets/images/nora-og-image.png" />
 
-    <!-- Google Analytics - loaded conditionally after cookie consent -->
+    <!-- Analytics - loaded conditionally after cookie consent -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -68,8 +68,27 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         gtag('config', 'G-C4CCK9KL36');
       }
 
-      if (localStorage.getItem('cookieConsent') === 'accepted') {
+      function loadHubSpot() {
+        if (document.getElementById('hs-script-loader')) return;
+        var script = document.createElement('script');
+        script.id = 'hs-script-loader';
+        script.async = true;
+        script.defer = true;
+        script.src = '//js-eu1.hs-scripts.com/144062425.js';
+        document.head.appendChild(script);
+      }
+
+      function loadAnalytics() {
         loadGoogleAnalytics();
+        loadHubSpot();
+      }
+
+      try {
+        if (localStorage.getItem('cookieConsent') === 'accepted') {
+          loadAnalytics();
+        }
+      } catch (e) {
+        // localStorage blocked - analytics won't load until consent given
       }
     </script>
 
@@ -250,6 +269,39 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       var s = document.createElement('script');
       s.src = base + '/js/main.js';
       document.body.appendChild(s);
+    </script>
+
+    <!-- i18n Dynamic Override Script -->
+    <script is:inline define:vars={{ lang }}>
+      (function() {
+        // Fetch and apply i18n overrides from CMS
+        fetch('/api/i18n/' + lang)
+          .then(function(r) { return r.json(); })
+          .then(function(data) {
+            if (!data.overrides || !data.overrides.length) return;
+
+            // Build a map of overrides
+            var overrides = {};
+            data.overrides.forEach(function(o) {
+              overrides[o.key_path] = o.value;
+            });
+
+            // Find and update elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(function(el) {
+              var key = el.getAttribute('data-i18n');
+              if (overrides[key] !== undefined) {
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                  el.value = overrides[key];
+                } else {
+                  el.innerHTML = overrides[key];
+                }
+              }
+            });
+          })
+          .catch(function(err) {
+            // Silently fail - static content remains
+          });
+      })();
     </script>
 
     <CookieBanner lang={lang} t={t} />

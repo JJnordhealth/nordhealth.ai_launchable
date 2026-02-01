@@ -1,0 +1,33 @@
+---
+export const prerender = true;
+
+import { createHash } from 'crypto';
+import fs from 'fs';
+import path from 'path';
+
+// Compute SHA-256 of each i18n file at build time
+const i18nDir = path.join(process.cwd(), 'src/i18n');
+const languages = ['EN', 'FI', 'NO', 'DK'];
+
+const hashes = languages.map(lang => {
+  const filePath = path.join(i18nDir, `${lang.toLowerCase()}.json`);
+  const content = fs.readFileSync(filePath, 'utf-8');
+  const hash = createHash('sha256').update(content).digest('hex');
+  return `${lang}: ${hash}`;
+});
+---
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>i18n</title>
+    <style>
+      body { font-family: monospace; padding: 20px; background: #0c1a3d; color: #fff; }
+      pre { line-height: 1.8; }
+    </style>
+  </head>
+  <body>
+    <pre>{hashes.join('\n')}</pre>
+  </body>
+</html>

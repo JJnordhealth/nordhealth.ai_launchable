@@ -30,21 +30,25 @@ const { lang, t } = Astro.props;
     var acceptBtn = document.getElementById('cookieAccept');
     var declineBtn = document.getElementById('cookieDecline');
 
-    if (!localStorage.getItem('cookieConsent')) {
+    var hasConsent = false;
+    try {
+      hasConsent = localStorage.getItem('cookieConsent');
+    } catch (e) {}
+
+    if (!hasConsent) {
       setTimeout(function() {
         banner?.classList.add('visible');
       }, 500);
     }
 
     acceptBtn?.addEventListener('click', function() {
-      localStorage.setItem('cookieConsent', 'accepted');
+      try { localStorage.setItem('cookieConsent', 'accepted'); } catch (e) {}
       banner?.classList.remove('visible');
-      // @ts-ignore
-      if (typeof loadGoogleAnalytics === 'function') loadGoogleAnalytics();
+      if (typeof loadAnalytics === 'function') loadAnalytics();
     });
 
     declineBtn?.addEventListener('click', function() {
-      localStorage.setItem('cookieConsent', 'declined');
+      try { localStorage.setItem('cookieConsent', 'declined'); } catch (e) {}
       banner?.classList.remove('visible');
     });
   })();

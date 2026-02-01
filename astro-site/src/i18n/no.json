@@ -19,7 +19,7 @@
     "gdpr": "GDPR-kompatibel",
     "noAudio": "Ingen lyd lagres",
     "noTraining": "Pasientdata brukes ikke<br>til AI-opplæring",
-    "clinicallyApproved": "Klinisk godkjent"
+    "clinicallyApproved": "Klinisk kvalitetssikret"
   },
   "tabs": {
     "generalPractice": "Fastleger",
@@ -121,18 +121,18 @@
     },
     "annual": {
       "badge": "Årlig",
-      "priceOld": "20% rabatt",
-      "price": "1035 kr",
+      "priceOld": "Ordinær pris 1035 kr / mnd",
+      "price": "895 kr",
       "period": "/ mnd (ekskl. mva)",
-      "annualTotal": "årlig fakturering 12 420 kr",
+      "annualTotal": "årlig fakturering 10 740 kr",
       "trial": "14 dagers gratis prøveperiode",
       "validity": "gyldig til 28.2.2026",
       "cta": "Prøv gratis"
     },
     "multiUser": {
       "badge": "Flerbruker",
-      "price": "Fra 599 kr / bruker",
-      "info": "For 5+ brukere – kontakt oss for tilpasset pris",
+      "price": "For 5+ brukere",
+      "info": "Kontakt salg for pristilbud",
       "cta": "Kontakt salg"
     }
   },
@@ -205,7 +205,7 @@
       },
       "analytics": {
         "title": "Analyse og informasjonskapsler",
-        "content": "Vi bruker Google Analytics for å analysere nettstedstrafikk. Google Analytics samler inn anonyme data som antall besøkte sider, besøksvarighet og enhetstype som brukes. Dataene brukes til å forbedre tjenesten vår.",
+        "content": "Vi bruker Google Analytics og HubSpot for å analysere nettstedstrafikk. Google Analytics samler inn anonyme data som antall besøkte sider, besøksvarighet og enhetstype som brukes. Dataene brukes til å forbedre tjenesten vår.",
         "optOut": "Du kan forhindre Google Analytics-datainnsamling ved å installere Google Analytics Opt-out-nettleserutvidelsen."
       }
     },

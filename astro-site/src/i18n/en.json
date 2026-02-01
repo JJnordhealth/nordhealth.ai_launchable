@@ -19,7 +19,7 @@
     "gdpr": "GDPR-compliant",
     "noAudio": "No audio stored",
     "noTraining": "Patient data not used<br>for AI model training",
-    "clinicallyApproved": "Clinically approved"
+    "clinicallyApproved": "Clinician-reviewed"
   },
   "tabs": {
     "generalPractice": "General Practice",
@@ -205,7 +205,7 @@
       },
       "analytics": {
         "title": "Analytics and cookies",
-        "content": "We use Google Analytics to analyze website traffic. Google Analytics collects anonymous data such as the number of pages visited, visit duration, and device type used. The data is used to improve our service.",
+        "content": "We use Google Analytics and HubSpot to analyze website traffic. Google Analytics collects anonymous data such as the number of pages visited, visit duration, and device type used. The data is used to improve our service.",
         "optOut": "You can prevent Google Analytics data collection by installing the Google Analytics Opt-out browser extension."
       }
     },

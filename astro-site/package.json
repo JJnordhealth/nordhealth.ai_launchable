@@ -9,7 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^9.5.2",
     "@astrojs/sitemap": "^3.7.0",
-    "astro": "^5.16.15"
+    "astro": "^5.16.15",
+    "bcryptjs": "^3.0.3",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.18.0"
   }
 }

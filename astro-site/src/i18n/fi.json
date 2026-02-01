@@ -19,7 +19,7 @@
     "gdpr": "GDPR-yhteensopiva",
     "noAudio": "Ääntä ei tallenneta",
     "noTraining": "Potilastietoja ei käytetä<br>kielimallin kouluttamiseen",
-    "clinicallyApproved": "Kliinisesti hyväksytty"
+    "clinicallyApproved": "Ammattilaisen tarkistama"
   },
   "tabs": {
     "generalPractice": "Yleislääkäri",
@@ -205,7 +205,7 @@
       },
       "analytics": {
         "title": "Analytiikka ja evästeet",
-        "content": "Käytämme Google Analyticsia verkkosivuston liikenteen analysointiin. Google Analytics kerää anonyymiä dataa, kuten vierailtujen sivujen määrän, vierailun keston ja käytetyn laitetyypin. Tietoja käytetään palvelumme parantamiseen.",
+        "content": "Käytämme Google Analyticsia ja HubSpotia verkkosivuston liikenteen analysointiin. Google Analytics kerää anonyymiä dataa, kuten vierailtujen sivujen määrän, vierailun keston ja käytetyn laitetyypin. Tietoja käytetään palvelumme parantamiseen.",
         "optOut": "Voit estää Google Analyticsin tiedonkeruun asentamalla Google Analyticsin opt-out-selainlaajennuksen."
       }
     },

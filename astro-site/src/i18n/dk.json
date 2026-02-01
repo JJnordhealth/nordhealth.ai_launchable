@@ -19,7 +19,7 @@
     "gdpr": "GDPR-kompatibel",
     "noAudio": "Ingen lyd gemmes",
     "noTraining": "Patientdata bruges ikke<br>til AI-træning",
-    "clinicallyApproved": "Klinisk godkendt"
+    "clinicallyApproved": "Klinisk kvalitetssikret"
   },
   "tabs": {
     "generalPractice": "Almen praksis",
@@ -55,7 +55,7 @@
     "description": "Vi automatiserer ikke blot notetagning - vi sikrer kvaliteten i overgangen fra konsultation til journalføring.\n\nStruktureret dokumentation i høj kvalitet - godkendt og færdiggjort af dig.\n\nUdviklet sammen med behandlere. Bygget af Nordhealth. Valgt af +30.000 sundhedsprofessionelle i Norden."
   },
   "trialBanner": {
-    "text": "Lanceringstilbud: Kun 399 kr per måned – tilgængeligt i begrænset tid"
+    "text": "Lanceringstilbud: Fra kun 349 kr. per måned – tilgængeligt i begrænset tid"
   },
   "features": {
     "title": "Funktioner",
@@ -121,17 +121,17 @@
     },
     "annual": {
       "badge": "Årlig",
-      "priceOld": "17% rabat",
-      "price": "499 kr",
+      "priceOld": "Tidligere 499 kr / md",
+      "price": "349 kr",
       "period": "/ md (ekskl. moms)",
-      "annualTotal": "årlig fakturering 5.988 kr",
+      "annualTotal": "årlig fakturering 4.188 kr",
       "trial": "14 dages gratis prøveperiode",
-      "validity": "",
+      "validity": "gyldig til 28.2.2026",
       "cta": "Prøv gratis"
     },
     "multiUser": {
       "badge": "Flerbruger",
-      "price": "Fra 499 kr / bruger",
+      "price": "Fra 349 kr / bruger",
       "info": "For 5+ brugere – kontakt os for tilpasset pris",
       "cta": "Kontakt salg"
     }
@@ -205,7 +205,7 @@
       },
       "analytics": {
         "title": "Analyse og cookies",
-        "content": "Vi bruger Google Analytics til at analysere webstedstrafik. Google Analytics indsamler anonyme data såsom antal besøgte sider, besøgsvarighed og anvendt enhedstype. Dataene bruges til at forbedre vores service.",
+        "content": "Vi bruger Google Analytics og HubSpot til at analysere webstedstrafik. Google Analytics indsamler anonyme data såsom antal besøgte sider, besøgsvarighed og anvendt enhedstype. Dataene bruges til at forbedre vores service.",
         "optOut": "Du kan forhindre Google Analytics-dataindsamling ved at installere Google Analytics Opt-out-browserudvidelsen."
       }
     },
