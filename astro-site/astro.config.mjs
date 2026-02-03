@@ -1,7 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
-import node from '@astrojs/node';
 
 // Use env var for base path - allows GitHub Pages to set /nordhealth.ai_launchable
 const base = process.env.ASTRO_BASE || '';
@@ -10,10 +9,7 @@ const base = process.env.ASTRO_BASE || '';
 export default defineConfig({
   site: 'https://nordhealth.ai',
   base: base,
-  output: 'server',
-  adapter: node({
-    mode: 'standalone'
-  }),
+  output: 'static',
   trailingSlash: 'always',
   build: {
     format: 'directory'
