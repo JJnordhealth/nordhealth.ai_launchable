@@ -27,8 +27,10 @@ body {
     "Segoe UI",
     system-ui,
     sans-serif;
-  font-weight: 300;
+  font-weight: 400; /* Figma: Regular weight as base */
   line-height: 1.4;
+  /* Figma: ss03 for single-story g, ss06 for other alternates */
+  font-feature-settings: 'ss03' 1, 'ss06' 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Exact Figma value for body text */
@@ -134,17 +136,17 @@ body.reflective-space-exited {
 }
 
 /* Body Large (20px) */
-/* Figma: body/l - size: 20, weight: 300, lineHeight: 1.399999976158142, letterSpacing: 0 */
+/* Figma: Armin Grotesk Regular for dark text, UltraLight for gray text */
 .hero-description,
 .about-description {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
+  font-size: 20px;
+  font-weight: 400; /* Regular - adjust to 200 for gray text */
+  line-height: 30px;
   letter-spacing: 0;
 }
 
 /* Body Medium (16px) */
-/* Figma: body/m - size: 16, weight: 300, lineHeight: 1.399999976158142, letterSpacing: 0 */
+/* Figma: Armin Grotesk - UltraLight (200) for gray text, Regular (400) for dark */
 .hero-subtitle,
 .feature-description,
 .reflective-space-description,
@@ -152,9 +154,8 @@ body.reflective-space-exited {
 .footer-copyright,
 .footer-link {
   font-size: 16px;
-  font-weight: 300;
-  line-height: 1.399999976158142;
-  /* Exact Figma value */
+  font-weight: 200; /* UltraLight for descriptions */
+  line-height: 24px;
   letter-spacing: 0;
 }
 
@@ -199,18 +200,23 @@ body.reflective-space-exited {
 .nav {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1440px;
+  max-width: 100%;
   z-index: 100;
+  height: 106px;
   padding: 24px 142px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .nav-logo {
@@ -392,7 +398,35 @@ body.reflective-space-exited {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
+  line-height: 1.4;
   transition: opacity 0.2s ease;
+}
+
+.nav-link-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-dropdown-arrow {
+  width: 12px;
+  height: 12px;
+}
+
+.btn-demo {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
+
+.nav-light .nav-link {
+  color: #0C1A3D;
+}
+
+.nav-light .btn-demo {
+  color: #0C1A3D;
 }
 
 
@@ -415,7 +449,7 @@ body.reflective-space-exited {
 }
 
 .btn-primary {
-  background-color: #3559c7;
+  background-color: #0c1a3d;
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -423,6 +457,7 @@ body.reflective-space-exited {
   cursor: pointer;
   font-family: inherit;
   transition: opacity 0.2s ease;
+  box-shadow: -8px -8px 24px 0px rgba(236, 224, 188, 0.8), 4px 8px 24px 0px rgba(44, 75, 167, 0.5);
 }
 
 .btn-primary:hover {
@@ -2975,12 +3010,635 @@ body.reflective-space-exited {
 }
 
 /* ============================================
+   Solutions Page Styles
+   ============================================ */
+
+/* Solutions page - white base with gradient overlay for hero area */
+.solutions-page {
+  background: linear-gradient(180deg, #f3f5fc 0%, #93aeff 100%);
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Nav should be transparent on solutions page to show gradient */
+.solutions-page .nav,
+.solutions-page .nav-light {
+  background: transparent;
+}
+
+/* Solutions Hero - transparent to show page gradient */
+/* Figma: hero frame at x=93.5, y=106, width=1253, height=556 */
+.solutions-hero {
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  padding: 106px 0 0; /* nav height only, horizontal handled by container */
+}
+
+.solutions-hero-container {
+  width: 1253px;
+  max-width: calc(100% - 187px); /* 93.5px * 2 margins */
+  height: 556px;
+  margin: 0 auto;
+  padding-top: 70px; /* Figma: content y=70 */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Figma: text group at y=45 offset, width=693, with title height=240 and description at y=314 */
+.solutions-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 29px; /* Figma: description starts ~29px after title based on positions */
+  text-align: left;
+  width: 693px;
+  flex-shrink: 0;
+  padding-top: 45px; /* Figma: text group y=45.0625 within content */
+}
+
+/* Figma: title width=692.5, height=240 (3 lines at 80px) */
+.solutions-hero-title {
+  color: #3559C7;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 80px;
+  margin: 0;
+  max-width: 693px;
+  font-feature-settings: 'salt' 1, 'ss06' 1, 'dlig' 1, 'lnum' 1, 'pnum' 1;
+}
+
+/* Figma: supporting text width=493.5, height=60 (2 lines at 30px) */
+/* Figma: Armin Grotesk UltraLight for gray description text */
+.solutions-hero-description {
+  color: #535862;
+  font-size: 18px;
+  font-weight: 200; /* UltraLight */
+  line-height: 30px;
+  margin: 0;
+  max-width: 494px;
+}
+
+/* Figma: image group at x=705, width=548 */
+.solutions-hero-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 548px;
+  flex-shrink: 0;
+}
+
+.solutions-hero-image img {
+  width: 548px;
+  height: auto;
+}
+
+/* Solutions Support Section - Figma: Features section node 915:6600 */
+/* Figma: bg-white, py-80, gap-64 between content sections */
+.solutions-support {
+  background: #ffffff;
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.solutions-support-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Figma: w-1056px, gap-102px between heading and image */
+.solutions-support-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 102px;
+  max-width: 1056px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Figma: w-447px */
+.solutions-support-header {
+  flex: 0 0 447px;
+  max-width: 447px;
+}
+
+/* Figma: 36px, leading-44px, tracking -0.72px, color #181d27, Regular weight */
+.solutions-support-heading {
+  color: #181D27;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+  margin: 0 0 20px 0;
+}
+
+/* Figma: 20px, leading-30px, Normal weight, color #535862 */
+.solutions-support-description {
+  color: #535862;
+  font-size: 20px;
+  font-weight: 400; /* Normal */
+  line-height: 30px;
+  margin: 0;
+}
+
+.solutions-support-image {
+  flex: 1;
+  max-width: 618px;
+}
+
+.solutions-support-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Figma: max-w-[1280px] px-[32px] w-full */
+.solutions-support-cards-wrapper {
+  max-width: 1280px;
+  padding: 0 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Figma: flex flex-wrap gap-[24px] items-start w-full */
+.solutions-support-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Figma: flex-1, min-w-280px, h-232px, bg-#fafafa, p-24, rounded-8, gap-20 */
+.solutions-support-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 0;
+  min-width: 280px;
+  height: 232px;
+  padding: 24px;
+  background: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Clean blue icon with centered checkmark */
+.solutions-support-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  flex-shrink: 0;
+  background: #4361d9;
+  border-radius: 12px;
+}
+
+.solutions-support-card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Figma: flex flex-col gap-[8px] items-start w-full */
+.solutions-support-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Figma: font-['Armin_Grotesk:Regular'] leading-[30px] text-[#181d27] text-[20px] w-full */
+.solutions-support-card-content h3 {
+  color: #181D27;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  width: 100%;
+}
+
+/* Figma: font-['Armin_Grotesk:UltraLight'] leading-[24px] text-[#535862] text-[16px] w-full */
+.solutions-support-card-content p {
+  color: #535862;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  margin: 0;
+  width: 100%;
+}
+
+/* Figma: opacity-0 for hidden placeholder card */
+.solutions-support-card-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Figma: flex flex-col gap-[20px] items-center w-full */
+.solutions-support-cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+/* Solutions Trust */
+.solutions-trust {
+  background: transparent;
+  padding: 99px 142px 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.solutions-trust-container {
+  max-width: 1056px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.solutions-trust-content {
+  text-align: center;
+  max-width: 684px;
+}
+
+.solutions-trust-title {
+  color: #181D27;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0 0 16px 0;
+}
+
+.solutions-trust-description {
+  color: #0c1a3d;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.solutions-trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+}
+
+.solutions-trust-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: #6b7a99;
+}
+
+.solutions-trust-badge svg {
+  width: 24px;
+  height: 24px;
+}
+
+.solutions-trust-badge span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 125px;
+  color: #6b7a99;
+}
+
+/* Solutions CTA */
+.solutions-cta {
+  background: linear-gradient(100.66deg, #ffffff 1.89%, #f3f5fc 100.66%);
+  min-height: 273px;
+  display: flex;
+  align-items: center;
+  padding: 40px 142px;
+  position: relative;
+  z-index: 1;
+}
+
+.solutions-cta-container {
+  max-width: 1056px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.solutions-cta-title {
+  color: #0c1a3d;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.solutions-cta-title strong {
+  font-weight: 600;
+  display: block;
+}
+
+.solutions-cta-button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 18px 40px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: -8px -8px 24px 0px rgba(236, 224, 188, 0.8), 4px 8px 24px 0px rgba(44, 75, 167, 0.5);
+}
+
+/* Solutions Testimonial */
+.solutions-testimonial {
+  background: transparent;
+  padding: 80px 142px;
+  position: relative;
+  z-index: 1;
+}
+
+.solutions-testimonial-container {
+  max-width: 684px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.solutions-testimonial-title {
+  color: #181D27;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+}
+
+/* Figma: 40px text with 40px line-height (1:1 ratio), SemiBold */
+.solutions-testimonial-quote {
+  color: #0c1a3d;
+  font-size: 40px;
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+  line-height: 40px;
+  margin: 0;
+}
+
+/* Solutions Page Tablet Styles */
+@media (max-width: 1024px) {
+  .solutions-page::before {
+    height: 900px;
+  }
+
+  .solutions-hero {
+    padding: 140px 48px 60px;
+  }
+
+  .solutions-hero-container {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .solutions-hero-content {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .solutions-hero-image img {
+    max-width: 400px;
+  }
+
+  .solutions-hero-title {
+    font-size: 48px;
+  }
+
+  .solutions-support {
+    padding: 60px 48px;
+  }
+
+  .solutions-support-container {
+    max-width: 100%;
+  }
+
+  .solutions-support-top {
+    gap: 48px;
+  }
+
+  .solutions-support-header {
+    flex: 0 0 340px;
+    max-width: 340px;
+  }
+
+  .solutions-support-heading {
+    font-size: 24px;
+  }
+
+  .solutions-support-description {
+    font-size: 15px;
+  }
+
+  .solutions-support-image {
+    flex: 1;
+    max-width: none;
+  }
+
+  .solutions-support-image img {
+    max-width: 100%;
+  }
+
+  .solutions-support-card {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 260px;
+  }
+
+  .solutions-trust {
+    padding: 60px 48px;
+  }
+
+  .solutions-trust-badges {
+    gap: 32px;
+  }
+
+  .solutions-cta {
+    padding: 48px 48px;
+  }
+
+  .solutions-cta-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .solutions-cta-title {
+    font-size: 24px;
+  }
+
+  .solutions-testimonial {
+    padding: 60px 48px;
+  }
+}
+
+/* Solutions Page Mobile Styles */
+@media (max-width: 768px) {
+  .solutions-page::before {
+    height: 700px;
+  }
+
+  .solutions-hero {
+    padding: 120px 24px 48px;
+  }
+
+  .solutions-hero-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .solutions-hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .solutions-hero-image img {
+    max-width: 300px;
+  }
+
+  .solutions-hero-title {
+    font-size: 36px;
+  }
+
+  .solutions-hero-description {
+    font-size: 16px;
+  }
+
+  .solutions-support {
+    padding: 48px 24px;
+  }
+
+  .solutions-support-container {
+    gap: 32px;
+  }
+
+  .solutions-support-top {
+    gap: 24px;
+  }
+
+  .solutions-support-heading {
+    font-size: 22px;
+  }
+
+  .solutions-support-description {
+    font-size: 14px;
+  }
+
+  .solutions-support-image img {
+    max-width: 100%;
+  }
+
+  .solutions-support-cards {
+    gap: 16px;
+  }
+
+  .solutions-support-card {
+    flex: 1 1 100%;
+    min-width: 100%;
+    padding: 16px;
+  }
+
+  .solutions-support-card-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .solutions-support-card-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .solutions-support-card-content h3 {
+    font-size: 14px;
+  }
+
+  .solutions-support-card-content p {
+    font-size: 13px;
+  }
+
+  .solutions-trust {
+    padding: 48px 24px;
+  }
+
+  .solutions-trust-title {
+    font-size: 28px;
+  }
+
+  .solutions-trust-description {
+    font-size: 16px;
+  }
+
+  .solutions-trust-badges {
+    gap: 24px;
+  }
+
+  .solutions-trust-badge span {
+    font-size: 13px;
+  }
+
+  .solutions-cta {
+    padding: 40px 24px;
+  }
+
+  .solutions-cta-title {
+    font-size: 22px;
+  }
+
+  .solutions-cta-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .solutions-testimonial {
+    padding: 48px 24px;
+  }
+
+  .solutions-testimonial-title {
+    font-size: 16px;
+  }
+
+  .solutions-testimonial-quote {
+    font-size: 24px;
+  }
+}
+
+/* ============================================
    Nora Footer - Responsive Styles
    ============================================ */
 
 .nora-footer {
-  background-color: #0c1a3d;
-  padding: 96px 142px 48px;
+  background: linear-gradient(180deg, #0c1a3d 0%, #09142f 100%);
+  padding: 96px 142px;
   min-height: auto;
 }
 
@@ -2990,6 +3648,7 @@ body.reflective-space-exited {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 40px;
 }
 
 .nora-footer-stats {
@@ -3288,579 +3947,5 @@ body.reflective-space-exited {
     padding: 12px 24px;
     flex: 1;
     max-width: 160px;
-  }
-}
-/* ============================================
-   Solutions Page Styles
-   ============================================ */
-
-/* Solutions page - white base with gradient overlay for hero area */
-.solutions-page {
-  background: #ffffff;
-  position: relative;
-}
-
-/* Gradient overlay that covers nav + hero area */
-.solutions-page::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 800px;
-  background: linear-gradient(
-    180deg,
-    #f3f5fc 0%,
-    #edf1fb 40%,
-    #f8f9fd 70%,
-    #ffffff 100%
-  );
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* Nav should be transparent on solutions page to show gradient */
-.solutions-page .nav,
-.solutions-page .nav-light {
-  background: transparent;
-}
-
-/* Solutions Hero - transparent to show page gradient */
-.solutions-hero {
-  background: transparent;
-  position: relative;
-  z-index: 1;
-  padding: 140px 142px 64px;
-}
-
-.solutions-hero-container {
-  max-width: 1156px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 64px;
-}
-
-.solutions-hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  text-align: left;
-  max-width: 500px;
-  flex-shrink: 0;
-}
-
-.solutions-hero-title {
-  color: #3559C7;
-  font-size: 56px;
-  font-weight: 600;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
-  margin: 0;
-}
-
-.solutions-hero-description {
-  color: #535862;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 0;
-  max-width: 420px;
-}
-
-.solutions-hero-image {
-  display: flex;
-  justify-content: flex-end;
-  flex: 1;
-}
-
-.solutions-hero-image img {
-  max-width: 480px;
-  width: 100%;
-  height: auto;
-}
-
-/* Solutions Support Section */
-.solutions-support {
-  background: #fff;
-  padding: 64px 142px 80px;
-  position: relative;
-  z-index: 1;
-}
-
-.solutions-support-container {
-  max-width: 1056px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-
-.solutions-support-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 72px;
-}
-
-.solutions-support-header {
-  flex: 0 0 400px;
-  max-width: 400px;
-}
-
-.solutions-support-heading {
-  color: #181D27;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  margin: 0 0 16px 0;
-}
-
-.solutions-support-description {
-  color: #535862;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
-  margin: 0;
-}
-
-.solutions-support-image {
-  flex: 1;
-  max-width: 540px;
-}
-
-.solutions-support-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-.solutions-support-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.solutions-support-card {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  flex: 1 1 calc(33.333% - 14px);
-  min-width: 280px;
-  padding: 20px;
-  background: #fafafa;
-  border-radius: 8px;
-}
-
-.solutions-support-card-icon {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
-  background: #2b48a1;
-  border: 2px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-}
-
-.solutions-support-card-icon svg {
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  width: 16px;
-  height: 16px;
-  color: #fff;
-}
-
-.solutions-support-card-content {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.solutions-support-card-content h3 {
-  color: #181D27;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1.4;
-  margin: 0;
-}
-
-.solutions-support-card-content p {
-  color: #535862;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.55;
-  margin: 0;
-}
-
-/* Solutions Trust */
-.solutions-trust {
-  background: linear-gradient(180deg, #d4dcf5 0%, #c5d0f0 100%);
-  padding: 80px 142px;
-  position: relative;
-  z-index: 1;
-}
-
-.solutions-trust-container {
-  max-width: 1056px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-}
-
-.solutions-trust-content {
-  text-align: center;
-  max-width: 684px;
-}
-
-.solutions-trust-title {
-  color: #181D27;
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin: 0 0 16px 0;
-}
-
-.solutions-trust-description {
-  color: #0c1a3d;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.solutions-trust-badges {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 48px;
-}
-
-.solutions-trust-badge {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  color: #6b7a99;
-}
-
-.solutions-trust-badge svg {
-  width: 24px;
-  height: 24px;
-}
-
-.solutions-trust-badge span {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.4;
-  text-align: center;
-  max-width: 125px;
-  color: #6b7a99;
-}
-
-/* Solutions CTA */
-.solutions-cta {
-  background: linear-gradient(100deg, #ffffff 0%, #f3f5fc 100%);
-  padding: 60px 142px;
-  position: relative;
-  z-index: 1;
-}
-
-.solutions-cta-container {
-  max-width: 1056px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.solutions-cta-title {
-  color: #0c1a3d;
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 1.3;
-  margin: 0;
-}
-
-.solutions-cta-title strong {
-  font-weight: 600;
-  display: block;
-}
-
-.solutions-cta-button {
-  font-size: 16px;
-  padding: 16px 32px;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-/* Solutions Testimonial */
-.solutions-testimonial {
-  background: linear-gradient(180deg, #d4dcf5 0%, #c5d0f0 100%);
-  padding: 80px 142px;
-  position: relative;
-  z-index: 1;
-}
-
-.solutions-testimonial-container {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.solutions-testimonial-title {
-  color: #181D27;
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0;
-}
-
-.solutions-testimonial-quote {
-  color: #0c1a3d;
-  font-size: 32px;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 1.4;
-  margin: 0;
-}
-
-/* Solutions Page Tablet Styles */
-@media (max-width: 1024px) {
-  .solutions-page::before {
-    height: 900px;
-  }
-
-  .solutions-hero {
-    padding: 140px 48px 60px;
-  }
-
-  .solutions-hero-container {
-    flex-direction: column;
-    gap: 48px;
-  }
-
-  .solutions-hero-content {
-    align-items: center;
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .solutions-hero-image img {
-    max-width: 400px;
-  }
-
-  .solutions-hero-title {
-    font-size: 48px;
-  }
-
-  .solutions-support {
-    padding: 60px 48px;
-  }
-
-  .solutions-support-container {
-    max-width: 100%;
-  }
-
-  .solutions-support-top {
-    gap: 48px;
-  }
-
-  .solutions-support-header {
-    flex: 0 0 340px;
-    max-width: 340px;
-  }
-
-  .solutions-support-heading {
-    font-size: 24px;
-  }
-
-  .solutions-support-description {
-    font-size: 15px;
-  }
-
-  .solutions-support-image {
-    flex: 1;
-    max-width: none;
-  }
-
-  .solutions-support-image img {
-    max-width: 100%;
-  }
-
-  .solutions-support-card {
-    flex: 1 1 calc(50% - 10px);
-    min-width: 260px;
-  }
-
-  .solutions-trust {
-    padding: 60px 48px;
-  }
-
-  .solutions-trust-badges {
-    gap: 32px;
-  }
-
-  .solutions-cta {
-    padding: 48px 48px;
-  }
-
-  .solutions-cta-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 24px;
-  }
-
-  .solutions-cta-title {
-    font-size: 24px;
-  }
-
-  .solutions-testimonial {
-    padding: 60px 48px;
-  }
-}
-
-/* Solutions Page Mobile Styles */
-@media (max-width: 768px) {
-  .solutions-page::before {
-    height: 700px;
-  }
-
-  .solutions-hero {
-    padding: 120px 24px 48px;
-  }
-
-  .solutions-hero-container {
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .solutions-hero-content {
-    align-items: center;
-    text-align: center;
-  }
-
-  .solutions-hero-image img {
-    max-width: 300px;
-  }
-
-  .solutions-hero-title {
-    font-size: 36px;
-  }
-
-  .solutions-hero-description {
-    font-size: 16px;
-  }
-
-  .solutions-support {
-    padding: 48px 24px;
-  }
-
-  .solutions-support-container {
-    gap: 32px;
-  }
-
-  .solutions-support-top {
-    gap: 24px;
-  }
-
-  .solutions-support-heading {
-    font-size: 22px;
-  }
-
-  .solutions-support-description {
-    font-size: 14px;
-  }
-
-  .solutions-support-image img {
-    max-width: 100%;
-  }
-
-  .solutions-support-cards {
-    gap: 16px;
-  }
-
-  .solutions-support-card {
-    flex: 1 1 100%;
-    min-width: 100%;
-    padding: 16px;
-  }
-
-  .solutions-support-card-icon {
-    width: 36px;
-    height: 36px;
-    min-width: 36px;
-  }
-
-  .solutions-support-card-icon svg {
-    left: 7px;
-    top: 7px;
-    width: 14px;
-    height: 14px;
-  }
-
-  .solutions-support-card-content h3 {
-    font-size: 14px;
-  }
-
-  .solutions-support-card-content p {
-    font-size: 13px;
-  }
-
-  .solutions-trust {
-    padding: 48px 24px;
-  }
-
-  .solutions-trust-title {
-    font-size: 28px;
-  }
-
-  .solutions-trust-description {
-    font-size: 16px;
-  }
-
-  .solutions-trust-badges {
-    gap: 24px;
-  }
-
-  .solutions-trust-badge span {
-    font-size: 13px;
-  }
-
-  .solutions-cta {
-    padding: 40px 24px;
-  }
-
-  .solutions-cta-title {
-    font-size: 22px;
-  }
-
-  .solutions-cta-button {
-    width: 100%;
-    text-align: center;
-  }
-
-  .solutions-testimonial {
-    padding: 48px 24px;
-  }
-
-  .solutions-testimonial-title {
-    font-size: 16px;
-  }
-
-  .solutions-testimonial-quote {
-    font-size: 24px;
   }
 }

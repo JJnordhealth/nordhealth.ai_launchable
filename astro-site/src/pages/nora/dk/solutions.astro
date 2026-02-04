@@ -4,14 +4,14 @@ export const prerender = true;
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getTranslations } from '../../../i18n';
 
-const lang = 'en';
+const lang = 'dk';
 const t = getTranslations(lang);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <BaseLayout
-  title="Speech Therapy Documentation - Nordhealth Nora"
-  description="AI-powered documentation for speech and language therapists. Capture session details in real time while staying focused on your patient. GDPR-compliant, EU-hosted."
+  title="Logopædisk dokumentation - Nordhealth Nora"
+  description="AI-drevet dokumentation til logopæder. Fang sessionsdetaljer i realtid, mens du bevarer fokus på din klient. GDPR-kompatibel, EU-hostet."
   lang={lang}
   t={t}
   canonicalPath="solutions"
@@ -33,108 +33,106 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <div class="solutions-hero-image fade-in-up" data-animation-delay="0.2s">
         <img
           src={`${base}/images/solutions_hero.png`}
-          alt="Healthcare professionals using Nordhealth Nora"
+          alt="Sundhedsprofessionelle bruger Nordhealth Nora"
           fetchpriority="high"
         />
       </div>
     </div>
   </section>
 
-  <!-- How Nora Supports You Section - Figma node 915:6600 -->
-  <section class="solutions-support section" data-node-id="915:6600">
-    <!-- Top content: heading + interface image -->
+  <!-- How Nora Supports You Section -->
+  <section class="solutions-support section">
     <div class="solutions-support-container">
-      <div class="solutions-support-top fade-in-up" data-animation-delay="0.1s" data-node-id="917:4816">
-        <div class="solutions-support-header" data-node-id="917:4577">
-          <h2 class="solutions-support-heading" data-node-id="917:4580">
+      <div class="solutions-support-top fade-in-up" data-animation-delay="0.1s">
+        <div class="solutions-support-header">
+          <h2 class="solutions-support-heading">
             {t.solutions.features.heading}
           </h2>
-          <p class="solutions-support-description" data-node-id="917:4581">
+          <p class="solutions-support-description">
             {t.solutions.features.description}
           </p>
         </div>
-        <div class="solutions-support-image" data-node-id="917:4582">
+        <div class="solutions-support-image">
           <img
             src={`${base}/images/how_nora_supports_you.png`}
-            alt="Nordhealth Nora clinical documentation interface"
+            alt="Nordhealth Nora klinisk dokumentationsinterface"
             loading="lazy"
           />
         </div>
       </div>
     </div>
 
-    <!-- Feature Cards - Figma node 917:3969 -->
-    <div class="solutions-support-cards-section" data-node-id="917:3969">
+    <!-- Feature Cards -->
+    <div class="solutions-support-cards-section">
       <!-- Row 1: 3 cards -->
-      <div class="solutions-support-cards-wrapper" data-node-id="915:6607">
-        <div class="solutions-support-cards fade-in-up" data-animation-delay="0.2s" data-node-id="915:6608">
-          <div class="solutions-support-card" data-node-id="915:6609">
-            <div class="solutions-support-card-icon" data-node-id="915:6610">
+      <div class="solutions-support-cards-wrapper">
+        <div class="solutions-support-cards fade-in-up" data-animation-delay="0.2s">
+          <div class="solutions-support-card">
+            <div class="solutions-support-card-icon">
               <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C15.51 0 20 4.49 20 10C20 15.51 15.51 20 10 20C4.49 20 0 15.51 0 10C0 4.49 4.49 0 10 0ZM10 2C5.59 2 2 5.59 2 10C2 14.41 5.59 18 10 18C14.41 18 18 14.41 18 10C18 5.59 14.41 2 10 2ZM14.79 7.71L9.47 13.66C9.29 13.87 9.03 13.99 8.75 13.99H8.72C8.46 13.99 8.2 13.89 8.01 13.7L5.15 10.84L6.56 9.43L8.68 11.55L13.29 6.38H13.3L14.79 7.71Z" fill="white"/>
               </svg>
             </div>
-            <div class="solutions-support-card-content" data-node-id="915:6611">
-              <h3 data-node-id="915:6613">{t.solutions.features.liveCapture.title}</h3>
-              <p data-node-id="915:6614">{t.solutions.features.liveCapture.description}</p>
+            <div class="solutions-support-card-content">
+              <h3>{t.solutions.features.liveCapture.title}</h3>
+              <p>{t.solutions.features.liveCapture.description}</p>
             </div>
           </div>
 
-          <div class="solutions-support-card" data-node-id="915:6616">
-            <div class="solutions-support-card-icon" data-node-id="915:6617">
+          <div class="solutions-support-card">
+            <div class="solutions-support-card-icon">
               <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C15.51 0 20 4.49 20 10C20 15.51 15.51 20 10 20C4.49 20 0 15.51 0 10C0 4.49 4.49 0 10 0ZM10 2C5.59 2 2 5.59 2 10C2 14.41 5.59 18 10 18C14.41 18 18 14.41 18 10C18 5.59 14.41 2 10 2ZM14.79 7.71L9.47 13.66C9.29 13.87 9.03 13.99 8.75 13.99H8.72C8.46 13.99 8.2 13.89 8.01 13.7L5.15 10.84L6.56 9.43L8.68 11.55L13.29 6.38H13.3L14.79 7.71Z" fill="white"/>
               </svg>
             </div>
-            <div class="solutions-support-card-content" data-node-id="915:6618">
-              <h3 data-node-id="915:6620">{t.solutions.features.structuredDrafts.title}</h3>
-              <p data-node-id="915:6621">{t.solutions.features.structuredDrafts.description}</p>
+            <div class="solutions-support-card-content">
+              <h3>{t.solutions.features.structuredDrafts.title}</h3>
+              <p>{t.solutions.features.structuredDrafts.description}</p>
             </div>
           </div>
 
-          <div class="solutions-support-card" data-node-id="915:6623">
-            <div class="solutions-support-card-icon" data-node-id="915:6624">
+          <div class="solutions-support-card">
+            <div class="solutions-support-card-icon">
               <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C15.51 0 20 4.49 20 10C20 15.51 15.51 20 10 20C4.49 20 0 15.51 0 10C0 4.49 4.49 0 10 0ZM10 2C5.59 2 2 5.59 2 10C2 14.41 5.59 18 10 18C14.41 18 18 14.41 18 10C18 5.59 14.41 2 10 2ZM14.79 7.71L9.47 13.66C9.29 13.87 9.03 13.99 8.75 13.99H8.72C8.46 13.99 8.2 13.89 8.01 13.7L5.15 10.84L6.56 9.43L8.68 11.55L13.29 6.38H13.3L14.79 7.71Z" fill="white"/>
               </svg>
             </div>
-            <div class="solutions-support-card-content" data-node-id="915:6625">
-              <h3 data-node-id="915:6627">{t.solutions.features.consistentPhrasing.title}</h3>
-              <p data-node-id="915:6628">{t.solutions.features.consistentPhrasing.description}</p>
+            <div class="solutions-support-card-content">
+              <h3>{t.solutions.features.consistentPhrasing.title}</h3>
+              <p>{t.solutions.features.consistentPhrasing.description}</p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Row 2: 2 visible cards + 1 hidden placeholder -->
-      <div class="solutions-support-cards-wrapper" data-node-id="917:3937">
-        <div class="solutions-support-cards fade-in-up" data-animation-delay="0.3s" data-node-id="917:3938">
-          <div class="solutions-support-card" data-node-id="917:3939">
-            <div class="solutions-support-card-icon" data-node-id="917:3940">
+      <div class="solutions-support-cards-wrapper">
+        <div class="solutions-support-cards fade-in-up" data-animation-delay="0.3s">
+          <div class="solutions-support-card">
+            <div class="solutions-support-card-icon">
               <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C15.51 0 20 4.49 20 10C20 15.51 15.51 20 10 20C4.49 20 0 15.51 0 10C0 4.49 4.49 0 10 0ZM10 2C5.59 2 2 5.59 2 10C2 14.41 5.59 18 10 18C14.41 18 18 14.41 18 10C18 5.59 14.41 2 10 2ZM14.79 7.71L9.47 13.66C9.29 13.87 9.03 13.99 8.75 13.99H8.72C8.46 13.99 8.2 13.89 8.01 13.7L5.15 10.84L6.56 9.43L8.68 11.55L13.29 6.38H13.3L14.79 7.71Z" fill="white"/>
               </svg>
             </div>
-            <div class="solutions-support-card-content" data-node-id="917:3941">
-              <h3 data-node-id="917:3943">{t.solutions.features.playFriendly.title}</h3>
-              <p data-node-id="917:3944">{t.solutions.features.playFriendly.description}</p>
+            <div class="solutions-support-card-content">
+              <h3>{t.solutions.features.playFriendly.title}</h3>
+              <p>{t.solutions.features.playFriendly.description}</p>
             </div>
           </div>
 
-          <div class="solutions-support-card" data-node-id="917:3946">
-            <div class="solutions-support-card-icon" data-node-id="917:3947">
+          <div class="solutions-support-card">
+            <div class="solutions-support-card-icon">
               <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C15.51 0 20 4.49 20 10C20 15.51 15.51 20 10 20C4.49 20 0 15.51 0 10C0 4.49 4.49 0 10 0ZM10 2C5.59 2 2 5.59 2 10C2 14.41 5.59 18 10 18C14.41 18 18 14.41 18 10C18 5.59 14.41 2 10 2ZM14.79 7.71L9.47 13.66C9.29 13.87 9.03 13.99 8.75 13.99H8.72C8.46 13.99 8.2 13.89 8.01 13.7L5.15 10.84L6.56 9.43L8.68 11.55L13.29 6.38H13.3L14.79 7.71Z" fill="white"/>
               </svg>
             </div>
-            <div class="solutions-support-card-content" data-node-id="917:3948">
-              <h3 data-node-id="917:3950">{t.solutions.features.fullControl.title}</h3>
-              <p data-node-id="917:3951">{t.solutions.features.fullControl.description}</p>
+            <div class="solutions-support-card-content">
+              <h3>{t.solutions.features.fullControl.title}</h3>
+              <p>{t.solutions.features.fullControl.description}</p>
             </div>
           </div>
 
-          <!-- Hidden placeholder card to maintain grid alignment -->
-          <div class="solutions-support-card solutions-support-card-hidden" data-node-id="917:3953" aria-hidden="true"></div>
+          <div class="solutions-support-card solutions-support-card-hidden" aria-hidden="true"></div>
         </div>
       </div>
     </div>
@@ -206,73 +204,4 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       </blockquote>
     </div>
   </section>
-
-  <!-- Figma Overlay for pixel-perfect comparison (DEV ONLY) -->
-  <div id="figma-overlay" class="figma-overlay"></div>
-  <button id="figma-toggle" class="figma-toggle">Toggle Figma</button>
-
-  <style>
-    .figma-overlay {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 1440px;
-      height: 3232px; /* Figma page height from metadata */
-      background-image: url('/images/figma-overlay.png');
-      background-size: 1440px auto;
-      background-repeat: no-repeat;
-      background-position: top center;
-      pointer-events: none;
-      z-index: 9999;
-      opacity: 0;
-      transition: opacity 0.2s;
-    }
-    .figma-overlay.active {
-      opacity: 0.5;
-    }
-    .figma-toggle {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 10000;
-      background: #0c1a3d;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-    .figma-toggle:hover {
-      background: #1e3a5f;
-    }
-  </style>
-
-  <script>
-    const overlay = document.getElementById('figma-overlay');
-    const toggle = document.getElementById('figma-toggle');
-    let opacity = 0.5;
-
-    toggle.addEventListener('click', () => {
-      overlay.classList.toggle('active');
-    });
-
-    // Keyboard shortcuts: F to toggle, [ and ] to adjust opacity
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'f' || e.key === 'F') {
-        overlay.classList.toggle('active');
-      }
-      if (e.key === '[') {
-        opacity = Math.max(0.1, opacity - 0.1);
-        overlay.style.opacity = overlay.classList.contains('active') ? opacity : 0;
-      }
-      if (e.key === ']') {
-        opacity = Math.min(1, opacity + 0.1);
-        overlay.style.opacity = overlay.classList.contains('active') ? opacity : 0;
-      }
-    });
-  </script>
 </BaseLayout>

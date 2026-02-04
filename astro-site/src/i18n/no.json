@@ -3,6 +3,7 @@
   "locale": "nb_NO",
   "hubspotFormId": "8d0c8921-df43-45da-a652-5917b5f865b0",
   "nav": {
+    "solutions": "Løsninger",
     "pricing": "Priser",
     "bookDemo": "Book en demo",
     "login": "Logg inn",
@@ -106,6 +107,55 @@
     "privacyPolicy": "personvernerklæring",
     "decline": "Avslå",
     "accept": "Godta"
+  },
+  "solutions": {
+    "hero": {
+      "title": "Din evne til å observere i dybden er ditt viktigste kliniske verktøy.",
+      "description": "Nora håndterer transkriberingen, slik at du kan ha fullt fokus der det hører hjemme – på pasienten."
+    },
+    "features": {
+      "heading": "Slik støtter Nora arbeidet ditt",
+      "description": "I logopedisk arbeid jobber oppmerksomheten din på flere nivåer samtidig. Fonetiske detaljer, ikke-verbale signaler, engasjement og responsmønstre. Å bevare denne dybden samtidig som du dokumenterer, er krevende.",
+      "liveCapture": {
+        "title": "Live opptak",
+        "description": "Fang språklige detaljer i sanntid, inkludert eksempler, feil, prompting, responser og progresjon, uten å være avhengig av hukommelsen etter timen."
+      },
+      "structuredDrafts": {
+        "title": "Strukturerte utkast",
+        "description": "Lag tydelige, strukturerte notater som er organisert og klare for gjennomgang."
+      },
+      "consistentPhrasing": {
+        "title": "Konsistent formulering",
+        "description": "Standardiser rutiner med Frasebibliotek. Sett inn øvelser og gjentakende klinisk formulering med et kort signal, konsekvent på tvers av pasienter."
+      },
+      "playFriendly": {
+        "title": "Lek-vennlig",
+        "description": "Støtter pediatriske og lekbaserte økter. Hold samspillet flytende mens Nora forbereder et utkast du kan ferdigstille rett etter timen."
+      },
+      "fullControl": {
+        "title": "Full kontroll",
+        "description": "Du har full kontroll. Ingenting lagres uten din godkjenning."
+      }
+    },
+    "trust": {
+      "title": "Kliniske sikkerhetsmekanismer",
+      "description": "EU-hostet. Ingen pasientdata brukes til å trene AI-modeller. Ingen automatisk lagring. Du forblir eneste forfatter av journalen.",
+      "badges": {
+        "euHosted": "Hostet i EU",
+        "gdpr": "GDPR-kompatibel",
+        "noAudio": "Ingen lyd lagres",
+        "noTraining": "Ingen trening på pasientdata",
+        "clinicallyValidated": "Klinisk validert"
+      }
+    },
+    "cta": {
+      "title": "Prøv Nordhealth Nora i din neste logopedtime.<br/>Start en 14-dagers gratis prøveperiode",
+      "button": "Prøv Nora"
+    },
+    "testimonial": {
+      "title": "Dette sier klinikere",
+      "quote": "Jeg følger med på pasienten, ikke skjermen. Utkastet er klart når vi er ferdige."
+    }
   },
   "pricing": {
     "title": "Velg prispakken som passer for deg",

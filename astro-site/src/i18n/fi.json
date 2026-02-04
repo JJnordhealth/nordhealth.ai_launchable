@@ -3,6 +3,7 @@
   "locale": "fi_FI",
   "hubspotFormId": "6761c43d-aef8-4c85-8d6c-7ed90a1ac8c5",
   "nav": {
+    "solutions": "Ratkaisut",
     "pricing": "Hinnat",
     "bookDemo": "Varaa esittely",
     "login": "Kirjaudu",
@@ -106,6 +107,55 @@
     "privacyPolicy": "tietosuojakäytännöstämme",
     "decline": "Hylkää",
     "accept": "Hyväksy"
+  },
+  "solutions": {
+    "hero": {
+      "title": "Havainnointikykysi on tärkein kliininen työkalusi.",
+      "description": "Nora hoitaa litteroinnin, jotta voit pitää täyden huomiosi siellä, minne se kuuluu – asiakkaassa."
+    },
+    "features": {
+      "heading": "Miten Nora tukee työtäsi",
+      "description": "Puheterapiassa huomiosi toimii usealla tasolla: foneettisissa yksityiskohdissa, ei-sanallisissa vihjeissä, vuorovaikutuksessa ja vuorottelussa. Havainnointisyvyyden säilyttäminen kirjauksen aikana on vaikeaa.",
+      "liveCapture": {
+        "title": "Reaaliaikainen taltiointi",
+        "description": "Taltioi kielelliset yksityiskohdat reaaliajassa, mukaan lukien esimerkit, virheet, kehotteet, vastaukset ja edistyminen, tukeutumatta omaan muistiin käynnin jälkeen."
+      },
+      "structuredDrafts": {
+        "title": "Rakenteiset luonnokset",
+        "description": "Laadi selkeitä, jäsenneltyjä muistiinpanoja, jotka ovat loogisia ja valmiita tarkistettaviksi."
+      },
+      "consistentPhrasing": {
+        "title": "Johdonmukaiset ilmaisut",
+        "description": "Standardoi toimintatavat fraasien avulla. Lisää harjoituksia ja toistuvia kliinisiä sanamuotoja lyhyellä vihjeellä, johdonmukaisesti kaikille asiakkaille."
+      },
+      "playFriendly": {
+        "title": "Tukee leikkiä",
+        "description": "Tukee pedagogisia ja leikkiterapiaan pohjautuvia istuntoja. Pidä vuorovaikutus jatkuvana samalla, kun Nora valmistelee luonnoksen, jonka voit viimeistellä käynnin jälkeen."
+      },
+      "fullControl": {
+        "title": "Täysi hallinta",
+        "description": "Pysy täydessä hallinnassa. Mitään ei tallenneta ilman hyväksyntääsi."
+      }
+    },
+    "trust": {
+      "title": "Kliininen turvallisuus",
+      "description": "Ylläpidetty EU-alueella. Potilastietoja ei käytetä tekoälymallien kouluttamiseen. Ei automaattista tallennusta. Olet kirjauksen ainoa muokkaaja.",
+      "badges": {
+        "euHosted": "Ylläpito EU-alueella",
+        "gdpr": "GDPR-yhteensopiva",
+        "noAudio": "Ääntä ei tallenneta",
+        "noTraining": "Ei koulutusta potilastiedoilla",
+        "clinicallyValidated": "Kliinisesti validoitu"
+      }
+    },
+    "cta": {
+      "title": "Kokeile Nordhealth Noraa seuraavassa puheterapiakäynnissäsi.<br/>Aloita 14 päivän ilmainen kokeilu",
+      "button": "Kokeile Noraa"
+    },
+    "testimonial": {
+      "title": "Mitä ammattilaiset sanovat",
+      "quote": "Seuraan asiakasta, en näyttöä. Luonnos on valmis, kun lopetamme."
+    }
   },
   "pricing": {
     "title": "Valitse sinulle sopiva hintapaketti",
