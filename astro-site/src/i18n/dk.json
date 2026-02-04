@@ -3,6 +3,7 @@
   "locale": "da_DK",
   "hubspotFormId": "d03599e2-7622-454e-aac8-ba071329897d",
   "nav": {
+    "solutions": "Løsninger",
     "pricing": "Priser",
     "bookDemo": "Book en demo",
     "login": "Log ind",
@@ -106,6 +107,55 @@
     "privacyPolicy": "privatlivspolitik",
     "decline": "Afvis",
     "accept": "Accepter"
+  },
+  "solutions": {
+    "hero": {
+      "title": "Dybden i dine observationer er dit vigtigste kliniske redskab.",
+      "description": "Nora sørger for transskriberingen, så du kan bevare dit fulde fokus der, hvor det hører hjemme – på patienten."
+    },
+    "features": {
+      "heading": "Sådan støtter Nora dit arbejde",
+      "description": "Inden for logopædi arbejder din opmærksomhed på mange planer: fonetiske detaljer, nonverbale signaler, engagement og svarmønstre. Det er en udfordring at fastholde den dybde i observationerne, samtidig med at du dokumenterer.",
+      "liveCapture": {
+        "title": "Live-transskribering",
+        "description": "Fang sproglige detaljer i realtid – herunder eksempler, fejl, prompts, responser og fremskridt – uden at skulle forlade dig på hukommelsen efter sessionen."
+      },
+      "structuredDrafts": {
+        "title": "Strukturerede udkast",
+        "description": "Få klare, strukturerede udkast til dine noter, som er organiserede og klar til gennemsyn."
+      },
+      "consistentPhrasing": {
+        "title": "Ensartede formuleringer",
+        "description": "Standardiser protokoller med Fraser. Indsæt øvelser og gentagne kliniske vendinger med en kort kommando – konsistent på tværs af alle klienter."
+      },
+      "playFriendly": {
+        "title": "Legende tilgang",
+        "description": "Støtter pædiatriske og legebaserede sessioner. Bevar flowet i interaktionen, mens Nora forbereder et udkast, som du kan færdiggøre med det samme bagefter."
+      },
+      "fullControl": {
+        "title": "Fuld kontrol",
+        "description": "Bevar den fulde kontrol. Intet gemmes uden din godkendelse."
+      }
+    },
+    "trust": {
+      "title": "Klinisk sikkerhed",
+      "description": "Hosted i EU. Ingen patientdata bruges til at træne AI-modeller. Ingen autogem-funktion. Du forbliver den eneste forfatter af journalen.",
+      "badges": {
+        "euHosted": "Hostet i EU",
+        "gdpr": "GDPR-kompatibel",
+        "noAudio": "Ingen lyd gemmes",
+        "noTraining": "Ingen træning på patientdata",
+        "clinicallyValidated": "Klinisk valideret"
+      }
+    },
+    "cta": {
+      "title": "Prøv Nordhealth Nora i din næste logopædiske session.<br/>Start en 14-dages gratis prøveperiode",
+      "button": "Prøv Nora"
+    },
+    "testimonial": {
+      "title": "Dette siger klinikere",
+      "quote": "Jeg kigger på klienten, ikke på skærmen. Udkastet ligger klar, når vi er færdige."
+    }
   },
   "pricing": {
     "title": "Klinisk dokumentation – klaret i realtid.",

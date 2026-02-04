@@ -7,7 +7,7 @@
     "pricing": "Pricing",
     "bookDemo": "Book a demo",
     "login": "Login",
-    "tryFree": "Try for free"
+    "tryFree": "Try for Free"
   },
   "hero": {
     "eyebrow": "Built by Nordhealth — trusted by over 30,000 healthcare professionals across the Nordics.",
@@ -178,7 +178,7 @@
       }
     },
     "cta": {
-      "title": "Try Nordhealth Nora in your next SLT session.<br/><strong>Start a 14-day free trial</strong>",
+      "title": "Try Nordhealth Nora in your next SLT session.<br/>Start a 14-day free trial",
       "button": "Try Nordhealth Nora"
     },
     "testimonial": {
