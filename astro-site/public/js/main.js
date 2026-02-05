@@ -403,39 +403,41 @@ window.addEventListener("resize", () => {
 });
 
 const footer = document.getElementById("footer");
-const footerContainer = document.querySelector(".footer-container");
+const footerContainer = document.querySelector(".footer-container") || document.querySelector(".nora-footer-container");
 const body = document.body;
 
-window.addEventListener("scroll", () => {
-  const footerTop = footer.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
-  const footerHeight = footer.offsetHeight;
-  
-  const transitionStart = windowHeight; 
-  const transitionEnd = -footerHeight; 
-  const transitionRange = transitionStart - transitionEnd;
-  
-  let scrollProgress = 0;
-  
-  if (footerTop < transitionStart && footerTop > transitionEnd) {
-    scrollProgress = 1 - (footerTop - transitionEnd) / transitionRange;
-    scrollProgress = Math.max(0, Math.min(1, scrollProgress));
-  } else if (footerTop <= transitionEnd) {
-    scrollProgress = 1;
-  }
-  
-  if (scrollProgress > 0) {
-    footer.style.setProperty("--scroll-progress", scrollProgress);
-    footerContainer.classList.add("footer-revealed");
-    body.classList.add("dark-mode");
-    footer.classList.add("scroll-active");
-  } else {
-    footer.style.setProperty("--scroll-progress", "0");
-    footerContainer.classList.remove("footer-revealed");
-    body.classList.remove("dark-mode");
-    footer.classList.remove("scroll-active");
-  }
-});
+if (footer && footerContainer) {
+  window.addEventListener("scroll", () => {
+    const footerTop = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    const footerHeight = footer.offsetHeight;
+
+    const transitionStart = windowHeight;
+    const transitionEnd = -footerHeight;
+    const transitionRange = transitionStart - transitionEnd;
+
+    let scrollProgress = 0;
+
+    if (footerTop < transitionStart && footerTop > transitionEnd) {
+      scrollProgress = 1 - (footerTop - transitionEnd) / transitionRange;
+      scrollProgress = Math.max(0, Math.min(1, scrollProgress));
+    } else if (footerTop <= transitionEnd) {
+      scrollProgress = 1;
+    }
+
+    if (scrollProgress > 0) {
+      footer.style.setProperty("--scroll-progress", scrollProgress);
+      footerContainer.classList.add("footer-revealed");
+      body.classList.add("dark-mode");
+      footer.classList.add("scroll-active");
+    } else {
+      footer.style.setProperty("--scroll-progress", "0");
+      footerContainer.classList.remove("footer-revealed");
+      body.classList.remove("dark-mode");
+      footer.classList.remove("scroll-active");
+    }
+  });
+}
 
 // Mobile Menu Toggle
 const navBurger = document.querySelector(".nav-burger");
