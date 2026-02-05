@@ -113,7 +113,7 @@
       "speechTherapists": "Logopæder og talepædagoger",
       "generalPractitioners": "Praktiserende læger og speciallæger",
       "psychologists": "Psykologer & psykoterapeuter",
-      "physiotherapists": "Physioterapeuter",
+      "physiotherapists": "Fysioterapeuter",
       "allSpecialties": "Alle specialer"
     },
     "speechTherapists": {
@@ -158,9 +158,9 @@
       "testimonial": {
         "title": "Dette siger klinikere",
         "quotes": [
-          "\"Jeg ser på klienten, ikke på skærmen. Udkastet er der, når vi er færdige.\"",
-          "\"Mine noter er mere ensartede, især for gentagne øvelser og sprogprøver.\"",
-          "\"Det sparer tid, men endnu vigtigere beskytter det opmærksomheden under sessionen.\""
+          "\"Jeg kigger på klienten, ikke på skærmen. Udkastet ligger klar, når vi er færdige.\"",
+          "\"Mine noter er blevet mere konsistente, især når det gælder gentagne øvelser og sprogprøver.\"",
+          "\"Det sparer tid, men vigtigst af alt beskytter det min opmærksomhed under sessionen.\""
         ]
       },
       "cta": {
@@ -250,15 +250,15 @@
         ]
       },
       "trust": {
-        "title": "Klinisk sikkerhed.",
+        "title": "Klinisk sikkerhed",
         "description": "Hosted i EU. Ingen patientdata bruges til at træne AI-modeller. Ingen autogem-funktion. Ingen klinisk beslutningsstøtte. Nora stiller ikke diagnoser og foreslår ikke behandling."
       },
       "testimonial": {
         "title": "Det siger terapeuterne",
         "quotes": [
-          "\"Private Noter lader mig holde mine tanker adskilt fra den officielle note.\"",
-          "\"Jeg tager ikke længere dokumentation med hjem om aftenen.\"",
-          "\"Det understøtter min arbejdsgang uden at forstyrre sessionen.\""
+          "\"Med Private noter kan jeg holde mine egne overvejelser adskilt fra den officielle journal.\"",
+          "\"Jeg tager ikke længere dokumentationsarbejdet med hjem om aftenen.\"",
+          "\"Det understøtter mit workflow uden at forstyrre selve sessionen.\""
         ]
       },
       "cta": {
@@ -267,7 +267,7 @@
     },
     "physiotherapists": {
       "meta": {
-        "title": "Physioterapeuter - Nordhealth Nora",
+        "title": "Fysioterapeuter - Nordhealth Nora",
         "description": "Fysioterapi handler om bevægelse, men dokumentation trækker dig ofte tilbage til tastaturet mellem patienterne. Nora er bygget til virkeligheden i en travl klinik og forvandler mundtlige vurderinger og stikord til struktureret og korrekt dokumentation, mens du er på farten."
       },
       "hero": {
@@ -307,9 +307,9 @@
       "testimonial": {
         "title": "Det siger kollegerne",
         "quotes": [
-          "\"Jeg færdiggør noter samme dag, som regel mellem patienter.\"",
-          "\"Det passer til, hvordan fysioterapisessioner rent faktisk fungerer.\"",
-          "\"Først udkast, så justerer og underskriver jeg.\""
+          "\"Jeg færdiggør mine noter samme dag, som regel mellem patienterne.\"",
+          "\"Det passer til, hvordan en fysioterapeutisk session rent faktisk foregår.\"",
+          "\"Først kommer udkastet, så tilretter jeg og godkender.\""
         ]
       },
       "cta": {
@@ -352,7 +352,7 @@
         "description": "Hold dig inden for de sikre rammer. Hosted i EU, ingen lagring af rå lydfiler, ingen patientdata bruges til træning af AI-modeller, ingen autogem."
       },
       "testimonial": {
-        "title": "Hvem det er til",
+        "title": "Hvem er det til?",
         "quotes": [
           "Sygeplejersker, diætister, ergoterapeuter, kiropraktorer, speciallæger og alle andre, der dokumenterer samtaler og har brug for udkast, der er hurtige at gennemse og sikre at bruge."
         ]

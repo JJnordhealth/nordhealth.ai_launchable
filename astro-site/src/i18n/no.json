@@ -158,9 +158,9 @@
       "testimonial": {
         "title": "Dette sier klinikere",
         "quotes": [
-          "\"Jeg ser på klienten, ikke skjermen. Utkastet er der når vi er ferdige.\"",
-          "\"Notatene mine er mer konsistente, spesielt for gjentatte øvelser og språkprøver.\"",
-          "\"Det sparer tid, men enda viktigere beskytter det oppmerksomheten under økten.\""
+          "\"Jeg følger med på pasienten, ikke skjermen. Utkastet er klart når vi er ferdige.\"",
+          "\"Notatene mine er mer konsistente, særlig ved gjentakende øvelser og språklige prøver.\"",
+          "\"Det sparer tid, men viktigst av alt beskytter det oppmerksomheten i timen.\""
         ]
       },
       "cta": {
@@ -251,14 +251,14 @@
       },
       "trust": {
         "title": "Kliniske sikkerhetsmekanismer",
-        "description": "EU-hostet. Ingen pasientdata brukes til å trene AI-modeller. Ingen automatisk lagring.Ingen kliniske beslutninger tas av systemet. Nora stiller ikke diagnoser eller foreslår behandling."
+        "description": "EU-hostet. Ingen pasientdata brukes til å trene AI-modeller. Ingen automatisk lagring. Ingen kliniske beslutninger tas av systemet. Nora stiller ikke diagnoser eller foreslår behandling."
       },
       "testimonial": {
         "title": "Dette sier terapeuter",
         "quotes": [
-          "\"Private notater lar meg holde tankene mine adskilt fra det offisielle notatet.\"",
-          "\"Jeg tar ikke lenger med dokumentasjon hjem om kvelden.\"",
-          "\"Det støtter arbeidsflyten min uten å forstyrre økten.\""
+          "\"Private notater gjør at jeg kan holde tankene mine adskilt fra journalen.\"",
+          "\"Jeg tar ikke med meg dokumentasjonen inn i kvelden lenger.\"",
+          "\"Det støtter arbeidsflyten min uten å forstyrre timen.\""
         ]
       },
       "cta": {
@@ -307,9 +307,9 @@
       "testimonial": {
         "title": "Dette sier kolleger",
         "quotes": [
-          "\"Jeg fullfører notater samme dag, vanligvis mellom pasienter.\"",
-          "\"Det passer til hvordan fysioterapiøkter faktisk fungerer.\"",
-          "\"Først utkast, så justerer og signerer jeg.\""
+          "\"Jeg blir ferdig med notatene samme dag, ofte mellom pasientene.\"",
+          "\"Det passer slik fysioterapitimer faktisk gjennomføres.\"",
+          "\"Utkast først, så justerer og signerer jeg.\""
         ]
       },
       "cta": {
@@ -352,7 +352,7 @@
         "description": "Hold deg innenfor tydelige rammer. EU-hostet, ingen rå lyd lagres, ingen pasientdata brukes til å trene AI-modeller, ingen automatisk lagring."
       },
       "testimonial": {
-        "title": "Hvem det er for",
+        "title": "Hvem er det for",
         "quotes": [
           "Sykepleiere, ernæringsfysiologer, ergoterapeuter, kiropraktorer, spesialister og alle som dokumenterer samtaler og trenger utkast som er raske å gjennomgå og trygge å bruke."
         ]
