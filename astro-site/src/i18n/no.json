@@ -109,52 +109,256 @@
     "accept": "Godta"
   },
   "solutions": {
-    "hero": {
-      "title": "Din evne til å observere i dybden er ditt viktigste kliniske verktøy.",
-      "description": "Nora håndterer transkriberingen, slik at du kan ha fullt fokus der det hører hjemme – på pasienten."
+    "dropdown": {
+      "speechTherapists": "Logopeder",
+      "generalPractitioners": "Fastleger / leger",
+      "psychologists": "Psykologer og psykiatere",
+      "physiotherapists": "Fysioterapeuter",
+      "allSpecialties": "Alle fagområder"
     },
-    "features": {
-      "heading": "Slik støtter Nora arbeidet ditt",
-      "description": "I logopedisk arbeid jobber oppmerksomheten din på flere nivåer samtidig. Fonetiske detaljer, ikke-verbale signaler, engasjement og responsmønstre. Å bevare denne dybden samtidig som du dokumenterer, er krevende.",
-      "liveCapture": {
-        "title": "Live opptak",
-        "description": "Fang språklige detaljer i sanntid, inkludert eksempler, feil, prompting, responser og progresjon, uten å være avhengig av hukommelsen etter timen."
+    "speechTherapists": {
+      "meta": {
+        "title": "Logopeder - Nordhealth Nora",
+        "description": "Nora håndterer transkriberingen, slik at du kan ha fullt fokus der det hører hjemme – på pasienten."
       },
-      "structuredDrafts": {
-        "title": "Strukturerte utkast",
-        "description": "Lag tydelige, strukturerte notater som er organisert og klare for gjennomgang."
+      "hero": {
+        "title": "Din evne til å observere i dybden er ditt viktigste kliniske verktøy.",
+        "description": "Nora håndterer transkriberingen, slik at du kan ha fullt fokus der det hører hjemme – på pasienten.",
+        "extendedDescription": "I logopedisk arbeid jobber oppmerksomheten din på flere nivåer samtidig. Fonetiske detaljer, ikke-verbale signaler, engasjement og responsmønstre. Å bevare denne dybden samtidig som du dokumenterer, er krevende."
       },
-      "consistentPhrasing": {
-        "title": "Konsistent formulering",
-        "description": "Standardiser rutiner med Frasebibliotek. Sett inn øvelser og gjentakende klinisk formulering med et kort signal, konsekvent på tvers av pasienter."
+      "features": {
+        "heading": "Slik støtter Nora arbeidet ditt",
+        "items": [
+          {
+            "title": "Live opptak",
+            "description": "Fang språklige detaljer i sanntid, inkludert eksempler, feil, prompting, responser og progresjon, uten å være avhengig av hukommelsen etter timen."
+          },
+          {
+            "title": "Strukturerte utkast",
+            "description": "Lag tydelige, strukturerte notater som er organisert og klare for gjennomgang."
+          },
+          {
+            "title": "Konsistent formulering",
+            "description": "Standardiser rutiner med Frasebibliotek. Sett inn øvelser og gjentakende klinisk formulering med et kort signal, konsekvent på tvers av pasienter."
+          },
+          {
+            "title": "Lek-vennlig",
+            "description": "Støtter pediatriske og lekbaserte økter. Hold samspillet flytende mens Nora forbereder et utkast du kan ferdigstille rett etter timen."
+          },
+          {
+            "title": "Full kontroll",
+            "description": "Du har full kontroll. Ingenting lagres uten din godkjenning."
+          }
+        ]
       },
-      "playFriendly": {
-        "title": "Lek-vennlig",
-        "description": "Støtter pediatriske og lekbaserte økter. Hold samspillet flytende mens Nora forbereder et utkast du kan ferdigstille rett etter timen."
+      "trust": {
+        "title": "Kliniske sikkerhetsmekanismer",
+        "description": "EU-hostet. Ingen pasientdata brukes til å trene AI-modeller. Ingen automatisk lagring. Du forblir eneste forfatter av journalen."
       },
-      "fullControl": {
-        "title": "Full kontroll",
-        "description": "Du har full kontroll. Ingenting lagres uten din godkjenning."
+      "testimonial": {
+        "title": "Dette sier klinikere",
+        "quotes": [
+          "Jeg følger med på pasienten, ikke skjermen. Utkastet er klart når vi er ferdige. Notatene mine er mer konsistente, særlig ved gjentakende øvelser og språklige prøver. Det sparer tid, men viktigst av alt beskytter det oppmerksomheten i timen."
+        ]
+      },
+      "cta": {
+        "button": "Prøv Nora"
       }
     },
-    "trust": {
-      "title": "Kliniske sikkerhetsmekanismer",
-      "description": "EU-hostet. Ingen pasientdata brukes til å trene AI-modeller. Ingen automatisk lagring. Du forblir eneste forfatter av journalen.",
-      "badges": {
-        "euHosted": "Hostet i EU",
-        "gdpr": "GDPR-kompatibel",
-        "noAudio": "Ingen lyd lagres",
-        "noTraining": "Ingen trening på pasientdata",
-        "clinicallyValidated": "Klinisk validert"
+    "generalPractitioners": {
+      "meta": {
+        "title": "Fastleger / leger - Nordhealth Nora",
+        "description": "Nora lager dokumentasjonsutkast basert på konsultasjonen, slik at du kan holde fokus på pasienten, og deretter gjennomgå og godkjenne det som blir journalført."
+      },
+      "hero": {
+        "title": "Mer tid til kliniske beslutninger. Mindre tid på omskriving.",
+        "description": "Nora lager dokumentasjonsutkast basert på konsultasjonen, slik at du kan holde fokus på pasienten, og deretter gjennomgå og godkjenne det som blir journalført.",
+        "extendedDescription": "I primærhelsetjenesten er dokumentasjon konstant. Journalnotater, henvisninger, sammendrag og attester. Å føre inn den samme informasjonen på tvers av dokumenter tapper både tid og oppmerksomhet."
+      },
+      "features": {
+        "heading": "Slik støtter Nora arbeidet ditt",
+        "items": [
+          {
+            "title": "Konsultasjonsopptak",
+            "description": "Lag journalutkast i din egen stil og tone, med nødvendige detaljer fanget."
+          },
+          {
+            "title": "Oppfølgingsdokumenter",
+            "description": "Opprett oppfølgingsdokumenter umiddelbart. Henvisninger, sammendrag, attester og sykmeldinger kommer fra samme konsultasjon."
+          },
+          {
+            "title": "Ingen kliniske beslutninger tas av systemet",
+            "description": "Nora stiller ikke diagnoser og foreslår ikke behandling."
+          },
+          {
+            "title": "Full kontroll",
+            "description": "Behold full kontroll. Du redigerer og godkjenner. Ingenting lagres automatisk."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Kliniske sikkerhetsmekanismer",
+        "description": "EU-hostet. Ingen pasientdata brukes til å trene AI-modeller. Ingen automatisk lagring. Klinikerstyrt, alltid."
+      },
+      "testimonial": {
+        "title": "Dette sier kolleger",
+        "quotes": [
+          "Jeg bruker ikke den siste timen av dagen på å ta igjen notater.",
+          "Henvisninger og attester avbryter ikke timeplanen lenger.",
+          "Den lager et utkast. Jeg avgjør hva som er korrekt."
+        ]
+      },
+      "cta": {
+        "button": "Prøv Nora"
       }
     },
-    "cta": {
-      "title": "Prøv Nordhealth Nora i din neste logopedtime.<br/>Start en 14-dagers gratis prøveperiode",
-      "button": "Prøv Nora"
+    "psychologists": {
+      "meta": {
+        "title": "Psykologer og psykiatere - Nordhealth Nora",
+        "description": "Det viktigste arbeidet i terapi skjer i uavbrutt tilstedeværelse. Nora jobber stille i bakgrunnen, støtter dokumentasjonen og ivaretar det terapeutiske rommet og din kliniske tenkning."
+      },
+      "hero": {
+        "title": "En refleksjonspartner for moderne terapi.",
+        "description": "Det viktigste arbeidet i terapi skjer i uavbrutt tilstedeværelse. Nora jobber stille i bakgrunnen, støtter dokumentasjonen og ivaretar det terapeutiske rommet og din kliniske tenkning.",
+        "extendedDescription": ""
+      },
+      "features": {
+        "heading": "Slik støtter Nora arbeidet ditt",
+        "items": [
+          {
+            "title": "Øktopptak",
+            "description": "Vær til stede i timen. Samtalen fanges uten at skriving er utgangspunktet."
+          },
+          {
+            "title": "Strukturerte utkast",
+            "description": "Lag journalutkast i din egen struktur og med ditt språk, klare til gjennomgang."
+          },
+          {
+            "title": "Private notater",
+            "description": "Hold terapeutisk refleksjon adskilt fra journalen. Bruk Private notater til tanker, hypoteser og kontekst."
+          },
+          {
+            "title": "Rask gjennomgang",
+            "description": "Fullfør dokumentasjonen på minutter. Generer et utkast umiddelbart etter timen, og rediger og godkjenn."
+          },
+          {
+            "title": "Full kontroll",
+            "description": "Behold full kontroll. Ingenting lagres uten din godkjenning."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Kliniske sikkerhetsmekanismer",
+        "description": "EU-hostet. Ingen pasientdata brukes til å trene AI-modeller. Ingen automatisk lagring.Ingen kliniske beslutninger tas av systemet. Nora stiller ikke diagnoser eller foreslår behandling."
+      },
+      "testimonial": {
+        "title": "Dette sier terapeuter",
+        "quotes": [
+          "Private notater gjør at jeg kan holde tankene mine adskilt fra journalen. Jeg tar ikke med meg dokumentasjonen inn i kvelden lenger. Det støtter arbeidsflyten min uten å forstyrre timen."
+        ]
+      },
+      "cta": {
+        "button": "Prøv Nora"
+      }
     },
-    "testimonial": {
-      "title": "Dette sier klinikere",
-      "quote": "Jeg følger med på pasienten, ikke skjermen. Utkastet er klart når vi er ferdige."
+    "physiotherapists": {
+      "meta": {
+        "title": "Fysioterapeuter - Nordhealth Nora",
+        "description": "Fysioterapi er bevegelsesbasert, men dokumentasjon trekker deg ofte tilbake til tastaturet mellom pasienter. Nora er bygget for hverdagen i en travel klinikk, og gjør muntlige vurderinger og instruksjoner om til strukturert, journalførbar dokumentasjon mens du holder deg i bevegelse."
+      },
+      "hero": {
+        "title": "Hendene dine er til for behandling. La Nora ta seg av skrivebordsarbeidet.",
+        "description": "Fysioterapi er bevegelsesbasert, men dokumentasjon trekker deg ofte tilbake til tastaturet mellom pasienter. Nora er bygget for hverdagen i en travel klinikk, og gjør muntlige vurderinger og instruksjoner om til strukturert, journalførbar dokumentasjon mens du holder deg i bevegelse.",
+        "extendedDescription": ""
+      },
+      "features": {
+        "heading": "Slik støtter Nora arbeidet ditt",
+        "items": [
+          {
+            "title": "Håndfri registrering",
+            "description": "Registrer funn håndfritt med stemmen under timen, inkludert tester, øvelsesendringer, smerterespons og toleranse."
+          },
+          {
+            "title": "Strukturerte journalnotater",
+            "description": "Motta strukturerte journalutkast automatisk, med funn, vurdering, plan og oppfølging tydelig organisert."
+          },
+          {
+            "title": "Standardiserte protokoller",
+            "description": "Gjenbruk standardoppsett. Lagre vanlige tester, øvelser og instruksjoner med Frasebibliotek."
+          },
+          {
+            "title": "Fleksible utdata",
+            "description": "Generer ekstra utdata ved behov, inkludert besøksoppsummeringer eller henvisninger, basert på samme økt."
+          },
+          {
+            "title": "Full kontroll",
+            "description": "Du har full kontroll. Du gjennomgår og godkjenner hvert notat. Ingenting lagres automatisk."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Kliniske sikkerhetsmekanismer",
+        "description": "EU-hostet. Ingen pasientdata brukes til å trene AI-modeller. Ingen automatisk lagring. Klinikerstyrt, alltid."
+      },
+      "testimonial": {
+        "title": "Dette sier kolleger",
+        "quotes": [
+          "Jeg blir ferdig med notatene samme dag, ofte mellom pasientene. Det passer slik fysioterapitimer faktisk gjennomføres. Utkast først, så justerer og signerer jeg."
+        ]
+      },
+      "cta": {
+        "button": "Prøv Nora"
+      }
+    },
+    "allSpecialties": {
+      "meta": {
+        "title": "Alle fagområder - Nordhealth Nora",
+        "description": "Nora er bygget for klinikere som trenger dokumentasjon som fungerer i reell klinisk hverdag."
+      },
+      "hero": {
+        "title": "Den kliniske motoren for moderne praksis.",
+        "description": "Nora er bygget for klinikere som trenger dokumentasjon som fungerer i reell klinisk hverdag.",
+        "extendedDescription": "Tydelig struktur, riktige utdata og strenge rammer. Den lager utkast basert på konsultasjonen. Du gjennomgår og godkjenner. Ingenting blir journalført som standard."
+      },
+      "features": {
+        "heading": "Slik støtter Nora arbeidet ditt",
+        "items": [
+          {
+            "title": "Ingen kliniske beslutninger tas av systemet",
+            "description": "Gjør konsultasjoner om til strukturerte utkast med SOAP, DAP eller ditt eget format."
+          },
+          {
+            "title": "Flere utdata",
+            "description": "Opprett flere dokumenter fra én økt, inkludert journalnotater, sammendrag, henvisninger og attester."
+          },
+          {
+            "title": "Private notater",
+            "description": "Hold klinisk tenkning adskilt. Private notater støtter refleksjon og kontekst utenfor journalen."
+          },
+          {
+            "title": "Gjenbrukbart språk",
+            "description": "Jobb raskere med gjenbrukbare formuleringer. Standardinstruksjoner og gjentakende språk lagres med Frasebibliotek."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Kliniske sikkerhetsmekanismer",
+        "description": "Hold deg innenfor tydelige rammer. EU-hostet, ingen rå lyd lagres, ingen pasientdata brukes til å trene AI-modeller, ingen automatisk lagring."
+      },
+      "testimonial": {
+        "title": "Hvem er det for",
+        "quotes": []
+      },
+      "cta": {
+        "button": "Sykepleiere, ernæringsfysiologer, ergoterapeuter, kiropraktorer, spesialister og alle som dokumenterer samtaler og trenger utkast som er raske å gjennomgå og trygge å bruke."
+      }
+    },
+    "trustBadges": {
+      "euHosted": "Hostet i EU",
+      "gdpr": "GDPR-kompatibel",
+      "noAudio": "Ingen lyd lagres",
+      "noTraining": "Ingen trening på pasientdata",
+      "clinicallyValidated": "Klinisk validert"
     }
   },
   "pricing": {
@@ -195,7 +399,12 @@
       "dataStorage": {
         "title": "Hvor lagres data?",
         "content": "Vi bruker kun EU-baserte datasentre for å levere tjenesten.",
-        "list": ["Norge: Physica og Psykbase Desktop", "Danmark: EasyPractice, Physica og Psykbase Web", "Finland: Diarium", "AI-funksjonalitet: AWS og Azure EU-datasentre"]
+        "list": [
+          "Norge: Physica og Psykbase Desktop",
+          "Danmark: EasyPractice, Physica og Psykbase Web",
+          "Finland: Diarium",
+          "AI-funksjonalitet: AWS og Azure EU-datasentre"
+        ]
       },
       "dataProcessing": {
         "title": "Behandles data utenfor EU?",
@@ -224,13 +433,22 @@
       "gdpr": {
         "title": "Er dere GDPR-kompatible?",
         "content": "Ja. Vi er fullt GDPR-kompatible. Som behandler på vegne av behandlingsansvarlig, oppfyller vi våre hovedforpliktelser, inkludert:",
-        "list": ["Sterk datasikkerhet: Omfattende tekniske og organisatoriske tiltak for å beskytte personopplysninger", "Konfidensialitet: Alle autoriserte ansatte er bundet av strenge taushetsavtaler", "Datainnbrudd: Umiddelbare varslingsprosedyrer ved potensielle brudd", "Støtte for GDPR-forpliktelser: Vi hjelper kundene våre med å oppfylle sine plikter overfor registrerte", "Samarbeid med myndigheter: Vi samarbeider med tilsynsmyndigheter"]
+        "list": [
+          "Sterk datasikkerhet: Omfattende tekniske og organisatoriske tiltak for å beskytte personopplysninger",
+          "Konfidensialitet: Alle autoriserte ansatte er bundet av strenge taushetsavtaler",
+          "Datainnbrudd: Umiddelbare varslingsprosedyrer ved potensielle brudd",
+          "Støtte for GDPR-forpliktelser: Vi hjelper kundene våre med å oppfylle sine plikter overfor registrerte",
+          "Samarbeid med myndigheter: Vi samarbeider med tilsynsmyndigheter"
+        ]
       },
       "subProcessors": {
         "title": "Kan jeg få en liste over alle underdatabehandlere?",
         "content": "Ja. Vi fører et transparent underdatabehandlerregister over alle leverandører med tilgang til personopplysninger.",
         "note": "Merk: Av forretnings- og sikkerhetsgrunner publiserer vi ikke navnene på individuelle modellleverandører da dette er konfidensiell informasjon. Vi garanterer imidlertid at:",
-        "list": ["Alle AI-relaterte underleverandører opererer i Europa", "Brukerdata overføres eller behandles ikke utenfor Europa"]
+        "list": [
+          "Alle AI-relaterte underleverandører opererer i Europa",
+          "Brukerdata overføres eller behandles ikke utenfor Europa"
+        ]
       },
       "certifications": {
         "title": "Hvilke sertifiseringer og standarder følger dere?",

@@ -109,52 +109,256 @@
     "accept": "Accepter"
   },
   "solutions": {
-    "hero": {
-      "title": "Dybden i dine observationer er dit vigtigste kliniske redskab.",
-      "description": "Nora sørger for transskriberingen, så du kan bevare dit fulde fokus der, hvor det hører hjemme – på patienten."
+    "dropdown": {
+      "speechTherapists": "Logopæder og talepædagoger",
+      "generalPractitioners": "Praktiserende læger og speciallæger",
+      "psychologists": "Psykologer & psykoterapeuter",
+      "physiotherapists": "Physioterapeuter",
+      "allSpecialties": "Alle specialer"
     },
-    "features": {
-      "heading": "Sådan støtter Nora dit arbejde",
-      "description": "Inden for logopædi arbejder din opmærksomhed på mange planer: fonetiske detaljer, nonverbale signaler, engagement og svarmønstre. Det er en udfordring at fastholde den dybde i observationerne, samtidig med at du dokumenterer.",
-      "liveCapture": {
-        "title": "Live-transskribering",
-        "description": "Fang sproglige detaljer i realtid – herunder eksempler, fejl, prompts, responser og fremskridt – uden at skulle forlade dig på hukommelsen efter sessionen."
+    "speechTherapists": {
+      "meta": {
+        "title": "Logopæder og talepædagoger - Nordhealth Nora",
+        "description": "Nora sørger for transskriberingen, så du kan bevare dit fulde fokus der, hvor det hører hjemme – på patienten."
       },
-      "structuredDrafts": {
-        "title": "Strukturerede udkast",
-        "description": "Få klare, strukturerede udkast til dine noter, som er organiserede og klar til gennemsyn."
+      "hero": {
+        "title": "Dybden i dine observationer er dit vigtigste kliniske redskab.",
+        "description": "Nora sørger for transskriberingen, så du kan bevare dit fulde fokus der, hvor det hører hjemme – på patienten.",
+        "extendedDescription": "Inden for logopædi arbejder din opmærksomhed på mange planer: fonetiske detaljer, nonverbale signaler, engagement og svarmønstre. Det er en udfordring at fastholde den dybde i observationerne, samtidig med at du dokumenterer."
       },
-      "consistentPhrasing": {
-        "title": "Ensartede formuleringer",
-        "description": "Standardiser protokoller med Fraser. Indsæt øvelser og gentagne kliniske vendinger med en kort kommando – konsistent på tværs af alle klienter."
+      "features": {
+        "heading": "Sådan støtter Nora dit arbejde",
+        "items": [
+          {
+            "title": "Live-transskribering",
+            "description": "Fang sproglige detaljer i realtid – herunder eksempler, fejl, prompts, responser og fremskridt – uden at skulle forlade dig på hukommelsen efter sessionen."
+          },
+          {
+            "title": "Strukturerede udkast",
+            "description": "Få klare, strukturerede udkast til dine noter, som er organiserede og klar til gennemsyn."
+          },
+          {
+            "title": "Ensartede formuleringer",
+            "description": "Standardiser protokoller med Fraser. Indsæt øvelser og gentagne kliniske vendinger med en kort kommando – konsistent på tværs af alle klienter."
+          },
+          {
+            "title": "Legende tilgang",
+            "description": "Støtter pædiatriske og legebaserede sessioner. Bevar flowet i interaktionen, mens Nora forbereder et udkast, som du kan færdiggøre med det samme bagefter."
+          },
+          {
+            "title": "Fuld kontrol",
+            "description": "Bevar den fulde kontrol. Intet gemmes uden din godkendelse."
+          }
+        ]
       },
-      "playFriendly": {
-        "title": "Legende tilgang",
-        "description": "Støtter pædiatriske og legebaserede sessioner. Bevar flowet i interaktionen, mens Nora forbereder et udkast, som du kan færdiggøre med det samme bagefter."
+      "trust": {
+        "title": "Klinisk sikkerhed",
+        "description": "Hosted i EU. Ingen patientdata bruges til at træne AI-modeller. Ingen autogem-funktion. Du forbliver den eneste forfatter af journalen."
       },
-      "fullControl": {
-        "title": "Fuld kontrol",
-        "description": "Bevar den fulde kontrol. Intet gemmes uden din godkendelse."
+      "testimonial": {
+        "title": "Dette siger klinikere",
+        "quotes": [
+          "”Jeg kigger på klienten, ikke på skærmen. Udkastet ligger klar, når vi er færdige.”\n”Mine noter er blevet mere konsistente, især når det gælder gentagne øvelser og sprogprøver.”\n”Det sparer tid, men vigtigst af alt beskytter det min opmærksomhed under sessionen.”"
+        ]
+      },
+      "cta": {
+        "button": "Prøv Nora"
       }
     },
-    "trust": {
-      "title": "Klinisk sikkerhed",
-      "description": "Hosted i EU. Ingen patientdata bruges til at træne AI-modeller. Ingen autogem-funktion. Du forbliver den eneste forfatter af journalen.",
-      "badges": {
-        "euHosted": "Hostet i EU",
-        "gdpr": "GDPR-kompatibel",
-        "noAudio": "Ingen lyd gemmes",
-        "noTraining": "Ingen træning på patientdata",
-        "clinicallyValidated": "Klinisk valideret"
+    "generalPractitioners": {
+      "meta": {
+        "title": "Praktiserende læger og speciallæger - Nordhealth Nora",
+        "description": "Nora skriver udkastet til din dokumentation baseret på konsultationen, så du kan bevare fokus på patienten. Bagefter gennemser og godkender du det, der bliver til den endelige journal."
+      },
+      "hero": {
+        "title": "Mere tid til kliniske beslutninger. Mindre tid på gentagelser.",
+        "description": "Nora skriver udkastet til din dokumentation baseret på konsultationen, så du kan bevare fokus på patienten. Bagefter gennemser og godkender du det, der bliver til den endelige journal.",
+        "extendedDescription": "I primærsektoren er dokumentationen konstant: Notater, henvisninger, resuméer og attester. At skulle indtaste de samme oplysninger i flere forskellige dokumenter dræner både tid og opmærksomhed."
+      },
+      "features": {
+        "heading": "Sådan støtter Nora dit arbejde",
+        "items": [
+          {
+            "title": "Registrering af konsultationen",
+            "description": "Få udkast til noter i din egen stil og tone, hvor de væsentlige detaljer er fanget."
+          },
+          {
+            "title": "Opfølgende dokumenter",
+            "description": "Opret opfølgende dokumenter med det samme. Henvisninger, resuméer, attester og sygemeldinger genereres ud fra den samme konsultation."
+          },
+          {
+            "title": "Ingen kliniske beslutninger tages af systemet",
+            "description": "Nora stiller ikke diagnoser og foreslår ikke behandling."
+          },
+          {
+            "title": "Fuld kontrol",
+            "description": "Bevar den fulde kontrol. Du redigerer og godkender. Intet gemmes automatisk."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Klinisk sikkerhed",
+        "description": "Hosted i EU. Ingen patientdata bruges til at træne AI-modeller. Ingen autogem-funktion. Altid lægeligt godkendt."
+      },
+      "testimonial": {
+        "title": "Det siger kollegerne",
+        "quotes": [
+          "”Jeg bruger ikke længere den sidste time af arbejdsdagen på at indhente dagens noter.”",
+          "”Henvisninger og attester forstyrrer ikke længere tidsplanen.”",
+          "”Nora skriver udkastet. Jeg bestemmer, hvad der er korrekt.”"
+        ]
+      },
+      "cta": {
+        "button": "Prøv Nora"
       }
     },
-    "cta": {
-      "title": "Prøv Nordhealth Nora i din næste logopædiske session.<br/>Start en 14-dages gratis prøveperiode",
-      "button": "Prøv Nora"
+    "psychologists": {
+      "meta": {
+        "title": "Psykologer & psykoterapeuter - Nordhealth Nora",
+        "description": "Det vigtigste arbejde i psykoterapi sker i det uforstyrrede nærvær. Nora bliver diskret i baggrunden og støtter din dokumentation, mens det terapeutiske rum og din kliniske tænkning beskyttes."
+      },
+      "hero": {
+        "title": "En reflekterende partner til moderne psykoterapi.",
+        "description": "Det vigtigste arbejde i psykoterapi sker i det uforstyrrede nærvær. Nora bliver diskret i baggrunden og støtter din dokumentation, mens det terapeutiske rum og din kliniske tænkning beskyttes.",
+        "extendedDescription": ""
+      },
+      "features": {
+        "heading": "Sådan støtter Nora dit arbejde",
+        "items": [
+          {
+            "title": "Optagelse af sessionen",
+            "description": "Vær til stede i sessionen. Fang samtalen uden at tastaturet er udgangspunktet."
+          },
+          {
+            "title": "Strukturerede udkast",
+            "description": "Få udkast til noter i din egen struktur og dit eget sprog, klar til gennemsyn."
+          },
+          {
+            "title": "Privat refleksion",
+            "description": "Hold den terapeutiske refleksion adskilt fra selve journalen. Brug Private noter til tanker, hypoteser og kontekst."
+          },
+          {
+            "title": "Hurtigt gennemsyn",
+            "description": "Færdiggør dokumentationen på få minutter. Generer et udkast med det samme efter sessionen, rediger det og godkend."
+          },
+          {
+            "title": "Fuld kontrol",
+            "description": "Bevar den fulde kontrol. Intet gemmes uden din godkendelse."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Klinisk sikkerhed.",
+        "description": "Hosted i EU. Ingen patientdata bruges til at træne AI-modeller. Ingen autogem-funktion. Ingen klinisk beslutningsstøtte. Nora stiller ikke diagnoser og foreslår ikke behandling."
+      },
+      "testimonial": {
+        "title": "Det siger terapeuterne",
+        "quotes": [
+          "”Med Private noter kan jeg holde mine egne overvejelser adskilt fra den officielle journal.”\n”Jeg tager ikke længere dokumentationsarbejdet med hjem om aftenen.”\n”Det understøtter mit workflow uden at forstyrre selve sessionen.”"
+        ]
+      },
+      "cta": {
+        "button": "Prøv Nora"
+      }
     },
-    "testimonial": {
-      "title": "Dette siger klinikere",
-      "quote": "Jeg kigger på klienten, ikke på skærmen. Udkastet ligger klar, når vi er færdige."
+    "physiotherapists": {
+      "meta": {
+        "title": "Physioterapeuter - Nordhealth Nora",
+        "description": "Fysioterapi handler om bevægelse, men dokumentation trækker dig ofte tilbage til tastaturet mellem patienterne. Nora er bygget til virkeligheden i en travl klinik og forvandler mundtlige vurderinger og stikord til struktureret og korrekt dokumentation, mens du er på farten."
+      },
+      "hero": {
+        "title": "Dine hænder er til behandling. Lad Nora klare skrivebordsarbejdet.",
+        "description": "Fysioterapi handler om bevægelse, men dokumentation trækker dig ofte tilbage til tastaturet mellem patienterne. Nora er bygget til virkeligheden i en travl klinik og forvandler mundtlige vurderinger og stikord til struktureret og korrekt dokumentation, mens du er på farten.",
+        "extendedDescription": ""
+      },
+      "features": {
+        "heading": "Sådan støtter Nora dit arbejde",
+        "items": [
+          {
+            "title": "Håndfri registrering",
+            "description": "Registrer dine fund håndfrit via stemmen under sessionen – herunder testresultater, ændringer i øvelser, smerterespons og tolerance."
+          },
+          {
+            "title": "Strukturerede noter",
+            "description": "Modtag automatisk strukturerede journaludkast, hvor fund, vurdering, plan og opfølgning er overskueligt organiseret."
+          },
+          {
+            "title": "Standardprotokoller",
+            "description": "Genbrug dine standardprotokoller. Gem almindelige test, øvelser og instruktioner med Fraser."
+          },
+          {
+            "title": "Fleksible formater",
+            "description": "Generer ekstra dokumentation, når der er brug for det – herunder opsummeringer eller henvisninger – baseret på den samme konsultation."
+          },
+          {
+            "title": "Fuld kontrol",
+            "description": "Bevar den fulde kontrol. Du gennemser og godkender hver eneste note. Intet gemmes automatisk."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Klinisk sikkerhed",
+        "description": "Hosted i EU. Ingen patientdata bruges til at træne AI-modeller. Ingen autogem-funktion. Altid godkendt af klinikeren."
+      },
+      "testimonial": {
+        "title": "Det siger kollegerne",
+        "quotes": [
+          "”Jeg færdiggør mine noter samme dag, som regel mellem patienterne.”\n”Det passer til, hvordan en fysioterapeutisk session rent faktisk foregår.”\n”Først kommer udkastet, så tilretter jeg og godkender.”"
+        ]
+      },
+      "cta": {
+        "button": "Prøv Nora"
+      }
+    },
+    "allSpecialties": {
+      "meta": {
+        "title": "Alle specialer - Nordhealth Nora",
+        "description": "Nora er skabt til klinikere, der har brug for dokumentation, som holder i virkelighedens praksis."
+      },
+      "hero": {
+        "title": "Den kliniske motor til den moderne praksis.",
+        "description": "Nora er skabt til klinikere, der har brug for dokumentation, som holder i virkelighedens praksis.",
+        "extendedDescription": "Klar struktur, de rigtige formater og skarpe rammer. Nora skriver udkast ud fra din konsultation. Du gennemser og godkender. Intet bliver en del af journalen som standard."
+      },
+      "features": {
+        "heading": "Sådan støtter Nora dit arbejde",
+        "items": [
+          {
+            "title": "Ingen kliniske beslutninger tages af systemet",
+            "description": "Forvandl konsultationer til strukturerede udkast ved hjælp af SOAP, DAP eller dit helt eget format."
+          },
+          {
+            "title": "Flere formater fra samme session",
+            "description": "Opret flere dokumenter ud fra én session – herunder journalnotater, opsummeringer, henvisninger og attester."
+          },
+          {
+            "title": "Private noter",
+            "description": "Hold din kliniske tænkning adskilt. Private noter understøtter refleksion og kontekst uden for den officielle journal."
+          },
+          {
+            "title": "Faste vendinger",
+            "description": "Arbejd hurtigere med faste vendinger. Standardinstruktioner og gentagne formuleringer gemmes med Fraser."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Klinisk sikkerhed",
+        "description": "Hold dig inden for de sikre rammer. Hosted i EU, ingen lagring af rå lydfiler, ingen patientdata bruges til træning af AI-modeller, ingen autogem."
+      },
+      "testimonial": {
+        "title": "Hvem er det til?",
+        "quotes": []
+      },
+      "cta": {
+        "button": "Sygeplejersker, diætister, ergoterapeuter, kiropraktorer, speciallæger og alle andre, der dokumenterer samtaler og har brug for udkast, der er hurtige at gennemse og sikre at bruge."
+      }
+    },
+    "trustBadges": {
+      "euHosted": "Hostet i EU",
+      "gdpr": "GDPR-kompatibel",
+      "noAudio": "Ingen lyd gemmes",
+      "noTraining": "Ingen træning på patientdata",
+      "clinicallyValidated": "Klinisk valideret"
     }
   },
   "pricing": {
@@ -195,7 +399,12 @@
       "dataStorage": {
         "title": "Hvor gemmes data?",
         "content": "Vi bruger kun EU-baserede datacentre til at levere tjenesten.",
-        "list": ["Norge: Physica og Psykbase Desktop", "Danmark: EasyPractice, Physica og Psykbase Web", "Finland: Diarium", "AI-funktionalitet: AWS og Azure EU-datacentre"]
+        "list": [
+          "Norge: Physica og Psykbase Desktop",
+          "Danmark: EasyPractice, Physica og Psykbase Web",
+          "Finland: Diarium",
+          "AI-funktionalitet: AWS og Azure EU-datacentre"
+        ]
       },
       "dataProcessing": {
         "title": "Behandles data uden for EU?",
@@ -224,13 +433,22 @@
       "gdpr": {
         "title": "Er I GDPR-kompatible?",
         "content": "Ja. Vi er fuldt GDPR-kompatible. Som databehandler på vegne af den dataansvarlige opfylder vi vores vigtigste forpligtelser, herunder:",
-        "list": ["Stærk datasikkerhed: Omfattende tekniske og organisatoriske foranstaltninger til beskyttelse af personoplysninger", "Fortrolighed: Alle autoriserede medarbejdere er bundet af strenge fortrolighedsaftaler", "Databrud: Øjeblikkelige underretningsprocedurer i tilfælde af potentielle brud", "Støtte til GDPR-forpligtelser: Vi hjælper vores kunder med at opfylde deres forpligtelser over for registrerede", "Samarbejde med myndigheder: Vi samarbejder med tilsynsmyndigheder"]
+        "list": [
+          "Stærk datasikkerhed: Omfattende tekniske og organisatoriske foranstaltninger til beskyttelse af personoplysninger",
+          "Fortrolighed: Alle autoriserede medarbejdere er bundet af strenge fortrolighedsaftaler",
+          "Databrud: Øjeblikkelige underretningsprocedurer i tilfælde af potentielle brud",
+          "Støtte til GDPR-forpligtelser: Vi hjælper vores kunder med at opfylde deres forpligtelser over for registrerede",
+          "Samarbejde med myndigheder: Vi samarbejder med tilsynsmyndigheder"
+        ]
       },
       "subProcessors": {
         "title": "Kan jeg få en liste over alle underdatabehandlere?",
         "content": "Ja. Vi opretholder et gennemsigtigt underdatabehandlerregister over alle leverandører med adgang til personoplysninger.",
         "note": "Bemærk: Af forretnings- og sikkerhedsmæssige årsager offentliggør vi ikke navnene på individuelle modeludbydere, da dette er fortrolig information. Vi garanterer dog, at:",
-        "list": ["Alle AI-relaterede underleverandører opererer i Europa", "Brugerdata overføres eller behandles ikke uden for Europa"]
+        "list": [
+          "Alle AI-relaterede underleverandører opererer i Europa",
+          "Brugerdata overføres eller behandles ikke uden for Europa"
+        ]
       },
       "certifications": {
         "title": "Hvilke certificeringer og standarder følger I?",

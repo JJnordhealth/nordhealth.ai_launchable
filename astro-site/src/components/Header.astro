@@ -31,11 +31,25 @@ const logoSrc = variant === 'light' ? `${base}/images/nordhealth-nora-light.svg`
       <span></span>
     </button>
     <div class="nav-actions">
+      <div class="nav-dropdown-wrapper">
+        <button class={`nav-link nav-link-dropdown${activePage === 'solutions' ? ' active' : ''}`} aria-expanded="false" aria-haspopup="true">
+          {t.nav.solutions}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="nav-dropdown-arrow">
+            <path d="M0.0601807 4.15736L1.33297 2.88456L5.99988 7.55147L10.6668 2.88451L11.9396 4.1573L6.84841 9.24852C6.37978 9.71715 5.61998 9.71715 5.15135 9.24852L0.0601807 4.15736Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href={`${base}/nora/${lang}/solutions/speech-therapists`} class="nav-dropdown-item">{t.solutions.dropdown.speechTherapists}</a>
+          <a href={`${base}/nora/${lang}/solutions/general-practitioners`} class="nav-dropdown-item">{t.solutions.dropdown.generalPractitioners}</a>
+          <a href={`${base}/nora/${lang}/solutions/psychologists`} class="nav-dropdown-item">{t.solutions.dropdown.psychologists}</a>
+          <a href={`${base}/nora/${lang}/solutions/physiotherapists`} class="nav-dropdown-item">{t.solutions.dropdown.physiotherapists}</a>
+          <a href={`${base}/nora/${lang}/solutions/all-specialties`} class="nav-dropdown-item">{t.solutions.dropdown.allSpecialties}</a>
+        </div>
+      </div>
       <a href={`${base}/nora/${lang}/pricing/`} class={`nav-link${activePage === 'pricing' ? ' active' : ''}`}>{t.nav.pricing}</a>
-      <button class="btn-secondary">
+      <button class="nav-link btn-demo">
         <span>{t.nav.bookDemo}</span>
       </button>
-      <a href="https://system.nordhealth.ai/" target="_blank" class="btn-outline">{t.nav.login}</a>
       <a href="https://system.nordhealth.ai/signup" target="_blank" class="btn-primary">{t.nav.tryFree}</a>
     </div>
   </div>

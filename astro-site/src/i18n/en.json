@@ -138,52 +138,256 @@
     }
   },
   "solutions": {
-    "hero": {
-      "title": "Your depth of observation is your greatest clinical tool.",
-      "description": "Nora takes care of the transcription, so you can keep your full focus where it belongs: on the patient."
+    "dropdown": {
+      "speechTherapists": "Speech Therapist",
+      "generalPractitioners": "General Practitioners",
+      "psychologists": "Psychologists",
+      "physiotherapists": "Physiotherapists",
+      "allSpecialties": "All specialties"
     },
-    "features": {
-      "heading": "How Nordhealth Nora supports you",
-      "description": "In speech and language therapy, your attention is always working on multiple levels — phonetic detail, non-verbal cues, engagement, response patterns. Holding that level of observation while also documenting is hard.",
-      "liveCapture": {
-        "title": "Live Capture",
-        "description": "Capture language detail in real time, including examples, errors, prompts, responses, and progress, without relying on memory after the session."
+    "speechTherapists": {
+      "meta": {
+        "title": "Speech Therapists - Nordhealth Nora",
+        "description": "Nora handles the transcription, so you can keep your full focus where it belongs, on the patient."
       },
-      "structuredDrafts": {
-        "title": "Structured Drafts",
-        "description": "Draft clear, structured notes that are organised and ready to review."
+      "hero": {
+        "title": "Your depth of observation is your greatest clinical tool.",
+        "description": "Nora handles the transcription, so you can keep your full focus where it belongs, on the patient.",
+        "extendedDescription": "In speech and language therapy, your attention works on multiple levels. Phonetic detail, non-verbal cues, engagement, response patterns. Holding that depth of observation while documenting is difficult."
       },
-      "consistentPhrasing": {
-        "title": "Consistent Phrasing",
-        "description": "Standardise protocols with Phrases. Insert your exercises and recurring clinical wording with a short cue, consistently across clients."
+      "features": {
+        "heading": "How Nora supports your work",
+        "items": [
+          {
+            "title": "Live Capture",
+            "description": "Capture language detail in real time, including examples, errors, prompts, responses, and progress, without relying on memory after the session."
+          },
+          {
+            "title": "Structured Drafts",
+            "description": "Draft clear, structured notes that are organised and ready to review."
+          },
+          {
+            "title": "Consistent Phrasing",
+            "description": "Standardise protocols with Phrases. Insert exercises and recurring clinical wording with a short cue, consistently across clients."
+          },
+          {
+            "title": "Play-Friendly",
+            "description": "Support paediatric and play-based sessions. Keep interaction flowing while Nora prepares a draft you can finalise right after."
+          },
+          {
+            "title": "Full Control",
+            "description": "Stay fully in control. Nothing is saved without your approval."
+          }
+        ]
       },
-      "playFriendly": {
-        "title": "Play-Friendly",
-        "description": "Support paediatric and play-based sessions. Keep the interaction flowing while Nora prepares a draft you can finalise right after."
+      "trust": {
+        "title": "Clinical safeguards",
+        "description": "EU-hosted. No patient data used to train AI models. No auto-save. You remain the sole author of the record."
       },
-      "fullControl": {
-        "title": "Full Control",
-        "description": "Stay fully in control. Nothing is saved without your approval."
+      "testimonial": {
+        "title": "What clinicians say",
+        "quotes": [
+          "“I’m watching the client, not the screen. The draft is there when we finish.”\n“My notes are more consistent, especially for repeated exercises and language samples.”\n“It saves time, but more importantly it protects attention during the session.”"
+        ]
+      },
+      "cta": {
+        "button": "Try Nora"
       }
     },
-    "trust": {
-      "title": "Clinical trust & data safeguards",
-      "description": "EU-hosted. No patient data used to train AI models. No auto-save. You remain the sole author of the record.",
-      "badges": {
-        "euHosted": "EU-hosted",
-        "gdpr": "GDPR compliant",
-        "noAudio": "No audio stored",
-        "noTraining": "No training on patient data",
-        "clinicallyValidated": "Clinically validated"
+    "generalPractitioners": {
+      "meta": {
+        "title": "General Practitioners / Doctors - Nordhealth Nora",
+        "description": "Nora drafts your documentation from the consultation, so you can stay focused on the patient, then review and approve what becomes the record."
+      },
+      "hero": {
+        "title": "More time for clinical decisions. Less time rewriting.",
+        "description": "Nora drafts your documentation from the consultation, so you can stay focused on the patient, then review and approve what becomes the record.",
+        "extendedDescription": "In primary care, documentation is constant. Notes, referrals, summaries, certificates. Re-entering the same information across documents drains time and attention."
+      },
+      "features": {
+        "heading": "How Nora supports your work",
+        "items": [
+          {
+            "title": "Consultation Capture",
+            "description": "Draft notes in your own style and tone, with essential details captured."
+          },
+          {
+            "title": "Follow-Up Documents",
+            "description": "Create follow-up documents immediately. Referrals, summaries, certificates, and sick notes come from the same consultation."
+          },
+          {
+            "title": "CDS-Free Support",
+            "description": "Stay CDS-free. Nora does not diagnose or suggest treatment."
+          },
+          {
+            "title": "Full Control",
+            "description": "Keep full control. You edit and approve. Nothing is saved automatically."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Clinical safeguards",
+        "description": "EU-hosted. No patient data used to train AI models. No auto-save. Clinician-approved, always."
+      },
+      "testimonial": {
+        "title": "What colleagues say",
+        "quotes": [
+          "“I don’t spend the last hour of the day catching up on notes.”",
+          "“Referrals and certificates stop interrupting the schedule.”",
+          "“It drafts. I decide what’s correct.”"
+        ]
+      },
+      "cta": {
+        "button": "Try Nora"
       }
     },
-    "cta": {
-      "title": "Try Nordhealth Nora in your next SLT session.<br/>Start a 14-day free trial",
-      "button": "Try Nordhealth Nora"
+    "psychologists": {
+      "meta": {
+        "title": "Psychologists & Psychotherapists - Nordhealth Nora",
+        "description": "The most important work in psychotherapy happens in uninterrupted presence. Nora stays quietly in the background, supporting your documentation while protecting the therapeutic space and your clinical thinking."
+      },
+      "hero": {
+        "title": "A reflective partner for modern psychotherapy.",
+        "description": "The most important work in psychotherapy happens in uninterrupted presence. Nora stays quietly in the background, supporting your documentation while protecting the therapeutic space and your clinical thinking.",
+        "extendedDescription": ""
+      },
+      "features": {
+        "heading": "How Nora supports your work",
+        "items": [
+          {
+            "title": "Session Capture",
+            "description": "Stay present during the session. Capture the conversation without typing as the default."
+          },
+          {
+            "title": "Structured Drafts",
+            "description": "Draft notes in your own structure and language, ready to review."
+          },
+          {
+            "title": "Private Reflection",
+            "description": "Keep therapeutic reflection separate from the record. Use Private Notes for thinking, hypotheses, and context."
+          },
+          {
+            "title": "Rapid Review",
+            "description": "Finish documentation in minutes. Generate a draft immediately after the session, then edit and approve."
+          },
+          {
+            "title": "Full Control",
+            "description": "Keep full control. Nothing is saved without your approval."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Clinical safeguards",
+        "description": "EU-hosted. No patient data used to train AI models. No auto-save. CDS-free. Nora does not diagnose or suggest treatment."
+      },
+      "testimonial": {
+        "title": "What therapists say",
+        "quotes": [
+          "“Private Notes lets me keep my thinking separate from the official note.”\n“I don’t carry documentation into the evening anymore.”\n“It supports my workflow without intruding on the session.”"
+        ]
+      },
+      "cta": {
+        "button": "Try Nora"
+      }
     },
-    "testimonial": {
-      "title": "What clinicians say",
-      "quote": "I'm watching the client, not the screen. The draft is there when we finish."
+    "physiotherapists": {
+      "meta": {
+        "title": "Physiotherapists - Nordhealth Nora",
+        "description": "Physiotherapy is movement-based, yet documentation often pulls you back to the keyboard between patients. Nora is built for the reality of a busy clinic floor, turning spoken assessments and cues into structured, compliant documentation while you keep moving."
+      },
+      "hero": {
+        "title": "Your hands are for treatment. Let Nora handle the desk work.",
+        "description": "Physiotherapy is movement-based, yet documentation often pulls you back to the keyboard between patients. Nora is built for the reality of a busy clinic floor, turning spoken assessments and cues into structured, compliant documentation while you keep moving.",
+        "extendedDescription": ""
+      },
+      "features": {
+        "heading": "How Nora supports your work",
+        "items": [
+          {
+            "title": "Hands-Free Capture",
+            "description": "Capture findings hands-free by voice during the session, including tests, exercise changes, pain response, and tolerance."
+          },
+          {
+            "title": "Structured Notes",
+            "description": "Receive structured journal note drafts automatically, with findings, assessment, plan, and follow-up clearly organised."
+          },
+          {
+            "title": "Standard Protocols",
+            "description": "Reuse standard protocols. Save common tests, exercises, and instructions with Phrases."
+          },
+          {
+            "title": "Flexible Outputs",
+            "description": "Generate additional outputs when needed, including visit summaries or referrals, from the same session."
+          },
+          {
+            "title": "Full Control",
+            "description": "Stay in full control. You review and approve every note. Nothing is saved automatically."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Clinical safeguards",
+        "description": "EU-hosted. No patient data used to train AI models. No auto-save. Clinician-approved, always."
+      },
+      "testimonial": {
+        "title": "What colleagues say",
+        "quotes": [
+          "“I finish notes the same day, usually between patients.”\n“It fits how physio sessions actually work.”\n“Draft first, then I adjust and sign.”"
+        ]
+      },
+      "cta": {
+        "button": "Try Nora"
+      }
+    },
+    "allSpecialties": {
+      "meta": {
+        "title": "All Specialties - Nordhealth Nora",
+        "description": "Nora is built for clinicians who need documentation that holds up in real practice."
+      },
+      "hero": {
+        "title": "The clinical engine for modern practice.",
+        "description": "Nora is built for clinicians who need documentation that holds up in real practice.",
+        "extendedDescription": "Clear structure, the right outputs, and strict boundaries. It drafts from your consultation. You review and approve. Nothing becomes part of the record by default."
+      },
+      "features": {
+        "heading": "How Nora supports your work",
+        "items": [
+          {
+            "title": "CDS-Free Support",
+            "description": "Turn consultations into structured drafts using SOAP, DAP, or your own format."
+          },
+          {
+            "title": "Multiple Outputs",
+            "description": "Create multiple documents from one session, including notes, summaries, referrals, and certificates."
+          },
+          {
+            "title": "Private Notes",
+            "description": "Keep clinical thinking separate. Private Notes support reflection and context outside the formal record."
+          },
+          {
+            "title": "Reusable Language",
+            "description": "Work faster with reusable phrasing. Standard instructions and recurring wording are saved with Phrases."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Clinical Safeguards",
+        "description": "Stay within strict boundaries. EU-hosted, no raw audio stored, no patient data used to train AI models, no auto-save."
+      },
+      "testimonial": {
+        "title": "Who it’s for",
+        "quotes": []
+      },
+      "cta": {
+        "button": "Nurses, nutritionists, occupational therapists, chiropractors, specialists, and anyone who documents conversations and needs drafts that are fast to review and safe to use."
+      }
+    },
+    "trustBadges": {
+      "euHosted": "EU-hosted",
+      "gdpr": "GDPR compliant",
+      "noAudio": "No audio stored",
+      "noTraining": "No training on patient data",
+      "clinicallyValidated": "Clinically validated"
     }
   },
   "privacy": {
@@ -195,7 +399,12 @@
       "dataStorage": {
         "title": "Where is data stored?",
         "content": "We use only EU-based data centers to provide the service.",
-        "list": ["Norway: Physica and Psykbase Desktop", "Denmark: EasyPractice, Physica, and Psykbase Web", "Finland: Diarium", "AI functionality: AWS and Azure EU data centers"]
+        "list": [
+          "Norway: Physica and Psykbase Desktop",
+          "Denmark: EasyPractice, Physica, and Psykbase Web",
+          "Finland: Diarium",
+          "AI functionality: AWS and Azure EU data centers"
+        ]
       },
       "dataProcessing": {
         "title": "Is data processed outside the EU?",
@@ -224,13 +433,22 @@
       "gdpr": {
         "title": "Are you GDPR-compliant?",
         "content": "Yes. We are fully GDPR-compliant. As a processor acting on behalf of the data controller, we fulfill our key obligations, including:",
-        "list": ["Strong data security: Extensive technical and organizational measures to protect personal data", "Confidentiality: All authorized employees are bound by strict confidentiality agreements", "Data breaches: Immediate notification procedures in case of potential breaches", "Support for GDPR obligations: We help our customers fulfill their duties to data subjects", "Cooperation with authorities: We cooperate with supervisory authorities"]
+        "list": [
+          "Strong data security: Extensive technical and organizational measures to protect personal data",
+          "Confidentiality: All authorized employees are bound by strict confidentiality agreements",
+          "Data breaches: Immediate notification procedures in case of potential breaches",
+          "Support for GDPR obligations: We help our customers fulfill their duties to data subjects",
+          "Cooperation with authorities: We cooperate with supervisory authorities"
+        ]
       },
       "subProcessors": {
         "title": "Can I get a list of all sub-processors?",
         "content": "Yes. We maintain a transparent sub-processor register of all vendors with access to personal data.",
         "note": "Note: For business and security reasons, we do not publish the names of individual model providers as this is confidential information. However, we guarantee that:",
-        "list": ["All AI-related subcontractors operate in Europe", "User data is not transferred or processed outside Europe"]
+        "list": [
+          "All AI-related subcontractors operate in Europe",
+          "User data is not transferred or processed outside Europe"
+        ]
       },
       "certifications": {
         "title": "What certifications and standards do you follow?",

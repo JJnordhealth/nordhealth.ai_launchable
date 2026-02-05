@@ -1,0 +1,24 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import SolutionPage from '../../../../components/SolutionPage.astro';
+import { getTranslations } from '../../../../i18n';
+
+const lang = 'dk';
+const t = getTranslations(lang);
+const specialty = 'allSpecialties';
+---
+
+<BaseLayout
+  title={t.solutions[specialty].meta.title}
+  description={t.solutions[specialty].meta.description}
+  lang={lang}
+  t={t}
+  canonicalPath="solutions/all-specialties"
+  headerVariant="light"
+  activePage="solutions"
+  bodyClass="solutions-page"
+>
+  <SolutionPage specialty={specialty} lang={lang} t={t} />
+</BaseLayout>

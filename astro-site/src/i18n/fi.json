@@ -109,52 +109,256 @@
     "accept": "Hyväksy"
   },
   "solutions": {
-    "hero": {
-      "title": "Havainnointikykysi on tärkein kliininen työkalusi.",
-      "description": "Nora hoitaa litteroinnin, jotta voit pitää täyden huomiosi siellä, minne se kuuluu – asiakkaassa."
+    "dropdown": {
+      "speechTherapists": "Puheterapeutit",
+      "generalPractitioners": "Yleislääkärit / Lääkärit",
+      "psychologists": "Psykologit & Psykoterapeutit",
+      "physiotherapists": "Fysioterapeutit",
+      "allSpecialties": "Kaikki erikoisalat"
     },
-    "features": {
-      "heading": "Miten Nora tukee työtäsi",
-      "description": "Puheterapiassa huomiosi toimii usealla tasolla: foneettisissa yksityiskohdissa, ei-sanallisissa vihjeissä, vuorovaikutuksessa ja vuorottelussa. Havainnointisyvyyden säilyttäminen kirjauksen aikana on vaikeaa.",
-      "liveCapture": {
-        "title": "Reaaliaikainen taltiointi",
-        "description": "Taltioi kielelliset yksityiskohdat reaaliajassa, mukaan lukien esimerkit, virheet, kehotteet, vastaukset ja edistyminen, tukeutumatta omaan muistiin käynnin jälkeen."
+    "speechTherapists": {
+      "meta": {
+        "title": "Puheterapeutit - Nordhealth Nora",
+        "description": "Nora hoitaa litteroinnin, jotta voit pitää täyden huomiosi siellä, minne se kuuluu – asiakkaassa."
       },
-      "structuredDrafts": {
-        "title": "Rakenteiset luonnokset",
-        "description": "Laadi selkeitä, jäsenneltyjä muistiinpanoja, jotka ovat loogisia ja valmiita tarkistettaviksi."
+      "hero": {
+        "title": "Havainnointikykysi on tärkein kliininen työkalusi.",
+        "description": "Nora hoitaa litteroinnin, jotta voit pitää täyden huomiosi siellä, minne se kuuluu – asiakkaassa.",
+        "extendedDescription": "Puheterapiassa huomiosi toimii usealla tasolla: foneettisissa yksityiskohdissa, ei-sanallisissa vihjeissä, vuorovaikutuksessa ja vuorottelussa. Havainnointisyvyyden säilyttäminen kirjauksen aikana on vaikeaa."
       },
-      "consistentPhrasing": {
-        "title": "Johdonmukaiset ilmaisut",
-        "description": "Standardoi toimintatavat fraasien avulla. Lisää harjoituksia ja toistuvia kliinisiä sanamuotoja lyhyellä vihjeellä, johdonmukaisesti kaikille asiakkaille."
+      "features": {
+        "heading": "Miten Nora tukee työtäsi",
+        "items": [
+          {
+            "title": "Reaaliaikainen taltiointi",
+            "description": "Taltioi kielelliset yksityiskohdat reaaliajassa, mukaan lukien esimerkit, virheet, kehotteet, vastaukset ja edistyminen, tukeutumatta omaan muistiin käynnin jälkeen."
+          },
+          {
+            "title": "Rakenteiset luonnokset",
+            "description": "Laadi selkeitä, jäsenneltyjä muistiinpanoja, jotka ovat loogisia ja valmiita tarkistettaviksi."
+          },
+          {
+            "title": "Johdonmukaiset ilmaisut",
+            "description": "Standardoi toimintatavat fraasien avulla. Lisää harjoituksia ja toistuvia kliinisiä sanamuotoja lyhyellä vihjeellä, johdonmukaisesti kaikille asiakkaille."
+          },
+          {
+            "title": "Tukee leikkiä",
+            "description": "Tukee pedagogisia ja leikkiterapiaan pohjautuvia istuntoja. Pidä vuorovaikutus jatkuvana samalla, kun Nora valmistelee luonnoksen, jonka voit viimeistellä käynnin jälkeen."
+          },
+          {
+            "title": "Täysi hallinta",
+            "description": "Pysy täydessä hallinnassa. Mitään ei tallenneta ilman hyväksyntääsi."
+          }
+        ]
       },
-      "playFriendly": {
-        "title": "Tukee leikkiä",
-        "description": "Tukee pedagogisia ja leikkiterapiaan pohjautuvia istuntoja. Pidä vuorovaikutus jatkuvana samalla, kun Nora valmistelee luonnoksen, jonka voit viimeistellä käynnin jälkeen."
+      "trust": {
+        "title": "Kliininen turvallisuus",
+        "description": "Ylläpidetty EU-alueella. Potilastietoja ei käytetä tekoälymallien kouluttamiseen. Ei automaattista tallennusta. Olet kirjauksen ainoa muokkaaja."
       },
-      "fullControl": {
-        "title": "Täysi hallinta",
-        "description": "Pysy täydessä hallinnassa. Mitään ei tallenneta ilman hyväksyntääsi."
+      "testimonial": {
+        "title": "Mitä ammattilaiset sanovat",
+        "quotes": [
+          "”Seuraan asiakasta, en näyttöä. Luonnos on valmis, kun lopetamme.” \n”Kirjaukseni ovat johdonmukaisempia, erityisesti toistuvien harjoitusten ja kielellisen sisällön osalta.” \n”Se säästää aikaa, mutta mikä tärkeämpää, se suojaa keskittymistäni istunnon aikana.”"
+        ]
+      },
+      "cta": {
+        "button": "Kokeile Noraa"
       }
     },
-    "trust": {
-      "title": "Kliininen turvallisuus",
-      "description": "Ylläpidetty EU-alueella. Potilastietoja ei käytetä tekoälymallien kouluttamiseen. Ei automaattista tallennusta. Olet kirjauksen ainoa muokkaaja.",
-      "badges": {
-        "euHosted": "Ylläpito EU-alueella",
-        "gdpr": "GDPR-yhteensopiva",
-        "noAudio": "Ääntä ei tallenneta",
-        "noTraining": "Ei koulutusta potilastiedoilla",
-        "clinicallyValidated": "Kliinisesti validoitu"
+    "generalPractitioners": {
+      "meta": {
+        "title": "Yleislääkärit / Lääkärit - Nordhealth Nora",
+        "description": "Nora laatii dokumentaatiosi konsultaation pohjalta, jotta voit keskittyä potilaaseen ja sen jälkeen tarkistaa sekä hyväksyä sen, mikä tallennetaan potilaskertomukseen."
+      },
+      "hero": {
+        "title": "Lisää aikaa kliinisille päätöksille. Vähemmän aikaa kirjoittamiseen.",
+        "description": "Nora laatii dokumentaatiosi konsultaation pohjalta, jotta voit keskittyä potilaaseen ja sen jälkeen tarkistaa sekä hyväksyä sen, mikä tallennetaan potilaskertomukseen.",
+        "extendedDescription": "Terveydenhuollossa dokumentointi on jatkuvaa: merkinnät, lähetteet, yhteenvedot, todistukset. Saman tiedon syöttäminen uudelleen eri asiakirjoihin vie aikaa ja huomiota."
+      },
+      "features": {
+        "heading": "Miten Nora tukee työtäsi",
+        "items": [
+          {
+            "title": "Konsultaation taltiointi",
+            "description": "Laadi kirjaukset omalla tyylilläsi ja sävylläsi taltioiden olennaiset yksityiskohdat."
+          },
+          {
+            "title": "Seurantayhteenvedot",
+            "description": "Luo seurannassa tarvittavat asiakirjat välittömästi. Lähetteet, yhteenvedot j sairauslomatodistukset syntyvät samasta konsultaatiosta."
+          },
+          {
+            "title": "Ei päätöksentuen tukea (CDS)",
+            "description": "Ei päätöksentuen tukea. Nora ei diagnosoi tai ehdota hoitoa."
+          },
+          {
+            "title": "Täysi hallinta",
+            "description": "Säilytä täysi hallinta. Mitään ei tallenneta ilman hyväksyntääsi."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Kliininen turvallisuus",
+        "description": "Ylläpidetty EU-alueella. Potilastietoja ei käytetä tekoälymallien kouluttamiseen. Ei automaattista tallennusta. Aina ammattilaisen hyväksymä."
+      },
+      "testimonial": {
+        "title": "Mitä kollegat sanovat",
+        "quotes": [
+          "”En käytä päivän viimeistä tuntia kirjausten valmiiksi saattamiseen.”",
+          "”Lähetteet ja todistukset eivät enää keskeytä aikataulua.”",
+          "”Se laatii luonnoksen. Minä päätän, mikä on oikein.”"
+        ]
+      },
+      "cta": {
+        "button": "Kokeile Noraa"
       }
     },
-    "cta": {
-      "title": "Kokeile Nordhealth Noraa seuraavassa puheterapiakäynnissäsi.<br/>Aloita 14 päivän ilmainen kokeilu",
-      "button": "Kokeile Noraa"
+    "psychologists": {
+      "meta": {
+        "title": "Psykologit & Psykoterapeutit - Nordhealth Nora",
+        "description": "Psykoterapian tärkein työ tapahtuu keskeytymättömässä läsnäolossa. Nora pysyy hiljaa taustalla tukien dokumentointiasi ja suojellen terapeuttista tilaa sekä kliinistä ajatteluasi."
+      },
+      "hero": {
+        "title": "Reflektiivinen kumppani nykyaikaiseen psykoterapiaan.",
+        "description": "Psykoterapian tärkein työ tapahtuu keskeytymättömässä läsnäolossa. Nora pysyy hiljaa taustalla tukien dokumentointiasi ja suojellen terapeuttista tilaa sekä kliinistä ajatteluasi.",
+        "extendedDescription": ""
+      },
+      "features": {
+        "heading": "Miten Nora tukee työtäsi",
+        "items": [
+          {
+            "title": "Istunnon taltiointi",
+            "description": "Pysy läsnä istunnon aikana. Taltioi keskustelu ilman, että kirjoittaminen on oletusarvo."
+          },
+          {
+            "title": "Rakenteiset luonnokset",
+            "description": "Laadi oman rakenteesi mukaisia kirjausluonnoksia omalla tyylilläsi, valmiina tarkistettavaksi."
+          },
+          {
+            "title": "Yksityinen pohdinta",
+            "description": "Pidä terapeuttinen pohdinta erillään potilaskertomuksesta. Käytä omia muistiinpanojaai ajatteluun, hypoteeseihin ja kontekstiin."
+          },
+          {
+            "title": "Nopea tarkistus",
+            "description": "Viimeistele dokumentointi minuuteissa. Luo luonnos välittömästi istunnon jälkeen, muokkaa ja hyväksy."
+          },
+          {
+            "title": "Täysi hallinta",
+            "description": "Säilytä täysi hallinta. Mitään ei tallenneta ilman hyväksyntääsi."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Kliininen turvallisuus",
+        "description": "Ylläpidetty EU-alueella. Potilastietoja ei käytetä tekoälymallien kouluttamiseen. Ei automaattista tallennusta. Ei päätöksentuen tukea. Nora ei diagnosoi tai ehdota hoitoa."
+      },
+      "testimonial": {
+        "title": "Mitä terapeutit sanovat",
+        "quotes": [
+          "”Yksityisten muistiinpanojen avulla voin pitää ajatteluni erillään virallisesta kirjauksesta.”\n”En enää kanna dokumentointia mukanani iltaan asti.”\n”Se tukee työnkulkuani häiritsemättä istuntoa.”"
+        ]
+      },
+      "cta": {
+        "button": "Kokeile Noraa"
+      }
     },
-    "testimonial": {
-      "title": "Mitä ammattilaiset sanovat",
-      "quote": "Seuraan asiakasta, en näyttöä. Luonnos on valmis, kun lopetamme."
+    "physiotherapists": {
+      "meta": {
+        "title": "Fysioterapeutit - Nordhealth Nora",
+        "description": "Fysioterapia on liikepohjaista, mutta dokumentointi vetää sinut usein takaisin näppäimistön ääreen aiakkaiden välillä. Nora on rakennettu kiireisen klinikan todellisuuteen, muuttaen puhutut arvioinnit ja annetut ohjeet rakenteelliseksi, vaatimustenmukaiseksi dokumentaatioksi samalla kun pysyt liikkeessä."
+      },
+      "hero": {
+        "title": "Kätesi on tarkoitettu hoitoon. Anna Noran hoitaa paperityöt.",
+        "description": "Fysioterapia on liikepohjaista, mutta dokumentointi vetää sinut usein takaisin näppäimistön ääreen aiakkaiden välillä. Nora on rakennettu kiireisen klinikan todellisuuteen, muuttaen puhutut arvioinnit ja annetut ohjeet rakenteelliseksi, vaatimustenmukaiseksi dokumentaatioksi samalla kun pysyt liikkeessä.",
+        "extendedDescription": ""
+      },
+      "features": {
+        "heading": "Miten Nora tukee työtäsi",
+        "items": [
+          {
+            "title": "Taltiointi ilman kirjoittamista",
+            "description": "Taltioi löydökset istunnon aikana ilman kirjoittamista puheeseen pohjautuen, mukaan lukien testit, harjoitukset, kipuvaste ja toimintakyky."
+          },
+          {
+            "title": "Rakenteiset muistiinpanot",
+            "description": "Saat automaattisesti rakenteisen kirjausluonnoksen, jossa löydökset, arvio, suunnitelma ja seuranta on järjestetty selkeästi."
+          },
+          {
+            "title": "Vakiotoimintatavat",
+            "description": "Hyödynnä vakiotoimintatapoja. Kirjaa testit, harjoitukset ja ohjeet fraasien avulla."
+          },
+          {
+            "title": "Monipuolinen dokumentaatio",
+            "description": "Luo tarvitsemasi dokumentaatio, kuten käyntiyhteenvedot tai lähetteet, samasta istunnosta."
+          },
+          {
+            "title": "Täysi hallinta",
+            "description": "Pysy täydessä hallinnassa."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Kliininen turvallisuus",
+        "description": "Ylläpidetty EU-alueella. Potilastietoja ei käytetä tekoälymallien kouluttamiseen. Ei automaattista tallennusta. Aina ammattilaisen hyväksymä."
+      },
+      "testimonial": {
+        "title": "Mitä kollegat sanovat",
+        "quotes": [
+          "”Viimeistelen kirjaukset samana päivänä, yleensä potilaiden välissä.”\n”Se sopii siihen, miten fysioterapiaistunnot todellisuudessa toimivat.”\n”Ensin luonnos, sitten muokkaus ja allekirjoitus.”"
+        ]
+      },
+      "cta": {
+        "button": "Kokeile Noraa"
+      }
+    },
+    "allSpecialties": {
+      "meta": {
+        "title": "Kaikki erikoisalat - Nordhealth Nora",
+        "description": "Nora on rakennettu terveydenhuollon ammattilaisille, jotka tarvitsevat todellisessa työssä kestävää dokumentaatiota."
+      },
+      "hero": {
+        "title": "Kliininen moottori nykyaikaiseen vastaanottoon.",
+        "description": "Nora on rakennettu terveydenhuollon ammattilaisille, jotka tarvitsevat todellisessa työssä kestävää dokumentaatiota.",
+        "extendedDescription": "Selkeä rakenne, oikeat kirjaukset ja tiukat rajat. Se laatii luonnoksen konsultaatiostasi. Sinä tarkistat ja hyväksyt. Mikään ei tule osaksi potilaskertomusta oletusarvoisesti."
+      },
+      "features": {
+        "heading": "Miten Nora tukee työtäsi",
+        "items": [
+          {
+            "title": "Ei päätöksentuen tukea (CDS)",
+            "description": "Muuta konsultaatiot rakenteellisiksi kirjausluonnoksiksi käyttämällä SOAP-, DAP- tai omaa kirjausmalliasi."
+          },
+          {
+            "title": "Useita dokumentteja",
+            "description": "Luo useita asiakirjoja yhdestä istunnosta, mukaan lukien kirjaukset, yhteenvedot, lähetteet ja todistukset."
+          },
+          {
+            "title": "Yksityiset muistiinpanot",
+            "description": "Pidä kliininen ajattelu erillään. Yksityiset muistiinpanot tukevat pohdintaa ja kontekstia virallisen potilaskertomuksen ulkopuolella."
+          },
+          {
+            "title": "Uudelleenkäytettävät termit",
+            "description": "Työskentele nopeammin uudelleenkäytettävien fraasien avulla. Vakio-ohjeet ja toistuvat sanamuodot tallennetaan fraasien avulla."
+          }
+        ]
+      },
+      "trust": {
+        "title": "Kliininen turvallisuus",
+        "description": "Pysy tiukkojen rajojen sisällä. Ylläpidetty EU-alueella, äänitallennetta ei säilytetä, potilastietoja ei käytetä tekoälymallien kouluttamiseen, ei automaattista tallennusta."
+      },
+      "testimonial": {
+        "title": "Kenelle se on tarkoitettu",
+        "quotes": []
+      },
+      "cta": {
+        "button": "Sairaanhoitajille, ravitsemusterapeuteille, toimintaterapeuteille, kiropraktikoille, lääkäreille ja kaikille, jotka dokumentoivat keskusteluja ja tarvitsevat kirjauksia, jotka ovat nopeita tarkistaa ja turvallisia käyttää."
+      }
+    },
+    "trustBadges": {
+      "euHosted": "Ylläpito EU-alueella",
+      "gdpr": "GDPR-yhteensopiva",
+      "noAudio": "Ääntä ei tallenneta",
+      "noTraining": "Ei koulutusta potilastiedoilla",
+      "clinicallyValidated": "Kliinisesti validoitu"
     }
   },
   "pricing": {
@@ -195,7 +399,12 @@
       "dataStorage": {
         "title": "Missä tietoja säilytetään?",
         "content": "Käytämme vain EU-alueen datakeskuksia palvelun tarjoamiseen.",
-        "list": ["Norja: Physica ja Psykbase Desktop", "Tanska: EasyPractice, Physica ja Psykbase Web", "Suomi: Diarium", "Tekoälytoiminnallisuus: AWS:n ja Azuren EU-datakeskukset"]
+        "list": [
+          "Norja: Physica ja Psykbase Desktop",
+          "Tanska: EasyPractice, Physica ja Psykbase Web",
+          "Suomi: Diarium",
+          "Tekoälytoiminnallisuus: AWS:n ja Azuren EU-datakeskukset"
+        ]
       },
       "dataProcessing": {
         "title": "Käsitelläänkö tietoja EU:n ulkopuolella?",
@@ -224,13 +433,22 @@
       "gdpr": {
         "title": "Oletteko GDPR-yhteensopivia?",
         "content": "Kyllä. Noudatamme täysin GDPR:ää. Rekisterinpitäjän puolesta toimivana käsittelijänä täytämme keskeiset velvoitteemme, mukaan lukien:",
-        "list": ["Vahva tietoturva: Laajat tekniset ja organisatoriset toimenpiteet henkilötietojen suojaamiseksi", "Luottamuksellisuus: Kaikki valtuutetut työntekijät ovat sitoutuneet tiukkaan salassapitoon", "Tietomurrot: Välittömät ilmoitusmenettelyt mahdollisten tietomurtojen yhteydessä", "Tuki GDPR-velvoitteille: Autamme asiakkaitamme täyttämään velvoitteensa rekisteröityjä kohtaan", "Yhteistyö viranomaisten kanssa: Teemme yhteistyötä valvontaviranomaisten kanssa"]
+        "list": [
+          "Vahva tietoturva: Laajat tekniset ja organisatoriset toimenpiteet henkilötietojen suojaamiseksi",
+          "Luottamuksellisuus: Kaikki valtuutetut työntekijät ovat sitoutuneet tiukkaan salassapitoon",
+          "Tietomurrot: Välittömät ilmoitusmenettelyt mahdollisten tietomurtojen yhteydessä",
+          "Tuki GDPR-velvoitteille: Autamme asiakkaitamme täyttämään velvoitteensa rekisteröityjä kohtaan",
+          "Yhteistyö viranomaisten kanssa: Teemme yhteistyötä valvontaviranomaisten kanssa"
+        ]
       },
       "subProcessors": {
         "title": "Voinko saada luettelon kaikista alikäsittelijöistä?",
         "content": "Kyllä. Pidämme yllä avointa alikäsittelijärekisteriä kaikista toimittajista, joilla on pääsy henkilötietoihin.",
         "note": "Huomautus: Liike- ja turvallisuussyistä emme julkaise yksittäisten mallintarjoajien nimiä, sillä tämä on luottamuksellista tietoa. Takaamme kuitenkin, että:",
-        "list": ["Kaikki tekoälyyn liittyvät alihankkijat toimivat Euroopassa", "Käyttäjätietoja ei siirretä tai käsitellä Euroopan ulkopuolella"]
+        "list": [
+          "Kaikki tekoälyyn liittyvät alihankkijat toimivat Euroopassa",
+          "Käyttäjätietoja ei siirretä tai käsitellä Euroopan ulkopuolella"
+        ]
       },
       "certifications": {
         "title": "Mitä sertifikaatteja ja standardeja noudatatte?",

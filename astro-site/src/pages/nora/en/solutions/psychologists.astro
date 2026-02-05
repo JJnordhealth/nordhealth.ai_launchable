@@ -1,0 +1,24 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import SolutionPage from '../../../../components/SolutionPage.astro';
+import { getTranslations } from '../../../../i18n';
+
+const lang = 'en';
+const t = getTranslations(lang);
+const specialty = 'psychologists';
+---
+
+<BaseLayout
+  title={t.solutions[specialty].meta.title}
+  description={t.solutions[specialty].meta.description}
+  lang={lang}
+  t={t}
+  canonicalPath="solutions/psychologists"
+  headerVariant="light"
+  activePage="solutions"
+  bodyClass="solutions-page"
+>
+  <SolutionPage specialty={specialty} lang={lang} t={t} />
+</BaseLayout>

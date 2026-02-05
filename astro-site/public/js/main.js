@@ -335,16 +335,13 @@ const pathMatch = window.location.pathname.match(/^(\/[^\/]+)?\/nora\/([a-z]{2})
 const basePath = pathMatch ? (pathMatch[1] || '') : '';
 const lang = pathMatch ? pathMatch[2] : 'en';
 
-// Language-specific hero images (NO, DK, EN have their own, FI uses FI)
-const imgSuffix = lang === 'no' ? 'NO' : lang === 'dk' ? 'DK' : lang === 'en' ? 'EN' : 'FI';
-const usesSingularTherapist = lang !== 'fi'; // NO/DK/EN use "therapist", FI uses "therapists"
-const usesAllTherapistsLast = lang !== 'fi'; // NO/DK/EN use "All Therapists" for last tab, FI uses "General_Practice"
+// Language-specific hero images - consistent naming for all languages
 const images = [
-  basePath + "/images/Nora_hero_asset_1_General_Practice_" + imgSuffix + ".png",
-  basePath + "/images/Nora_hero_asset_1_Psychotherapists_" + imgSuffix + ".png",
-  basePath + "/images/Nora_hero_asset_1_Speech_therapist" + (usesSingularTherapist ? '' : 's') + "_" + imgSuffix + ".png",
-  basePath + "/images/Nora_hero_asset_1_Physiotherapists_" + imgSuffix + ".png",
-  basePath + "/images/Nora_hero_asset_1_" + (usesAllTherapistsLast ? 'All_Therapists' : 'General_Practice') + "_" + imgSuffix + ".png",
+  basePath + "/images/hero_general-practitioners_" + lang + ".png",
+  basePath + "/images/hero_psychologists_" + lang + ".png",
+  basePath + "/images/hero_speech-therapists_" + lang + ".png",
+  basePath + "/images/hero_physiotherapists_" + lang + ".png",
+  basePath + "/images/hero_all-specialties_" + lang + ".png",
 ];
 
 // Preload images for smoother transitions
