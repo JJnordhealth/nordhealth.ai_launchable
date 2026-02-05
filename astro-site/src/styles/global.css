@@ -3124,6 +3124,7 @@ body.reflective-space-exited {
   margin: 0;
   max-width: 693px;
   font-feature-settings: 'salt' 1, 'ss06' 1, 'dlig' 1, 'lnum' 1, 'pnum' 1;
+  text-wrap: balance;
 }
 
 /* Figma: supporting text width=493.5, height=60 (2 lines at 30px) */
@@ -3198,6 +3199,7 @@ body.reflective-space-exited {
   line-height: 44px;
   letter-spacing: -0.72px;
   margin: 0 0 20px 0;
+  text-wrap: balance;
 }
 
 /* Figma: 20px, leading-30px, Normal weight, color #535862 */
@@ -3342,6 +3344,7 @@ body.reflective-space-exited {
   font-weight: 600;
   line-height: 1;
   margin: 0 0 16px 0;
+  text-wrap: balance;
 }
 
 .solutions-trust-description {
@@ -3451,14 +3454,87 @@ body.reflective-space-exited {
   margin: 0;
 }
 
+/* Testimonial quotes container - relative for absolute positioning of quotes */
+.solutions-testimonial-quotes {
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Figma: 40px text with 40px line-height (1:1 ratio), SemiBold */
 .solutions-testimonial-quote {
   color: #0c1a3d;
   font-size: 40px;
   font-weight: 600; /* SemiBold */
   font-style: normal;
-  line-height: 40px;
+  line-height: 1.2;
   margin: 0;
+  text-wrap: balance;
+  /* Slideshow styles */
+  position: absolute;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  width: 100%;
+}
+
+.solutions-testimonial-quote.active {
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.solutions-testimonial-quote.exiting {
+  opacity: 0;
+  transform: translateY(-12px);
+}
+
+/* Progress dots */
+.solutions-testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.solutions-testimonial-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #d1d5db;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.solutions-testimonial-dot:hover {
+  background: #9ca3af;
+  transform: scale(1.2);
+}
+
+.solutions-testimonial-dot:focus-visible {
+  outline: 2px solid #3559C7;
+  outline-offset: 2px;
+}
+
+.solutions-testimonial-dot.active {
+  background: #3559C7;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .solutions-testimonial-quote {
+    transition: opacity 0.2s ease;
+    transform: none !important;
+  }
+  .solutions-testimonial-quote.exiting {
+    transform: none;
+  }
 }
 
 /* Solutions Page Tablet Styles */
@@ -3744,8 +3820,23 @@ body.reflective-space-exited {
     font-size: 16px;
   }
 
+  .solutions-testimonial-quotes {
+    min-height: 100px;
+  }
+
   .solutions-testimonial-quote {
     font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .solutions-testimonial-dots {
+    margin-top: 24px;
+    gap: 10px;
+  }
+
+  .solutions-testimonial-dot {
+    width: 8px;
+    height: 8px;
   }
 }
 
@@ -3820,8 +3911,17 @@ body.reflective-space-exited {
     padding: 40px 16px;
   }
 
+  .solutions-testimonial-quotes {
+    min-height: 80px;
+  }
+
   .solutions-testimonial-quote {
     font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .solutions-testimonial-dots {
+    margin-top: 20px;
   }
 }
 
