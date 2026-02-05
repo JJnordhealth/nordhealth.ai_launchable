@@ -3786,8 +3786,18 @@ body.reflective-space-exited {
     padding: 40px 16px;
   }
 
+  .solutions-support-top {
+    gap: 20px;
+  }
+
   .solutions-support-heading {
     font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .solutions-support-description {
+    font-size: 13px;
+    line-height: 1.5;
   }
 
   .solutions-trust {
