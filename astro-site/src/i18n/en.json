@@ -187,7 +187,9 @@
       "testimonial": {
         "title": "What clinicians say",
         "quotes": [
-          "“I’m watching the client, not the screen. The draft is there when we finish.”\n“My notes are more consistent, especially for repeated exercises and language samples.”\n“It saves time, but more importantly it protects attention during the session.”"
+          "I'm watching the client, not the screen. The draft is there when we finish.",
+          "My notes are more consistent, especially for repeated exercises and language samples.",
+          "It saves time, but more importantly it protects attention during the session."
         ]
       },
       "cta": {
@@ -283,7 +285,9 @@
       "testimonial": {
         "title": "What therapists say",
         "quotes": [
-          "“Private Notes lets me keep my thinking separate from the official note.”\n“I don’t carry documentation into the evening anymore.”\n“It supports my workflow without intruding on the session.”"
+          "Private Notes lets me keep my thinking separate from the official note.",
+          "I don't carry documentation into the evening anymore.",
+          "It supports my workflow without intruding on the session."
         ]
       },
       "cta": {
@@ -332,7 +336,9 @@
       "testimonial": {
         "title": "What colleagues say",
         "quotes": [
-          "“I finish notes the same day, usually between patients.”\n“It fits how physio sessions actually work.”\n“Draft first, then I adjust and sign.”"
+          "I finish notes the same day, usually between patients.",
+          "It fits how physio sessions actually work.",
+          "Draft first, then I adjust and sign."
         ]
       },
       "cta": {
@@ -375,11 +381,13 @@
         "description": "Stay within strict boundaries. EU-hosted, no raw audio stored, no patient data used to train AI models, no auto-save."
       },
       "testimonial": {
-        "title": "Who it’s for",
-        "quotes": []
+        "title": "Who it's for",
+        "quotes": [
+          "Nurses, nutritionists, occupational therapists, chiropractors, specialists, and anyone who documents conversations and needs drafts that are fast to review and safe to use."
+        ]
       },
       "cta": {
-        "button": "Nurses, nutritionists, occupational therapists, chiropractors, specialists, and anyone who documents conversations and needs drafts that are fast to review and safe to use."
+        "button": "Try Nora"
       }
     },
     "trustBadges": {

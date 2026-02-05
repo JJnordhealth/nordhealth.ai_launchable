@@ -158,7 +158,9 @@
       "testimonial": {
         "title": "Dette siger klinikere",
         "quotes": [
-          "”Jeg kigger på klienten, ikke på skærmen. Udkastet ligger klar, når vi er færdige.”\n”Mine noter er blevet mere konsistente, især når det gælder gentagne øvelser og sprogprøver.”\n”Det sparer tid, men vigtigst af alt beskytter det min opmærksomhed under sessionen.”"
+          "Jeg ser på klienten, ikke på skærmen. Udkastet er der, når vi er færdige.",
+          "Mine noter er mere ensartede, især for gentagne øvelser og sprogprøver.",
+          "Det sparer tid, men endnu vigtigere beskytter det opmærksomheden under sessionen."
         ]
       },
       "cta": {
@@ -254,7 +256,9 @@
       "testimonial": {
         "title": "Det siger terapeuterne",
         "quotes": [
-          "”Med Private noter kan jeg holde mine egne overvejelser adskilt fra den officielle journal.”\n”Jeg tager ikke længere dokumentationsarbejdet med hjem om aftenen.”\n”Det understøtter mit workflow uden at forstyrre selve sessionen.”"
+          "Private Noter lader mig holde mine tanker adskilt fra den officielle note.",
+          "Jeg tager ikke længere dokumentation med hjem om aftenen.",
+          "Det understøtter min arbejdsgang uden at forstyrre sessionen."
         ]
       },
       "cta": {
@@ -303,7 +307,9 @@
       "testimonial": {
         "title": "Det siger kollegerne",
         "quotes": [
-          "”Jeg færdiggør mine noter samme dag, som regel mellem patienterne.”\n”Det passer til, hvordan en fysioterapeutisk session rent faktisk foregår.”\n”Først kommer udkastet, så tilretter jeg og godkender.”"
+          "Jeg færdiggør noter samme dag, som regel mellem patienter.",
+          "Det passer til, hvordan fysioterapisessioner rent faktisk fungerer.",
+          "Først udkast, så justerer og underskriver jeg."
         ]
       },
       "cta": {
@@ -346,11 +352,13 @@
         "description": "Hold dig inden for de sikre rammer. Hosted i EU, ingen lagring af rå lydfiler, ingen patientdata bruges til træning af AI-modeller, ingen autogem."
       },
       "testimonial": {
-        "title": "Hvem er det til?",
-        "quotes": []
+        "title": "Hvem det er til",
+        "quotes": [
+          "Sygeplejersker, diætister, ergoterapeuter, kiropraktorer, speciallæger og alle andre, der dokumenterer samtaler og har brug for udkast, der er hurtige at gennemse og sikre at bruge."
+        ]
       },
       "cta": {
-        "button": "Sygeplejersker, diætister, ergoterapeuter, kiropraktorer, speciallæger og alle andre, der dokumenterer samtaler og har brug for udkast, der er hurtige at gennemse og sikre at bruge."
+        "button": "Prøv Nora"
       }
     },
     "trustBadges": {
