@@ -353,7 +353,7 @@ images.forEach(src => {
 let activeTab = document.querySelector(".role-tab.active");
 
 function moveIndicator(tab, animate = true) {
-  if (!tab) return;
+  if (!tab || !indicator) return;
 
   indicator.style.transition = animate
     ? "opacity 0.2s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s ease"
@@ -371,7 +371,9 @@ tabs.forEach((tab, index) => {
     tab.classList.add("active");
     activeTab = tab;
 
-    indicator.style.opacity = "1";
+    if (indicator) {
+      indicator.style.opacity = "1";
+    }
 
     moveIndicator(tab);
 
@@ -395,7 +397,9 @@ tabs.forEach((tab, index) => {
 
 window.addEventListener("load", () => {
   moveIndicator(activeTab, false);
-  indicator.style.opacity = activeTab ? "1" : "0";
+  if (indicator) {
+    indicator.style.opacity = activeTab ? "1" : "0";
+  }
 });
 
 window.addEventListener("resize", () => {

@@ -271,12 +271,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       document.body.appendChild(s);
     </script>
 
-    <!-- i18n Dynamic Override Script -->
+    <!-- i18n Dynamic Override Script (disabled for static builds) -->
+    <!--
     <script is:inline define:vars={{ lang }}>
       (function() {
         // Fetch and apply i18n overrides from CMS
         fetch('/api/i18n/' + lang)
-          .then(function(r) { return r.json(); })
+          .then(function(r) { if (!r.ok) throw new Error('No API'); return r.json(); })
           .then(function(data) {
             if (!data.overrides || !data.overrides.length) return;
 
@@ -298,11 +299,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
               }
             });
           })
-          .catch(function(err) {
-            // Silently fail - static content remains
-          });
+          .catch(function(err) {});
       })();
     </script>
+    -->
 
     <CookieBanner lang={lang} t={t} />
   </body>
