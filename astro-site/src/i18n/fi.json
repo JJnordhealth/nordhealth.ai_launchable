@@ -221,8 +221,8 @@
       },
       "hero": {
         "title": "Reflektiivinen kumppani nykyaikaiseen psykoterapiaan.",
-        "description": "Psykoterapian tärkein työ tapahtuu keskeytymättömässä läsnäolossa. Nora pysyy hiljaa taustalla tukien dokumentointiasi ja suojellen terapeuttista tilaa sekä kliinistä ajatteluasi.",
-        "extendedDescription": ""
+        "description": "Psykoterapian tärkein työ tapahtuu keskeytymättömässä läsnäolossa.",
+        "extendedDescription": "Nora pysyy hiljaa taustalla tukien dokumentointiasi ja suojellen terapeuttista tilaa sekä kliinistä ajatteluasi."
       },
       "features": {
         "heading": "Miten Nora tukee työtäsi",
@@ -271,9 +271,9 @@
         "description": "Fysioterapia on liikepohjaista, mutta dokumentointi vetää sinut usein takaisin näppäimistön ääreen aiakkaiden välillä. Nora on rakennettu kiireisen klinikan todellisuuteen, muuttaen puhutut arvioinnit ja annetut ohjeet rakenteelliseksi, vaatimustenmukaiseksi dokumentaatioksi samalla kun pysyt liikkeessä."
       },
       "hero": {
-        "title": "Kätesi on tarkoitettu hoitoon. Anna Noran hoitaa paperityöt.",
-        "description": "Fysioterapia on liikepohjaista, mutta dokumentointi vetää sinut usein takaisin näppäimistön ääreen aiakkaiden välillä. Nora on rakennettu kiireisen klinikan todellisuuteen, muuttaen puhutut arvioinnit ja annetut ohjeet rakenteelliseksi, vaatimustenmukaiseksi dokumentaatioksi samalla kun pysyt liikkeessä.",
-        "extendedDescription": ""
+        "title": "Kätesi on tarkoitettu hoitoon. Anna Nora hoitaa paperityöt.",
+        "description": "Fysioterapia on liikepohjaista, mutta dokumentointi vetää sinut usein takaisin näppäimistön ääreen aiakkaiden välillä.",
+        "extendedDescription": "Nora on rakennettu kiireisen klinikan todellisuuteen, muuttaen puhutut arvioinnit ja annetut ohjeet rakenteelliseksi, vaatimustenmukaiseksi dokumentaatioksi samalla kun pysyt liikkeessä."
       },
       "features": {
         "heading": "Miten Nora tukee työtäsi",

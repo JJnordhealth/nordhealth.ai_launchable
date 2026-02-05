@@ -250,8 +250,8 @@
       },
       "hero": {
         "title": "A reflective partner for modern psychotherapy.",
-        "description": "The most important work in psychotherapy happens in uninterrupted presence. Nora stays quietly in the background, supporting your documentation while protecting the therapeutic space and your clinical thinking.",
-        "extendedDescription": ""
+        "description": "The most important work in psychotherapy happens in uninterrupted presence.",
+        "extendedDescription": "Nora stays quietly in the background, supporting your documentation while protecting the therapeutic space and your clinical thinking."
       },
       "features": {
         "heading": "How Nora supports your work",
@@ -301,8 +301,8 @@
       },
       "hero": {
         "title": "Your hands are for treatment. Let Nora handle the desk work.",
-        "description": "Physiotherapy is movement-based, yet documentation often pulls you back to the keyboard between patients. Nora is built for the reality of a busy clinic floor, turning spoken assessments and cues into structured, compliant documentation while you keep moving.",
-        "extendedDescription": ""
+        "description": "Physiotherapy is movement-based, yet documentation often pulls you back to the keyboard between patients.",
+        "extendedDescription": "Nora is built for the reality of a busy clinic floor, turning spoken assessments and cues into structured, compliant documentation while you keep moving."
       },
       "features": {
         "heading": "How Nora supports your work",
