@@ -1,4 +1,41 @@
 /* ============================================
+   Armin Grotesk Font Face Declarations
+   Base path: /nordhealth.ai_launchable for GitHub Pages
+   ============================================ */
+
+@font-face {
+  font-family: "Armin Grotesk";
+  src: url("/nordhealth.ai_launchable/fonts/ArminGrotesk-UltraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Armin Grotesk";
+  src: url("/nordhealth.ai_launchable/fonts/ArminGrotesk-Normal.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Armin Grotesk";
+  src: url("/nordhealth.ai_launchable/fonts/ArminGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Armin Grotesk";
+  src: url("/nordhealth.ai_launchable/fonts/ArminGrotesk-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
    CSS Reset & Base Styles
    ============================================ */
 
