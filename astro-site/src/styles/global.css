@@ -3367,7 +3367,7 @@ body.reflective-space-exited {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  color: #6b7a99;
+  color: #ffffff;
 }
 
 .solutions-trust-badge svg {
@@ -3381,7 +3381,7 @@ body.reflective-space-exited {
   line-height: 1.4;
   text-align: center;
   max-width: 125px;
-  color: #6b7a99;
+  color: #ffffff;
 }
 
 /* Solutions CTA */
