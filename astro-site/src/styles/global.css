@@ -3468,26 +3468,49 @@ body.reflective-space-exited {
   }
 
   .solutions-hero {
-    padding: 140px 48px 60px;
+    padding: 120px 48px 60px;
   }
 
   .solutions-hero-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     flex-direction: column;
-    gap: 48px;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
   }
 
   .solutions-hero-content {
+    width: 100%;
+    max-width: 600px;
+    flex-shrink: 1;
     align-items: center;
     text-align: center;
-    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .solutions-hero-image {
+    width: 100%;
+    max-width: 450px;
+    flex-shrink: 1;
+    justify-content: center;
   }
 
   .solutions-hero-image img {
+    width: 100%;
     max-width: 400px;
+    height: auto;
   }
 
   .solutions-hero-title {
-    font-size: 48px;
+    font-size: 42px;
+    line-height: 1.2;
+    max-width: 100%;
+  }
+
+  .solutions-hero-description {
+    max-width: 100%;
   }
 
   .solutions-support {
@@ -3499,12 +3522,14 @@ body.reflective-space-exited {
   }
 
   .solutions-support-top {
-    gap: 48px;
+    flex-direction: column;
+    gap: 40px;
   }
 
   .solutions-support-header {
-    flex: 0 0 340px;
-    max-width: 340px;
+    flex: 1 1 auto;
+    max-width: 100%;
+    text-align: center;
   }
 
   .solutions-support-heading {
@@ -3559,33 +3584,57 @@ body.reflective-space-exited {
 /* Solutions Page Mobile Styles */
 @media (max-width: 768px) {
   .solutions-page::before {
-    height: 700px;
+    height: auto;
+    min-height: 100vh;
   }
 
   .solutions-hero {
-    padding: 120px 24px 48px;
+    padding: 100px 20px 40px;
   }
 
   .solutions-hero-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     flex-direction: column;
+    align-items: center;
     gap: 32px;
+    padding-top: 24px;
   }
 
   .solutions-hero-content {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 1;
     align-items: center;
     text-align: center;
+    padding-top: 0;
+    gap: 16px;
+  }
+
+  .solutions-hero-image {
+    width: 100%;
+    max-width: 320px;
+    flex-shrink: 1;
+    justify-content: center;
   }
 
   .solutions-hero-image img {
-    max-width: 300px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
   }
 
   .solutions-hero-title {
-    font-size: 36px;
+    font-size: 28px;
+    line-height: 1.25;
+    max-width: 100%;
   }
 
   .solutions-hero-description {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 100%;
   }
 
   .solutions-support {
@@ -3597,15 +3646,28 @@ body.reflective-space-exited {
   }
 
   .solutions-support-top {
+    flex-direction: column;
     gap: 24px;
+  }
+
+  .solutions-support-header {
+    flex: 1 1 auto;
+    max-width: 100%;
+    text-align: center;
   }
 
   .solutions-support-heading {
     font-size: 22px;
+    line-height: 1.3;
   }
 
   .solutions-support-description {
     font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .solutions-support-image {
+    max-width: 100%;
   }
 
   .solutions-support-image img {
@@ -3684,6 +3746,72 @@ body.reflective-space-exited {
 
   .solutions-testimonial-quote {
     font-size: 24px;
+  }
+}
+
+/* Solutions Page Small Mobile Styles (iPhone SE, etc.) */
+@media (max-width: 480px) {
+  .solutions-hero {
+    padding: 90px 16px 32px;
+  }
+
+  .solutions-hero-container {
+    gap: 24px;
+    padding-top: 16px;
+  }
+
+  .solutions-hero-content {
+    gap: 12px;
+  }
+
+  .solutions-hero-image {
+    max-width: 260px;
+  }
+
+  .solutions-hero-image img {
+    max-width: 240px;
+  }
+
+  .solutions-hero-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .solutions-hero-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .solutions-support {
+    padding: 40px 16px;
+  }
+
+  .solutions-support-heading {
+    font-size: 20px;
+  }
+
+  .solutions-trust {
+    padding: 40px 16px;
+  }
+
+  .solutions-trust-title {
+    font-size: 24px;
+  }
+
+  .solutions-trust-badges {
+    gap: 16px;
+  }
+
+  .solutions-cta {
+    padding: 32px 16px;
+  }
+
+  .solutions-testimonial {
+    padding: 40px 16px;
+  }
+
+  .solutions-testimonial-quote {
+    font-size: 20px;
   }
 }
 
